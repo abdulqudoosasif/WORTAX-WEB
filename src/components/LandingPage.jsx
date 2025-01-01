@@ -3,7 +3,7 @@ import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 function LandingPage() {
   return (
     <div className="h-full  pt-1">
-      <div className="mt-52 ">
+     <div className="mt-52 ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (
             <div className="masker flex mx-16">
@@ -29,16 +29,18 @@ function LandingPage() {
         ].map((item, index) => (
           <p>{item}</p>
         ))}
-        <div className="px-3 py-1 border-[1px] border-zinc-800 rounded-full">
-          START THE PROJECT
-        </div>
+        <button className="relative px-5 text-sm py-2 overflow-hidden border border-zinc-800 rounded-full  text-[#17191b] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
+          <span className="relative z-10 tracking-wide font-medium">
+            START THE PROJECT
+          </span>
+        </button>
       </div>
       <div>
-      <DotLottieReact 
-      src="https://lottie.host/6393b579-b453-4bbc-93bb-b888d7419558/14PovrnZta.lottie"
-      loop
-      autoplay
-    />
+        <DotLottieReact
+          src="https://lottie.host/6393b579-b453-4bbc-93bb-b888d7419558/14PovrnZta.lottie"
+          loop
+          autoplay
+        />
       </div>
     </div>
   );
