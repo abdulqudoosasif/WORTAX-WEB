@@ -35,13 +35,13 @@ function LandingPage() {
           </span>
         </button>
       </div>
-      <div>
+      {/* <div>
         <DotLottieReact
           src="https://lottie.host/6393b579-b453-4bbc-93bb-b888d7419558/14PovrnZta.lottie"
           loop
           autoplay
-        />
-      </div>
+        /> */}
+      {/* </div> */}
     </div>
   );
 }
