@@ -1,16 +1,18 @@
+import { motion } from "framer-motion";
 import React from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+// import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 function LandingPage() {
+
   return (
     <div className="h-full  pt-1">
-     <div className="mt-52 ">
+     <div className="mt-[13vw] ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (
             <div className="masker flex mx-16">
               {index === 1 && (
-                <div className="w-[160px] h-[70px] relative rounded-md top-[2vh] mr-3 bg-black"></div>
+                <motion.div initial={{width:0}} animate={{width:"12vw"}} transition={{ease:[0.76,0,0.24,1],duration:1}}  className="w-[12vw] h-[7vw] relative rounded-md top-[0.9vw] mr-3 bg-black"></motion.div>
               )}
-              <h1 className="uppercase text-8xl font-bold tracking-tighter bg-gradient-to-r from-blue-800 to-black bg-clip-text text-transparent">
+              <h1 className="uppercase text-[9vw] font-bold leading-[8vw] tracking-tighter bg-gradient-to-r from-blue-800 to-black bg-clip-text text-transparent">
                 {item}
               </h1>
             </div>
