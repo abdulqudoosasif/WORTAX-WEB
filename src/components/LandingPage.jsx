@@ -5,7 +5,7 @@ import {PopupButton} from "react-calendly";
 function LandingPage() {
   
   return (
-    <div className="h-full  pt-1">
+    <div data-scroll data-scroll-section data-scroll-speed='-.4' className="h-full  pt-1">
      <div className="mt-52 ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (

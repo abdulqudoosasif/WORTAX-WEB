@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
   return (
-    <div className='bg-gray-400 rounded-t-3xl h-screen -mt-12'>
+    <div data-scroll data-scroll-section data-scroll-speed='0.2' className='bg-gray-400 rounded-t-3xl -mt-[4vw] h-screen  relative z-20'>
       
     </div>
   )
