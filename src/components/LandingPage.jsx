@@ -1,6 +1,9 @@
 import React from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { motion } from "framer-motion";
+import {PopupButton} from "react-calendly";
 function LandingPage() {
+  
   return (
     <div className="h-full  pt-1">
      <div className="mt-52 ">
