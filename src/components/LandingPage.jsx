@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { PopupButton } from "react-calendly";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import BookMeeting from "./BookMeeting";
 function LandingPage() {
+  const [showCalendly, setShowCalendly] = useState(false)
+
   return (
     <div className="h-full  pt-1">
-     <div className="mt-52 ">
+      <div className="mt-52 ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (
             <div className="masker flex mx-16">
@@ -29,19 +33,20 @@ function LandingPage() {
         ].map((item, index) => (
           <p>{item}</p>
         ))}
-        <button className="relative px-5 text-sm py-2 overflow-hidden border border-zinc-800 rounded-full  text-[#17191b] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
-          <span className="relative z-10 tracking-wide font-medium">
-            START THE PROJECT
-          </span>
-        </button>
+        <PopupButton
+          url="https://calendly.com/emhamza-491"
+          rootElement={document.getElementById("root")}
+          className="relative px-5 text-sm py-2 overflow-hidden border border-zinc-800 rounded-full text-[#17191b] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
+          text={<span className="relative z-10 tracking-wide font-medium">BOOK AN APPOINTMENT</span>}
+        />        
       </div>
-      {/* <div>
-        <DotLottieReact
+      <div>
+        {/* <DotLottieReact
           src="https://lottie.host/6393b579-b453-4bbc-93bb-b888d7419558/14PovrnZta.lottie"
           loop
           autoplay
         /> */}
-      {/* </div> */}
+      </div>
     </div>
   );
 }
