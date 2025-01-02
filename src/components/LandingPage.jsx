@@ -6,7 +6,7 @@ function LandingPage() {
   
   return (
     <div data-scroll data-scroll-section data-scroll-speed='-.3' className="h-full  pt-1">
-     <div className="mt-52 ">
+     <div className="mt-[10vw] ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (
             <div className="masker flex mx-16">
