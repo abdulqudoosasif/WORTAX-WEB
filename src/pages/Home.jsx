@@ -9,7 +9,7 @@ import Threejs from "../components/home/Threejs";
 
 function Home() {
   return (
-    <div>
+    <div className="bg-gray-50">
       <Navbar />
       <LandingPage />
       <Marquee />

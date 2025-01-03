@@ -17,14 +17,17 @@ import Img13 from './../../assets/img/13.png'
 import '../../index.css';
 function About() {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed='0.2' className='bg-neutral-900 rounded-t-3xl  -mt-[15vw]  pt-[2vw] pb-[5vw] relative z-20'>
+    <div data-scroll data-scroll-section data-scroll-speed='0.2' 
+    className='bg-neutral-900 rounded-t-3xl  -mt-[15vw]  pt-[2vw] pb-[5vw] relative z-20'>
     
        <div className=' px-16 pb-[4vw] '>
         <h2 className='text-white text-[3vw] font-bold '>
         Website Design & Development Projects
         </h2>
         <p className='text-white text-lg mt-2 w-1/2'>
-        At WebRay Studio, we excel in crafting unique and impactful website designs and development solutions. From intuitive UI/UX design to seamless development, our talented team brings our clients' visions to life with professionalism and creativity. Explore our portfolio to see some of our recent projects.
+        At WebRay Studio, we excel in crafting unique and impactful website designs and development solutions. From intuitive UI/UX design
+         to seamless development, our talented team brings our clients' visions to life with professionalism and creativity.
+          Explore our portfolio to see some of our recent projects.
         </p>
         </div> 
       <Swiper
@@ -35,7 +38,7 @@ function About() {
         speed={800}
         autoplay={{
             delay: 2000,
-            disableOnInteraction: false,  
+              
           }}
           modules={[Pagination, Autoplay]}
         className="mySwiper Scroll mb-3" >
@@ -47,6 +50,7 @@ function About() {
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4  '><img className='rounded-lg ' src={Img4} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4  '><img className='rounded-lg ' src={Img5} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4  '><img className='rounded-lg ' src={Img6} alt="" /></SwiperSlide>
+        
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4  '><img className='rounded-lg ' src={Img7} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4  '><img className='rounded-lg ' src={Img12} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4  '><img className='rounded-lg ' src={Img13} alt="" /></SwiperSlide>
@@ -62,7 +66,7 @@ function About() {
         speed={800}
         autoplay={{
             delay: 2000, 
-            disableOnInteraction: false, 
+             
           }}
           modules={[Pagination, Autoplay]}
         className="mySwiper " >
@@ -74,6 +78,7 @@ function About() {
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4'><img  className=' rounded-lg' src={Img6} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4'><img className=' rounded-lg' src={Img5} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4'><img className=' rounded-lg' src={Img4} alt="" /></SwiperSlide>
+        
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4'><img className=' rounded-lg' src={Img3} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4'><img className=' rounded-lg' src={Img2} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-4'><img className=' rounded-lg' src={Img1} alt="" /></SwiperSlide>
