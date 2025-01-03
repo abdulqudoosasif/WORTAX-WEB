@@ -5,7 +5,7 @@ const WalletHoverEffect = () => {
   return (
     <div className="flex flex-col py-10 min-h-screen bg-gray-50">
       <ServicesHeader />
-      <div className="flex items-center justify-evenly flex-wrap px-8">
+      <div className="flex items-center justify-evenly flex-wrap px-8 mt-3">
         <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-[calc(100%-40px)] my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
           {/* {/ Card wrapper for hover effect /} */}
           <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
