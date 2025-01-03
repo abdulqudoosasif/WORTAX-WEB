@@ -2,7 +2,7 @@ import React from "react";
 
 const WalletHoverEffect = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50">
+    <div className="flex items-center justify-center min-h-screen bg-white">
       <div className="relative w-80 h-40 group">
         {/* Main card */}
         <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 group-hover:skew-y-2 transition-transform duration-300">

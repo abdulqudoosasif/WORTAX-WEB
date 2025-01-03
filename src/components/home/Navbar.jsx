@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logp from "../assets/img/Logo.png";
+import Logp from "./../../assets/img/Logo.png";
 import { FiMenu, FiX } from "react-icons/fi"; // For hamburger and close icons
 
 function Navbar() {
