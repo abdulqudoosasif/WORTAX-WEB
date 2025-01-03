@@ -3,7 +3,7 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 
 const ParallaxDemo = () => {
   return (
-<div className='flex bg-gray-50 h-[100vh] px-16'> 
+<div className='flex bg-white h-[100vh] px-16'> 
 
     <div className='w-1/2 flex items-center'>
       <div>
