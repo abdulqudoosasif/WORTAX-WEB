@@ -5,7 +5,7 @@ import Marquee from "../components/home/Marquee";
 import About from "../components/home/About";
 import ParallaxDemo from "../components/home/ParallaxDemo";
 import WalletHoverEffect from "../components/home/services/Services";
-import Threejs from "../components/home/Threejs";
+import Example from "../components/home/3d-scroll/Example";
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
       <About />
       <WalletHoverEffect />
       <ParallaxDemo />
-      <Threejs />
+      <Example/>
     </div>
   );
 }
