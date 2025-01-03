@@ -1,17 +1,31 @@
 import React from "react";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import img from "./../../assets/img/logo2.png";
 import { motion } from "framer-motion";
-import {PopupButton} from "react-calendly";
+import { PopupButton } from "react-calendly";
 function LandingPage() {
-  
   return (
-    <div data-scroll data-scroll-section data-scroll-speed='-.3' className="h-full  pt-1">
-     <div className="mt-[16vw] ">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.3"
+      className="h-full  pt-1"
+    >
+      <div className="mt-[16vw] ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (
             <div className="masker flex mx-16">
               {index === 1 && (
-                <motion.div initial={{width:0}} animate={{width:"10vw"}} transition={{ease:[0.76,0,0.24,1],duration:1}}  className="w-[vw] h-[6vw] relative rounded-md top-[0.3vw] mr-3 bg-black"></motion.div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "10vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className="w-[10vw] h-[6vw] overflow-hidden relative rounded-md top-[0.3vw] mr-3"
+                >
+                  <img
+                    src={img}
+                    className="w-full h-[6vw] object-cover rounded-lg shadow-lg"
+                  />
+                </motion.div>
               )}
               <h1 className="uppercase text-[7vw] font-bold leading-[6vw] tracking-tighter  text-[#001A6E]">
                 {item}
@@ -36,8 +50,12 @@ function LandingPage() {
           url="https://calendly.com/emhamza-491"
           rootElement={document.getElementById("root")}
           className="relative px-5 text-sm py-2 overflow-hidden border border-zinc-800 rounded-full text-[#17191b] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
-          text={<span className="relative z-10 tracking-wide font-medium">BOOK AN APPOINTMENT</span>}
-        />        
+          text={
+            <span className="relative z-10 tracking-wide font-medium">
+              BOOK AN APPOINTMENT
+            </span>
+          }
+        />
       </div>
     </div>
   );
