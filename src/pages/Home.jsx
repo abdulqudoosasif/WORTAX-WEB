@@ -6,6 +6,8 @@ import About from "../components/home/About";
 import ParallaxDemo from "../components/home/ParallaxDemo";
 import WalletHoverEffect from "../components/home/services/Services";
 import Example from "../components/home/3d-scroll/Example";
+import Scroller from "../components/home/Scroller";
+import GetStarted from "../components/home/get-started/GetStarted";
 
 function Home() {
   return (
@@ -14,9 +16,10 @@ function Home() {
       <LandingPage />
       <Marquee />
       <About />
+      <Scroller/>
       <WalletHoverEffect />
       <ParallaxDemo />
-      <Example/>
+      <GetStarted/>
     </div>
   );
 }

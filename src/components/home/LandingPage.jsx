@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./../../assets/img/logo2.png";
+import img from "./../../assets/img/logo1.png";
 import { motion } from "framer-motion";
 import { PopupButton } from "react-calendly";
 function LandingPage() {
@@ -27,7 +27,7 @@ function LandingPage() {
                   />
                 </motion.div>
               )}
-              <h1 className="uppercase text-[7vw] font-bold leading-[6vw] tracking-tighter  text-[#001A6E]">
+              <h1 className="uppercase text-[7vw] font-bold leading-[6vw] tracking-tighter  text-neutral-900">
                 {item}
               </h1>
             </div>
