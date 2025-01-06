@@ -1,5 +1,6 @@
 import React from 'react'
 import Squares from './Squares';
+import BlurText from './ BlurText';
 function GetStarted() {
   return (
     <div className='h-screen bg-neutral-900 relative'>
@@ -12,7 +13,13 @@ function GetStarted() {
       hoverFillColor='#fff'
     />
     <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-semibold  text-[7vw]'>
-        <h1>GET STARTED</h1>
+    <BlurText
+  text="Get Started"
+  delay={150}
+  animateBy="words"
+  direction="top"
+  className="text-[9vw] font-bold"
+/>
     </div>
     </div>
   )
