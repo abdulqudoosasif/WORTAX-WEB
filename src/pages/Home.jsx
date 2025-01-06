@@ -16,8 +16,8 @@ function Home() {
       <LandingPage />
       <Marquee />
       <About />
-      <Scroller/>
       <WalletHoverEffect />
+      <Scroller/>
       <ParallaxDemo />
       <GetStarted/>
     </div>

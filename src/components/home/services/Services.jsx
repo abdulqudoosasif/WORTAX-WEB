@@ -3,7 +3,7 @@ import ServicesHeader from "./ServicesHeader";
 
 const WalletHoverEffect = () => {
   return (
-    <div className="flex flex-col py-10 min-h-screen bg-gray-50">
+    <div className="-mt-[9vw] flex flex-col py-10 min-h-screen bg-gray-50">
       <ServicesHeader />
       <div className="flex items-center justify-evenly flex-wrap px-8 mt-3">
         <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-[calc(100%-40px)] my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
@@ -53,7 +53,7 @@ const WalletHoverEffect = () => {
               <div>
                 {/* {/ Mobile icon /} */}
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg" 
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={2}
