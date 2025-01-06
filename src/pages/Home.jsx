@@ -14,24 +14,13 @@ import "locomotive-scroll/dist/locomotive-scroll.css";
 import LoadingFile from "../components/home/Loading-file";
 
 function Home() {
+
+    const locomotiveScroll = new LocomotiveScroll();
   const [counter, setCounter] = useState(0);
   const [preloader, setPreloader] = useState(true);
 
-  useEffect(() => {
     // Initialize LocomotiveScroll
-    const scrollContainer = document.querySelector("#main-container");
-    if (scrollContainer) {
-      const scrollInstance = new LocomotiveScroll({
-        el: scrollContainer,
-        smooth: true,
-      });
 
-      // Clean up LocomotiveScroll on component unmount
-      return () => {
-        scrollInstance.destroy();
-      };
-    }
-  }, []);
 
   useEffect(() => {
     // Progress bar counter
@@ -39,7 +28,7 @@ function Home() {
       setCounter((prevCounter) =>
         prevCounter < 100 ? prevCounter + 1 : (clearInterval(count), 100)
       );
-    },10);
+    }, 25);
 
     // Clear interval on unmount
     return () => clearInterval(count);
@@ -104,7 +93,7 @@ function Home() {
 
       {/* Content */}
       {!preloader && (
-        <div className="absolute ">
+        <div className=" ">
           <div className="bg-gray-50">
             <Navbar />
             <LandingPage />
