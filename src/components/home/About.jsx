@@ -41,7 +41,7 @@ function About() {
   ];
   return (
     <div data-scroll data-scroll-section data-scroll-speed='0.3' 
-    className='bg-gray-50 rounded-t-3xl  h-[100vh] -mt-[15vw] overflow-hidden relative z-20'>
+    className='bg-gray-50 rounded-t-3xl  min-h-[100vh] -mt-[15vw] overflow-hidden relative z-20'>
      <div className="py-12 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-[3vw] text-neutral-900 font-extrabold text-center mb-12">
