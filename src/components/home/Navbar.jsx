@@ -17,7 +17,7 @@ function Navbar() {
       </div>
 
       {/* {/ Links for larger screens /} */}
-      <div className="hidden md:flex items-center gap-10 text-md font-medium">
+      <div className="hidden lg:flex items-center gap-10 text-md font-medium">
         <a
           href=""
           className="relative hover:no-underline group"
@@ -56,7 +56,7 @@ function Navbar() {
       </div>
 
       {/* {/ Hamburger Icon for mobile /} */}
-      <div className="md:hidden flex items-center">
+      <div className="lg:hidden flex items-center">
         <button onClick={toggleSidebar}>
           {isSidebarOpen ? <FiX size={24} /> : <FiMenu size={24} />}
         </button>
@@ -64,7 +64,7 @@ function Navbar() {
 
       {/* {/ Sidebar for mobile /} */}
       <div
-        className={`fixed top-11 mt-[-4px] left-0 h-full w-48 bg-white shadow-lg z-40 p-6 transition-transform duration-500 transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed top-20 left-0 h-full w-48 bg-white shadow-lg z-40 p-6 transition-transform duration-500 transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
       >
         <ul className="flex flex-col gap-4 text-lg font-medium">
