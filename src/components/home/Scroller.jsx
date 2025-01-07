@@ -20,13 +20,13 @@ import '../../index.css';
 function Scroller() {
   return (
     <div  
-    className='bg-neutral-900     pt-[2vw] pb-[5vw] relative z-10'>
+    className='bg-neutral-900 pt-6 lg:pt-[2vw] pb-[5vw] relative z-10'>
     
-       <div className=' px-16 pb-[4vw] '>
-        <h2 className='text-[#fff] text-[3vw] font-bold '>
+       <div className=' lg:px-16 px-4 pb-[4vw] '>
+        <h2 className='text-[#fff] lg:text-[3vw] text-3xl font-bold '>
         Website Design & Development Projects
         </h2>
-        <p className='text-[#fff] text-lg mt-2 w-1/2'>
+        <p className='text-[#fff] text-lg lg:mt-2  mt-6 lg:w-1/2'>
         At WebRay Studio, we excel in crafting unique and impactful website designs and development solutions. From intuitive UI/UX design
          to seamless development, our talented team brings our clients' visions to life with professionalism and creativity.
           Explore our portfolio to see some of our recent projects.
@@ -43,19 +43,19 @@ function Scroller() {
               
           }}
           modules={[Pagination, Autoplay]}
-        className="mySwiper Scroll mb-3" >
+        className="mySwiper Scroll mb-3 lg:mt-0 mt-10"  >
        <div dir="ltr"> {/* Add this wrapper to force RTL */}
-       <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img1} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img2} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img3} alt="" /></SwiperSlide>
+       <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img1} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img2} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img3} alt="" /></SwiperSlide>
 
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img4} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img14} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img6} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img4} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img14} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img6} alt="" /></SwiperSlide>
         
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img16} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img12} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3  '><img className='rounded-lg shadow-lg ' src={Img13} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img16} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img12} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img className='rounded-lg shadow-lg ' src={Img13} alt="" /></SwiperSlide>
        
       </div>
       </Swiper>
@@ -71,19 +71,19 @@ function Scroller() {
              
           }}
           modules={[Pagination, Autoplay]}
-        className="mySwiper " >
+        className="mySwiper lg:mb-0 mb-5" >
        <div dir="ltr"> {/* Add this wrapper to force RTL */}
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img11} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img10} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img17} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img11} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img10} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img17} alt="" /></SwiperSlide>
 
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img  className=' rounded-lg shadow-lg' src={Img6} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img15} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img4} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img  className=' rounded-lg shadow-lg' src={Img6} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img15} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img4} alt="" /></SwiperSlide>
         
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img3} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img2} alt="" /></SwiperSlide>
-        <SwiperSlide className='mx-1 rounded-lg overflow-hidden p-3'><img className=' rounded-lg shadow-lg' src={Img1} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img3} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img2} alt="" /></SwiperSlide>
+        <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img1} alt="" /></SwiperSlide>
        
       </div>
       </Swiper>

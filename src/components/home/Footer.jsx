@@ -8,12 +8,12 @@ const Footer = () => {
     data-scroll-speed="-.8"
     className="bg-gray-50 text-neutral-900 py-12 h-[100vh] flex items-center">
       <div className="container mx-auto px-6">
-        <div className="flex flex-wrap justify-between">
+        <div className="lg:flex flex-wrap justify-between">
           {/* Left Section */}
-          <div className="space-y-4 w-[25vw]">
+          <div className="space-y-4 lg:w-[25vw]">
             <div className="flex items-center space-x-2">
               <div className="bg-green-500 rounded-full h-8 w-8"></div>
-              <span className="text-[1.6vw] leading-[1.6vw] font-bold">WORTAX <br/>IT SOLUTION</span>
+              <span className="lg:text-[1.6vw] text-xl lg:leading-[1.6vw] font-bold">WORTAX <br/>IT SOLUTION</span>
             </div>
             <p className="text-gray-400 text-md">
               Your on-demand design team producing quality designs that drive results
@@ -36,44 +36,44 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="grid grid-cols-3 gap-8 text-sm">
+          <div className="grid grid-cols-3 gap-8 lg:mb-0 mb-8 text-sm">
             <div className='flex flex-col items-center'>
-              <h3 className="font-bold text-[1.4vw] mb-2">Design by</h3>
+              <h3 className="font-bold lg:text-[1.4vw] mb-2">Design by</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='text-[1.2vw] mt-2'>Locations</li>
-                <li className='text-[1.2vw] mt-2'>Industries</li>
-                <li className='text-[1.2vw] mt-2'>Use cases</li>
-                <li className='text-[1.2vw] mt-2'>Services</li>
+                <li className='lg:text-[1.2vw] mt-2'>Locations</li>
+                <li className='lg:text-[1.2vw] mt-2'>Industries</li>
+                <li className='lg:text-[1.2vw] mt-2'>Use cases</li>
+                <li className='lg:text-[1.2vw] mt-2'>Services</li>
               </ul>
             </div>
             <div className='flex flex-col items-center'>
-              <h3 className="font-bold text-[1.4vw] mb-2">Resources</h3>
+              <h3 className="font-bold lg:text-[1.4vw] mb-2">Resources</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='text-[1.2vw] mt-2'>Blog</li>
-                <li className='text-[1.2vw] mt-2'>Podcast</li>
-                <li className='text-[1.2vw] mt-2'>E-book</li>
-                <li className='text-[1.2vw] mt-2'>Guides</li>
+                <li className='lg:text-[1.2vw] mt-2'>Blog</li>
+                <li className='lg:text-[1.2vw] mt-2'>Podcast</li>
+                <li className='lg:text-[1.2vw] mt-2'>E-book</li>
+                <li className='lg:text-[1.2vw] mt-2'>Guides</li>
               </ul>
             </div>
             <div className='flex flex-col items-center'>
-              <h3 className="font-bold text-[1.4vw] mb-2">Company</h3>
+              <h3 className="font-bold lg:text-[1.4vw] mb-2">Company</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='text-[1.2vw] mt-2'>Case study</li>
-                <li className='text-[1.2vw] mt-2'>Portfolio</li>
-                <li className='text-[1.2vw] mt-2'>Careers</li>
-                <li className='text-[1.2vw] mt-2'>Contact</li>
+                <li className='lg:text-[1.2vw] mt-2'>Case study</li>
+                <li className='lg:text-[1.2vw] mt-2'>Portfolio</li>
+                <li className='lg:text-[1.2vw] mt-2'>Careers</li>
+                <li className='lg:text-[1.2vw] mt-2'>Contact</li>
               </ul>
             </div>
           </div>
 
           {/* Call to Action Section */}
           <div className="text-right space-y-4">
-            <h3 className="text-[3vw] leading-[2.8vw] text-left font-bold">
+            <h3 className="lg:text-[3vw] lg:leading-[2.8vw] text-2xl text-left font-bold">
               Let’s build  something <br /> great
             </h3>
             <a
               href="#"
-              className="text-blue-500 font-bold text-[2vw] flex items-center space-x-2 hover:underline"
+              className="text-blue-500 font-bold lg:text-[2vw] text-xl flex items-center space-x-2 hover:underline"
             >
               <span>let's talk</span>
               <span className="text-xl">&#8599;</span>
@@ -82,9 +82,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className=" border-t border-gray-800 mt-[6vw] pt-6 text-sm flex justify-between">
+        <div className=" border-t border-gray-800 mt-[6vw] pt-6 text-sm lg:flex justify-between">
           <p className="text-gray-400">Wortax IT Solution © 2024</p>
-          <div className="flex space-x-6">
+          <div className="flex mt-4 lg:mt-0 space-x-6">
             <a href="#" className="text-gray-400 hover:text-white">
               Manage Subscription
             </a>

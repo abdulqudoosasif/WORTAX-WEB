@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./../../assets/img/logo1.png";
+import img from "../../../assets/img/logo1.png";
 import { motion } from "framer-motion";
 import { PopupButton } from "react-calendly";
 function LandingPage() {
@@ -10,16 +10,16 @@ function LandingPage() {
       data-scroll-speed="-.3"
       className="h-full  pt-1"
     >
-      <div className="mt-[16vw] ">
+      <div className="mt-[150px] lg:mt-[16vw] ">
         {["We create", "eye-opening", "presentations"].map((item, index) => {
           return (
-            <div className="masker flex mx-16">
+            <div className="masker flex mx-4 lg:mx-16">
               {index === 1 && (
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: "10vw" }}
                   transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                  className="w-[10vw] h-[6vw] overflow-hidden relative rounded-md top-[0.3vw] mr-3"
+                  className="h-[6vw] overflow-hidden relative rounded-md lg:top-[0.3vw] top-[2vw]  mr-3"
                 >
                   <img
                     src={img}
@@ -27,7 +27,7 @@ function LandingPage() {
                   />
                 </motion.div>
               )}
-              <h1 className="uppercase text-[7vw] font-bold leading-[6vw] tracking-tighter  text-neutral-900">
+              <h1 className="text-4xl uppercase lg:text-[7vw] font-bold lg:leading-[6vw] tracking-tighter  text-neutral-900">
                 {item}
               </h1>
             </div>
@@ -39,12 +39,12 @@ function LandingPage() {
 
       <div className="border-t-[1px] border-black mt-[11vw]"></div>
 
-      <div className="flex justify-between items-center mt-3 mb-[8vw] mx-16">
+      <div className="lg:flex justify-between items-center mt-3 lg:mb-[8vw] lg:mx-16 mx-4">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
-          <p>{item}</p>
+          <p className=" my-2">{item}</p>
         ))}
         <PopupButton
           url="https://calendly.com/emhamza-491"
