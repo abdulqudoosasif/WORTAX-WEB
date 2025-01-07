@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/home/Navbar";
+import Navbar from "../components/home/header/Navbar";
 import LandingPage from "../components/home/LandingPage/LandingPage";
 import Marquee from "../components/home/Marquee";
 import About from "../components/home/About";
