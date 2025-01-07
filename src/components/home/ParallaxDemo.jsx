@@ -3,7 +3,7 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import Img1 from './../../assets/img/1.png'
 const ParallaxDemo = () => {
   return (
-<div className='lg:flex bg-white justify-between lg:h-[100vh] p-4 lg:px-16'> 
+<div className='lg:flex bg-white justify-between lg:h-[100vh] px-4 lg:px-16'> 
 
     <div className='lg:w-[30vw] flex items-center'>
       <div>
