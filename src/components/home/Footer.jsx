@@ -6,7 +6,7 @@ const Footer = () => {
     data-scroll
     data-scroll-section
     data-scroll-speed="-.8"
-    className="bg-neutral-900 text-neutral-100  py-[200px] min-h-[100vh]  flex items-center">
+    className="lg:bg-neutral-900 md:bg-neutral-900 bg-gray-50 lg:text-neutral-100 md:text-neutral-100 text-neutral-900  py-[200px] min-h-[100vh]  flex items-center">
       <div className="container mx-auto px-6">
         <div className="lg:flex md:flex-wrap justify-between">
           {/* Left Section */}

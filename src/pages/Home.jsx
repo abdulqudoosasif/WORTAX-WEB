@@ -8,7 +8,6 @@ import WalletHoverEffect from "../components/home/services/Services";
 import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
-import ThreeDmodel from "../components/home/3dLaptop/ThreeDmodel";
 import MainLaptopFile from "../components/home/3dLaptop/MainLaptopFile";
 
 function Home() {

@@ -11,7 +11,7 @@ function LandingPage() {
       className="h-full  pt-1"
     >
       <div className="mt-[150px] lg:mt-[16vw] ">
-        {["We create", "eye-opening", "presentations"].map((item, index) => {
+        {["We Scale Local", "Roots to", "Digital Heights"].map((item, index) => {
           return (
             <div className="masker flex mx-4 lg:mx-16">
               {index === 1 && (
