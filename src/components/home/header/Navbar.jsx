@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from '../../../assets/img/Logo.png';
 import Magnet from "./Magnet";
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
     <div className="w-[90vw] fixed bg-neutral-900 z-40 rounded-xl mx-[5vw] my-2 py-2 px-12 flex justify-between items-center">
       {/* Logo Hover Effect */}
       <Magnet padding={50} disabled={false} magnetStrength={4}>
-        {/* <img
+        <img
           src={logo}
           alt="Logo"
           className="cursor-pointer"
@@ -15,7 +15,7 @@ const Navbar = () => {
             width: "100px",
             height: "auto",
           }}
-        /> */}
+        />
       </Magnet>
 
       {/* Navigation Links */}
