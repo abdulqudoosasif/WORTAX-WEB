@@ -8,6 +8,7 @@ import WalletHoverEffect from "../components/home/services/Services";
 import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
+import ThreeDmodel from "../components/home/3dLaptop/ThreeDmodel";
 
 function Home() {
   return (
@@ -19,6 +20,7 @@ function Home() {
       <WalletHoverEffect />
       <Scroller/>
       <ParallaxDemo />
+      <ThreeDmodel/>
       <GetStarted/>
       <Footer/>
     </div>
