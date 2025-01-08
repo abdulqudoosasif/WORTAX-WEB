@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../../../assets/img/logo.png';
+// import logo from '../../../assets/img/logo.png';
 import Magnet from "./Magnet";
 
 const Navbar = () => {
@@ -8,7 +8,7 @@ const Navbar = () => {
       {/* Logo Hover Effect */}
       <Magnet padding={50} disabled={false} magnetStrength={4}>
         <img
-          src={logo}
+          src={'https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?semt=ais_hybrid'}
           alt="Logo"
           className="cursor-pointer"
           style={{
