@@ -14,7 +14,7 @@ const Navbar = () => {
           src={logo}
           className="cursor-pointer"
           style={{
-            width: "100px", // Adjust size as needed
+            width: "100px", 
             height: "auto",
           }}
         />
