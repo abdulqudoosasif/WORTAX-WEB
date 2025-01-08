@@ -18,12 +18,11 @@ main,
 }
 
 .content {
-  overflow-y: hi;
+  overflow-x: hidden;
   width: 334px;
   height: 216px;
-  background: #f0f0f0;
   border-radius: 3px;
-  overflow-y: auto;
+  overflow-y: hidden;
   padding: 0;
 }
 
