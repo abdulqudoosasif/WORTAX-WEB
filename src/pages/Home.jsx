@@ -13,7 +13,7 @@ import MainLaptopFile from "../components/home/3dLaptop/MainLaptopFile";
 
 function Home() {
   return (
-    <div className="bg-gray-50 ">
+    <div className="bg-gray-50 overflow-hidden ">
       <Navbar />
       <LandingPage />
       <Marquee />
