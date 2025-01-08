@@ -22,7 +22,7 @@ function Home() {
       <Scroller/>
       <ParallaxDemo />
       <MainLaptopFile/>
-      {/* <GetStarted/> */}
+      <GetStarted/>
       <Footer/>
     </div>
   );
