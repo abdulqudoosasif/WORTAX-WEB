@@ -30,6 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
+    
     <div
       ref={navbarRef}
       className="w-[90vw] fixed bg-neutral-900 z-50 rounded-xl mx-[5vw] my-2 py-2 px-6 flex justify-between items-center lg:px-12"
