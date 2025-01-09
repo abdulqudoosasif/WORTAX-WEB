@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import logo from "../../../assets/img/Logo.png";
+import logo from "../../../assets/img/Logo.png"
+import logoimg from "../../../assets/img/logo-img.png";
 import Magnet from "./Magnet";
 
 const Navbar = () => {
@@ -37,15 +38,21 @@ const Navbar = () => {
     >
       {/* Logo Hover Effect */}
       <Magnet padding={50} disabled={false} magnetStrength={4}>
+        <div className="flex items-center">
+        <div className=" rounded-full h-10 w-10">
+                          <img src={logoimg} alt="" />
+                        </div>
         <img
           src={logo}
           alt="Logo"
           className="cursor-pointer"
           style={{
-            width: "80px",
+            width: "100px",
             height: "auto",
           }}
-        />
+          />
+         
+          </div>  
       </Magnet>
 
       {/* Navigation Links */}

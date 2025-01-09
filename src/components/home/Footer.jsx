@@ -1,4 +1,5 @@
 import React from 'react';
+import logoimg from '../../assets/img/logo-img.png';
 
 const Footer = () => {
   return (
@@ -12,7 +13,9 @@ const Footer = () => {
           {/* Left Section */}
           <div className="space-y-4 mt-14 lg:w-[25vw]">
             <div className="flex items-center space-x-2">
-              <div className="bg-green-500 rounded-full h-8 w-8"></div>
+              <div className=" rounded-full ">
+                <img src={logoimg} alt="" className='w-16 h-16'/>
+              </div>
               <span className="lg:text-[1.6vw] text-xl lg:leading-[1.6vw] font-bold">WORTAX <br/>IT SOLUTION</span>
             </div>
             <p className="text-gray-400 text-md">

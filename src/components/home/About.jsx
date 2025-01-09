@@ -7,7 +7,7 @@ import { IoCompassOutline } from 'react-icons/io5';
 function About() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed='0.3' 
-    className='bg-gray-50 rounded-t-3xl  -mt-[15vw] overflow-hidden relative pb-[2vw] z-20'>
+    className='bg-[#CDEA68] rounded-t-3xl  -mt-[15vw] overflow-hidden relative pb-[2vw] z-20'>
      <div className="py-12 ">
       <div className=" mx-auto px-4 sm:px-6">
         <h2 className="lg:text-[3vw] text-3xl text-neutral-900 font-semibold text-center mb-12">
