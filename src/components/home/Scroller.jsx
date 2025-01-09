@@ -22,15 +22,17 @@ function Scroller() {
     <div  
     className='bg-neutral-900 pt-6 lg:pt-[2vw] pb-[5vw] relative z-10'>
     
-       <div className=' lg:px-16 px-4 pb-[4vw] '>
+       <div className=' lg:px-16 px-4 lg:flex pb-[4vw] items-center justify-center gap-10 '>
         <h2 className='text-[#fff] lg:text-[3vw] text-3xl font-bold '>
-        Website Design & Development Projects
+        Local Business Websites <br/>That Work as Hard as You Do
         </h2>
         <p className='text-[#fff] text-lg lg:mt-2  mt-6 lg:w-1/2'>
-        At WebRay Studio, we excel in crafting unique and impactful website designs and development solutions. From intuitive UI/UX design
-         to seamless development, our talented team brings our clients' visions to life with professionalism and creativity.
-          Explore our portfolio to see some of our recent projects.
-        </p>
+      At Wortax, we understand that your local business deserves more than just a website - it needs 
+      a digital foundation for growth. Our team crafts custom websites that capture the spirit of your
+      business while delivering the professional edge you need to compete. From smart designs that showcase
+      your products to user-friendly features that keep customers coming back, we build digital solutions that 
+      help local businesses thrive. Below are the Website which we have crafted
+      </p>
         </div> 
       <Swiper
         slidesPerView={4}
