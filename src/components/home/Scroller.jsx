@@ -35,13 +35,11 @@ function Scroller() {
       <Swiper
         slidesPerView={4}
         spaceBetween={5}
-        centeredSlides={true}
         loop={true}
         speed={800}
         autoplay={{
             delay: 2000,
-              
-          }}
+               }}
           modules={[Pagination, Autoplay]}
         className="mySwiper Scroll mb-3 lg:mt-0 mt-10"  >
        <div dir="ltr"> {/* Add this wrapper to force RTL */}
@@ -63,7 +61,6 @@ function Scroller() {
       <Swiper
         slidesPerView={4}
         spaceBetween={5}
-        centeredSlides={true}
         loop={true}
         speed={800}
         autoplay={{
@@ -72,7 +69,7 @@ function Scroller() {
           }}
           modules={[Pagination, Autoplay]}
         className="mySwiper lg:mb-0 mb-5" >
-       <div dir="ltr"> {/* Add this wrapper to force RTL */}
+       <div dir="ltr "> {/* Add this wrapper to force RTL */}
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img11} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img10} alt="" /></SwiperSlide>
         <SwiperSlide className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img className=' rounded-lg shadow-lg' src={Img17} alt="" /></SwiperSlide>
