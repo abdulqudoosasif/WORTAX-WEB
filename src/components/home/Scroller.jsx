@@ -23,7 +23,7 @@ function Scroller() {
     className='bg-neutral-900 pt-6 lg:pt-[2vw] pb-[5vw] relative z-10'>
     
        <div className=' lg:px-16 px-4 lg:flex pb-[4vw] items-center justify-center gap-10 '>
-        <h2 className='text-[#fff] leading-[3vw] lg:text-[3vw] text-3xl font-bold '>
+        <h2 className='text-[#fff] lg:leading-[3vw] lg:text-[3vw] text-3xl font-bold '>
         Local Business Websites <br/>That Work as Hard as You Do
         </h2>
         <p className='text-[#fff] text-lg lg:mt-2  mt-6 lg:w-1/2'>
