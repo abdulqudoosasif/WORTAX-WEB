@@ -15,15 +15,15 @@ function LandingPage() {
           return (
             <div className="masker flex mx-4 lg:mx-16">
               {index === 1 && (
-                <motion.div
-                  initial={{ width: 0 }}
-                  animate={{ width: "10vw" }}
-                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                  className="h-[6vw] overflow-hidden relative rounded-md lg:top-[0.3vw] md:-top-[0.1vw] sm:top-0 top-[2vw]  mr-3"
-                >
+               <motion.div
+               initial={{ scaleX: 0 }}
+               animate={{ scaleX: 1 }} // Animates the scaling of width
+               transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+               className="lg:w-[10vw] md:w-[15vw] w-[15vw] lg:h-[6vw] md:h-[6vw] h-[8.3vw] overflow-hidden relative rounded-md lg:top-[0.3vw] lg:ml-[0.3vw] md:-top-[0.1vw] sm:top-0 top-[1.2vw] mr-2 origin-left"
+             >
                   <img
                     src={img}
-                    className="w-full h-[6vw] object-cover rounded-lg shadow-lg"
+                    className="w-full lg:h-[6vw] md:h-[6vw] h-[8.3vw] object-cover rounded-lg shadow-lg"
                   />
                 </motion.div>
               )}
