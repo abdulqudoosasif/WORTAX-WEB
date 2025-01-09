@@ -6,14 +6,8 @@ export default {
   ],
   theme: {
     extend: {
-      translate: {
-        'translateZ-0': 'translateZ(0)',
-        'translateZ-10': 'translateZ(10px)',
-        'translateZ-20': 'translateZ(20px)',
-        'translateZ-50': 'translateZ(50px)',
-      },
-      transform: {
-        'perspective': 'perspective(1000px)',
+      fontSize: {
+        "clamp-sm": "clamp(1.2rem, 0.45vw + 1rem, 1.9rem)",
       },
     },
   },
