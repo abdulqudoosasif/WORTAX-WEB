@@ -1,19 +1,25 @@
 import React, { useEffect, useRef } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import Navbar from "./components/header/Navbar";
+import AboutUs from "./pages/AboutUs";
 
 function ScrollWrapper({ children }) {
   const scrollRef = useRef(null);
-  const scrollInstance = useRef(null); 
+  const scrollInstance = useRef(null);
   const location = useLocation();
 
   useEffect(() => {
     if (scrollInstance.current) {
-      scrollInstance.current.destroy(); 
+      scrollInstance.current.destroy();
     }
 
     scrollInstance.current = new LocomotiveScroll({
@@ -45,6 +51,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/about-us" element={<AboutUs />} />
         </Routes>
       </ScrollWrapper>
     </Router>

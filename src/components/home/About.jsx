@@ -1,7 +1,5 @@
-import { div } from 'framer-motion/client';
 import React from 'react'
 import { BsSpeedometer2 } from 'react-icons/bs';
-import { FaRegCompass } from 'react-icons/fa';
 import { IoCompassOutline } from 'react-icons/io5';
 
 function About() {

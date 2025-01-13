@@ -62,7 +62,7 @@ const TabComponent = () => {
     hidden: {
       opacity: 0,
     },
-  };
+  }; 
 
   const handleMouseMove = (e) => {
     document.documentElement.style.setProperty("--mouse-x", `${e.clientX}px`);
