@@ -7,9 +7,10 @@ const Footer = () => {
     data-scroll
     data-scroll-section
     data-scroll-speed="-.8"
-    className="lg:bg-neutral-900 md:bg-neutral-900 bg-gray-50 lg:text-neutral-100 md:text-neutral-100 text-neutral-900  py-[200px] min-h-[100vh]  flex items-center">
-      <div className="container mx-auto px-6">
-        <div className="lg:flex md:flex-wrap justify-between">
+    className=" bg-gray-50 justify-center relative
+     text-neutral-900  py-[200px] min-h-[100vh]  flex items-center">
+      <div className="px-6">
+        <div className="flex md:flex-wrap gap-10 justify-between">
           {/* Left Section */}
           <div className="space-y-4 mt-14 lg:w-[25vw]">
             <div className="flex items-center space-x-2">
@@ -86,7 +87,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className=" border-t border-gray-800 mt-[6vw] pt-6 text-sm lg:flex justify-between">
-          <p className="text-gray-400">Wortax IT Solution © 2024</p>
+          <p className="text-gray-400">Wortax IT Solution © 2025</p>
           <div className="flex mt-4 lg:mt-0 space-x-6">
             <a href="#" className="text-gray-400 hover:text-white">
               Manage Subscription

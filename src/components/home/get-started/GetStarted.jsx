@@ -3,7 +3,7 @@ import Squares from './Squares';
 import BlurText from './ BlurText';
 function GetStarted() {
   return (
-    <div className='h-screen z-10 rounded-3xl overflow-hidden  bg-neutral-900 relative lg:hidden md:hidden block'>
+    <div className='h-screen z-10 rounded-3xl overflow-hidden  bg-neutral-900 relative '>
     
     <Squares 
       speed={0.5} 

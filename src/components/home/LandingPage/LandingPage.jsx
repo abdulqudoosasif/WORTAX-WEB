@@ -19,7 +19,7 @@ function LandingPage() {
                initial={{ scaleX: 0 }}
                animate={{ scaleX: 1 }} // Animates the scaling of width
                transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-               className="lg:w-[10vw] md:w-[15vw] w-[15vw] lg:h-[6vw] md:h-[6vw] h-[8.3vw] overflow-hidden relative rounded-md lg:top-[0.3vw] lg:ml-[0.3vw] md:-top-[0.1vw] sm:top-0 top-[1.2vw] mr-2 origin-left"
+               className="lg:w-[10vw] md:w-[15vw] w-[15vw] lg:h-[6vw] md:h-[6vw] h-[8.3vw] overflow-hidden relative rounded-md lg:top-[0.3vw]lg:ml-[-0.3vw] md:-top-[0.1vw] sm:top-0 top-[1.2vw] mr-2 origin-left"
              >
                   <img
                     src={img}
@@ -27,7 +27,7 @@ function LandingPage() {
                   />
                 </motion.div>
               )}
-              <h1 className="text-4xl uppercase lg:text-[6vw] font-bold lg:leading-[6vw] tracking-tighter  text-neutral-900">
+              <h1 className="text-4xl uppercase lg:text-[7vw] font-bold lg:leading-[6vw] tracking-tighter  text-neutral-900">
                 {item}
               </h1>
             </div>
@@ -39,7 +39,7 @@ function LandingPage() {
 
       <div className="border-t-[1px] border-black mt-[11vw]"></div>
 
-      <div className="lg:flex justify-between items-center mt-3 lg:mb-[8vw] lg:mx-16 mx-4">
+      <div className="lg:flex justify-between items-center mt-3 lg:mb-[3vw] lg:mx-16 mx-4">
         {[
           "For public and private companies",
           "From the first pitch to IPO",

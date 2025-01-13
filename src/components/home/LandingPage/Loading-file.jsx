@@ -48,7 +48,8 @@ function LoadingFile() {
         <PopupButton
           url="https://calendly.com/emhamza-491"
           rootElement={document.getElementById("root")}
-          className="relative px-5 text-sm py-2 overflow-hidden border border-zinc-800 rounded-full text-[#17191b] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
+          className="relative px-5 text-sm py-2 overflow-hidden border border-zinc-800 rounded-full text-[#17191b] transition-all 
+          before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full"
           text={
             <span className="relative z-10 tracking-wide font-medium">
               BOOK AN APPOINTMENT

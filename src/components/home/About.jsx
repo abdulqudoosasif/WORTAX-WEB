@@ -7,7 +7,7 @@ import { IoCompassOutline } from 'react-icons/io5';
 function About() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed='0.3' 
-    className='bg-[#CDEA68] rounded-t-3xl  -mt-[15vw] overflow-hidden relative pb-[2vw] z-20'>
+    className='bg-gray-50 rounded-t-3xl  -mt-[15vw] overflow-hidden relative pb-[2vw] z-20'>
      <div className="py-12 ">
       <div className=" mx-auto px-4 sm:px-6">
         <h2 className="lg:text-[3vw] text-3xl text-neutral-900 font-semibold text-center mb-12">
@@ -22,7 +22,7 @@ function About() {
       Transform your local presence with swift, strategic precision. Our data-driven digital optimization process combines cutting-edge technology with personalized attention, delivering rapid results while maintaining your unique local identity. We fast-track your digital growth without losing the personal touch that makes your business special.
     </p>
   </div>
-  <div className="flex flex-col items-center lg:w-[25vw] md:w-[45vw]  lg:border-x-[1px] border-gray-400">
+  <div className="flex flex-col items-center w-[25vw] md:w-[45vw] lg:w-[30vw] lg:border-x-[1px] border-gray-400">
     <IoCompassOutline className="mb-2 lg:text-[2vw] text-3xl" />
     <h3 className="lg:text-[1.5vw] text-xl mb-2 text-neutral-900">Digital Scouting Expertise</h3>
     <p className="text-center lg:w-[18vw] text-gray-700">

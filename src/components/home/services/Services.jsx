@@ -5,197 +5,90 @@ const WalletHoverEffect = () => {
   return (
     <div className="lg:-mt-[9vw] -mt-[220px] flex flex-col py-10 min-h-screen bg-gray-50">
       <ServicesHeader />
+
       <div className="flex items-center justify-evenly flex-wrap px-8 mt-3">
-        <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-full my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
-          {/* {/ Card wrapper for hover effect /} */}
-          <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
-            {/* {/ Colored layers /} */}
-            <div className="absolute inset-0 mb-1 bg-yellow-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-8 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-purple-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-6 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-teal-200 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-4 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-pink-800 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-2 z-0"></div>
-
-            {/* {/ Main card /} */}
-            <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 border border-gray-300">
-              <h2 className="text-lg font-semibold mb-4">Mobile Design</h2>
-              <div>
-                {/* {/ Mobile icon /} */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-28 h-28 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 9v.008h.008V9h-.008zM4.5 8.25v7.5a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5v-7.5m-15 0A1.5 1.5 0 016 6.75h12a1.5 1.5 0 011.5 1.5m-15 0h15M9 12h6"
-                  />
-                </svg>
-              </div>
-            </div>
+        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 h-[13vw] ">
+          <div className="bg"></div>
+          <div className="bg0"></div>
+          <div className="bg1"></div>
+          <div className="bg2"></div>
+          <div className="bg3 border-[1px] flex items-center justify-between px-6">
+            <h1 className="text-[2vw] font-bold">Branding</h1>
+            <img
+              className="h-[8vw]"
+              src="https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/64d5d79abf8d81d90a15c7a8_Group%201680.svg"
+              alt=""
+            />
           </div>
         </div>
-        <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-full my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
-          {/* {/ Card wrapper for hover effect /} */}
-          <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
-            {/* {/ Colored layers /} */}
-            <div className="absolute inset-0 mb-1 bg-yellow-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-8 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-purple-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-6 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-teal-200 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-4 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-pink-800 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-2 z-0"></div>
-
-            {/* {/ Main card /} */}
-            <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 border border-gray-300">
-              <h2 className="text-lg font-semibold mb-4">Mobile Design</h2>
-              <div>
-                {/* {/ Mobile icon /} */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg" 
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-28 h-28 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 9v.008h.008V9h-.008zM4.5 8.25v7.5a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5v-7.5m-15 0A1.5 1.5 0 016 6.75h12a1.5 1.5 0 011.5 1.5m-15 0h15M9 12h6"
-                  />
-                </svg>
-              </div>
-            </div>
+        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 h-[13vw] ">
+          <div className="bg"></div>
+          <div className="bg0"></div>
+          <div className="bg1"></div>
+          <div className="bg2"></div>
+          <div className="bg3 border-[1px] flex items-center justify-between px-6">
+            <h1 className="text-[2vw] font-bold">Branding</h1>
+            <img
+              className="h-[8vw]"
+              src="https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/64d5d79abf8d81d90a15c7a8_Group%201680.svg"
+              alt=""
+            />
           </div>
         </div>
-        <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-full my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
-          {/* {/ Card wrapper for hover effect /} */}
-          <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
-            {/* {/ Colored layers /} */}
-            <div className="absolute inset-0 mb-1 bg-yellow-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-8 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-purple-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-6 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-teal-200 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-4 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-pink-800 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-2 z-0"></div>
-
-            {/* {/ Main card /} */}
-            <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 border border-gray-300">
-              <h2 className="text-lg font-semibold mb-4">Mobile Design</h2>
-              <div>
-                {/* {/ Mobile icon /} */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-28 h-28 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 9v.008h.008V9h-.008zM4.5 8.25v7.5a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5v-7.5m-15 0A1.5 1.5 0 016 6.75h12a1.5 1.5 0 011.5 1.5m-15 0h15M9 12h6"
-                  />
-                </svg>
-              </div>
-            </div>
+        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 h-[13vw] ">
+          <div className="bg"></div>
+          <div className="bg0"></div>
+          <div className="bg1"></div>
+          <div className="bg2"></div>
+          <div className="bg3 border-[1px] flex items-center justify-between px-6">
+            <h1 className="text-[2vw] font-bold">Branding</h1>
+            <img
+              className="h-[8vw]"
+              src="https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/64d5d79abf8d81d90a15c7a8_Group%201680.svg"
+              alt=""
+            />
           </div>
         </div>
-        <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-full my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
-          {/* {/ Card wrapper for hover effect /} */}
-          <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
-            {/* {/ Colored layers /} */}
-            <div className="absolute inset-0 mb-1 bg-yellow-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-8 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-purple-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-6 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-teal-200 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-4 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-pink-800 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-2 z-0"></div>
-
-            {/* {/ Main card /} */}
-            <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 border border-gray-300">
-              <h2 className="text-lg font-semibold mb-4">Mobile Design</h2>
-              <div>
-                {/* {/ Mobile icon /} */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-28 h-28 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 9v.008h.008V9h-.008zM4.5 8.25v7.5a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5v-7.5m-15 0A1.5 1.5 0 016 6.75h12a1.5 1.5 0 011.5 1.5m-15 0h15M9 12h6"
-                  />
-                </svg>
-              </div>
-            </div>
+        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 h-[13vw] ">
+          <div className="bg"></div>
+          <div className="bg0"></div>
+          <div className="bg1"></div>
+          <div className="bg2"></div>
+          <div className="bg3 border-[1px] flex items-center justify-between px-6">
+            <h1 className="text-[2vw] font-bold">Branding</h1>
+            <img
+              className="h-[8vw]"
+              src="https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/64d5d79abf8d81d90a15c7a8_Group%201680.svg"
+              alt=""
+            />
           </div>
         </div>
-        <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-full my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
-          {/* {/ Card wrapper for hover effect /} */}
-          <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
-            {/* {/ Colored layers /} */}
-            <div className="absolute inset-0 mb-1 bg-yellow-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-8 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-purple-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-6 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-teal-200 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-4 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-pink-800 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-2 z-0"></div>
-
-            {/* {/ Main card /} */}
-            <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 border border-gray-300">
-              <h2 className="text-lg font-semibold mb-4">Mobile Design</h2>
-              <div>
-                {/* {/ Mobile icon /} */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-28 h-28 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 9v.008h.008V9h-.008zM4.5 8.25v7.5a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5v-7.5m-15 0A1.5 1.5 0 016 6.75h12a1.5 1.5 0 011.5 1.5m-15 0h15M9 12h6"
-                  />
-                </svg>
-              </div>
-            </div>
+        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 h-[13vw] ">
+          <div className="bg"></div>
+          <div className="bg0"></div>
+          <div className="bg1"></div>
+          <div className="bg2"></div>
+          <div className="bg3 border-[1px] flex items-center justify-between px-6">
+            <h1 className="text-[2vw] font-bold">Branding</h1>
+            <img
+              className="h-[8vw]"
+              src="https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/64d5d79abf8d81d90a15c7a8_Group%201680.svg"
+              alt=""
+            />
           </div>
         </div>
-        <div className="relative lg:w-[calc(50%-50px)] md:w-[calc(100%-50px)] w-full my-10 h-48 group hover:skew-x-3 perspective-1000 scale-y-110">
-          {/* {/ Card wrapper for hover effect /} */}
-          <div className="relative w-full h-full transform transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-40 group-hover:translate-z-20">
-            {/* {/ Colored layers /} */}
-            <div className="absolute inset-0 mb-1 bg-yellow-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-8 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-purple-400 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-6 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-teal-200 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-4 z-0"></div>
-            <div className="absolute inset-0 mb-1 bg-pink-800 rounded-lg transform transition-transform duration-300 group-hover:-translate-y-2 z-0"></div>
-
-            {/* {/ Main card /} */}
-            <div className="relative bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center z-10 border border-gray-300">
-              <h2 className="text-lg font-semibold mb-4">Mobile Design</h2>
-              <div>
-                {/* {/ Mobile icon /} */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-28 h-28 text-gray-700"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15.75 9v.008h.008V9h-.008zM4.5 8.25v7.5a1.5 1.5 0 001.5 1.5h12a1.5 1.5 0 001.5-1.5v-7.5m-15 0A1.5 1.5 0 016 6.75h12a1.5 1.5 0 011.5 1.5m-15 0h15M9 12h6"
-                  />
-                </svg>
-              </div>
-            </div>
+        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 h-[13vw] ">
+          <div className="bg"></div>
+          <div className="bg0"></div>
+          <div className="bg1"></div>
+          <div className="bg2"></div>
+          <div className="bg3 border-[1px] flex items-center justify-between px-6">
+            <h1 className="text-[2vw] font-bold">Branding</h1>
+            <img
+              className="h-[8vw]"
+              src="https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/64d5d79abf8d81d90a15c7a8_Group%201680.svg"
+              alt=""
+            />
           </div>
         </div>
       </div>

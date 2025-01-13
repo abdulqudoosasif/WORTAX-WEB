@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/home/header/Navbar";
 import LandingPage from "../components/home/LandingPage/LandingPage";
 import Marquee from "../components/home/Marquee";
 import About from "../components/home/About";
@@ -8,19 +7,17 @@ import WalletHoverEffect from "../components/home/services/Services";
 import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
-import MainLaptopFile from "../components/home/3dLaptop/MainLaptopFile";
 
 function Home() {
   return (
     <div className="bg-gray-50 overflow-hidden ">
-      <Navbar />
+    
       <LandingPage />
       <Marquee />
       <About />
       <WalletHoverEffect />
       <Scroller/>
       <ParallaxDemo />
-      <MainLaptopFile/>
       <GetStarted/>
       <Footer/>
     </div>
