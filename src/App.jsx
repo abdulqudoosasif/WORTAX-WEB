@@ -47,7 +47,7 @@ function App() {
   return (
     <Router>
       <ScrollWrapper>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />
