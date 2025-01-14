@@ -15,13 +15,12 @@ const FooterHeader = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % messages.length);
-    }, 2000); // Change every 2 seconds
+    }, 3000); 
     return () => clearInterval(interval);
   }, [messages.length]);
 
 
   useEffect(() => {
-   // GSAP Animation to hide Navbar on scroll
     let previousScrollY = 0;
 
     window.addEventListener("scroll", () => {
@@ -31,10 +30,8 @@ const FooterHeader = () => {
         currentScrollY < previousScrollY && 
         currentScrollY > window.innerHeight 
       ) {
-        // Scroll Up: Hide Navbar
         gsap.to(navbarRef.current, { y: "30vh", duration: 5.9 });
       } else {
-        // Scroll Down: Show Navbar
         gsap.to(navbarRef.current, { y: "0", duration: 0.9 });
       }
 
@@ -59,7 +56,7 @@ const FooterHeader = () => {
           className="w-[50px] h-[50px] object-cover rounded-full"
         />
         <div className="text-black flex gap-1 justify-center h-[2vw] overflow-hidden font-semibold">
-         <p> Giving</p>
+         <p className="text-[1vw]"> Giving</p>
            <div
               className="transition-transform  w-fit  duration-100 ease-in-out"
               style={{ transform: `translateY(-${activeIndex * 2}vw)` }}
@@ -67,22 +64,23 @@ const FooterHeader = () => {
               {messages.map((message, index) => (
                 <p
                   key={index}
-                  className="  leading-[.3vw] text-blue-500  w-fit pt-[0.6vw] "
+                  className="  leading-[.3vw] text-[1vw] text-blue-500  w-fit pt-[0.6vw] "
                   style={{ height: "2vw" }}
                 >
                   {message}
                 </p>
               ))}
-            </div> <p> their time back</p>
+            </div> <p className="text-[1vw]"> their time back</p>
         </div>
       </div>
 
       {/* Buttons */}
+      
       <div className="flex items-center space-x-2">
-        <button className="bg-black text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
+        <button className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
           <span>View Pricing</span> <span>💰</span>
         </button>
-        <button className="bg-lime-400 text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1">
+        <button className="bg-lime-400 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1">
           <span>Book a Call</span> <span>📞</span>
         </button>
       </div>

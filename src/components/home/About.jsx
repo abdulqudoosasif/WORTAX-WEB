@@ -11,7 +11,7 @@ function About() {
         <h2 className="lg:text-[3vw] text-3xl text-neutral-900 font-semibold text-center mb-12">
           ABOUT US
         </h2>
-        <div className="flex flex-wrap items-center justify-center gap-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 items-center justify-center gap-2">
   {/* line one */}
   <div className="flex flex-col items-center md:w-[45vw] lg:w-[30vw]">
     <BsSpeedometer2 className="mb-2 lg:text-[2vw] text-3xl" />
@@ -20,7 +20,7 @@ function About() {
       Transform your local presence with swift, strategic precision. Our data-driven digital optimization process combines cutting-edge technology with personalized attention, delivering rapid results while maintaining your unique local identity. We fast-track your digital growth without losing the personal touch that makes your business special.
     </p>
   </div>
-  <div className="flex flex-col items-center w-[25vw] md:w-[45vw] lg:w-[30vw] lg:border-x-[1px] border-gray-400">
+  <div className="flex flex-col items-center  md:w-[45vw] lg:w-[30vw] lg:border-x-[1px] border-gray-400">
     <IoCompassOutline className="mb-2 lg:text-[2vw] text-3xl" />
     <h3 className="lg:text-[1.5vw] text-xl mb-2 text-neutral-900">Digital Scouting Expertise</h3>
     <p className="text-center lg:w-[18vw] text-gray-700">
@@ -42,11 +42,18 @@ function About() {
       Every local business has its own story, and your digital strategy should tell it perfectly. We immerse ourselves in understanding your business, customers, and community. From customized social media campaigns to targeted local advertising, we create digital solutions that preserve your local charm while expanding your reach.
     </p>
   </div>
-  <div className="flex flex-col md:w-[45vw] lg:w-[30vw] mt-7 items-center px-8 lg:border-l-[1px] border-gray-400">
+  <div className="flex flex-col md:w-[45vw] lg:w-[30vw] mt-7 items-center px-8 lg:border-x-[1px] border-gray-400">
     <BsSpeedometer2 className="mb-2 lg:text-[2vw] text-3xl" />
     <h3 className="lg:text-[1.5vw] text-xl mb-2 text-neutral-900">Industry Expertise</h3>
     <p className="text-center lg:w-[18vw] text-gray-700">
       Where local insight meets digital mastery. Our team brings deep understanding of both digital technologies and local business dynamics. We know what works for local businesses because we've helped hundreds grow from local favorites to digital leaders. Our strategies blend proven digital techniques with local business wisdom.
+    </p>
+  </div>
+  <div className="flex flex-col items-center md:w-[45vw] lg:w-[30vw]">
+    <BsSpeedometer2 className="mb-2 lg:text-[2vw] text-3xl" />
+    <h3 className="lg:text-[1.5vw] text-xl text-neutral-900 mb-2">Speed and Precision</h3>
+    <p className="text-center lg:w-[18vw] text-gray-700">
+      Transform your local presence with swift, strategic precision. Our data-driven digital optimization process combines cutting-edge technology with personalized attention, delivering rapid results while maintaining your unique local identity. We fast-track your digital growth without losing the personal touch that makes your business special.
     </p>
   </div>
 </div>

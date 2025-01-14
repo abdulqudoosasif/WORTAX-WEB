@@ -84,7 +84,7 @@ const OurTeam = () => {
     };
 
     return (
-        <div className='relative top-[23vw] rounded-t-3xl w-full  bg-[#004d43]  flex flex-col items-center justify-center overflow-hidden'
+        <div className='relative top-[23vw] rounded-t-3xl w-full  bg-[#004d43] z-30 mb-[12vw]  flex flex-col items-center justify-center overflow-hidden'
             data-scroll
             data-scroll-section
             data-scroll-speed=".2"
