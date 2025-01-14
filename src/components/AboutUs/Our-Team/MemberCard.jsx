@@ -3,27 +3,51 @@ import Logo from '../../../assets/img/wortax-black.png';
 
 const MemberCard = (props) => {
     const [position, setPosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
-    const [isHovered, setIsHovered] = useState(false); // Track hover state
-
-    // Update position on mouse move
-    const handleMouseMove = (e) => {
-        setPosition({ x: e.clientX, y: e.clientY });
-    };
+      const [cursorText, setCursorText] = useState("");
+      const [cursorVariant, setCursorVariant] = useState("default");
+   
 
     const handleClick = () => {
         props.onClick();
     };
 
-    // Add event listener for mouse movement
-    useEffect(() => {
-        window.addEventListener("mousemove", handleMouseMove);
-        return () => window.removeEventListener("mousemove", handleMouseMove);
-    }, []);
-
-    // Handle hover state
-    const handleMouseEnter = () => setIsHovered(true);
-    const handleMouseLeave = () => setIsHovered(false);
-
+    const variants = {
+        default: {
+          opacity: 1,
+          height: 10,
+          width: 10,
+          x: 0,
+          y: 0,
+          transition: { type: "spring", mass: 0.6 },
+        },
+        card: {
+          opacity: 1,
+          height: 40,
+          width: 190,
+          backgroundColor: "#C9FF00",
+          x: 0,
+          y: 0,
+          transition: { type: "spring", stiffness: 300, damping: 28 },
+        },
+        hidden: {
+          opacity: 0,
+        },
+      }; 
+    
+      const handleMouseMove = (e) => {
+        document.documentElement.style.setProperty("--mouse-x", `${e.clientX}px`);
+        document.documentElement.style.setProperty("--mouse-y", `${e.clientY}px`);
+      };
+    
+      const handleCardEnter = (title) => {
+        setCursorText(title);
+        setCursorVariant("card");
+      };
+    
+      const handleCardLeave = () => {
+        setCursorText("");
+        setCursorVariant("default");
+      };
     return (
         <div
             className={`absolute member-card w-[75vw] h-[38vw] mx-auto bg-white rounded-lg flex flex-col justify-between p-[1vw] cursor-pointer
