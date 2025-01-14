@@ -1,5 +1,6 @@
 import React from 'react';
 import logoimg from '../../assets/img/logo-img.png';
+import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -24,17 +25,18 @@ const Footer = () => {
             </p>
             <p className="font-medium">+1 (205) 687-8151</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white">
-                <i className="fab fa-facebook-f"></i>
+              <a href="#" className="text-neutral-900 text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
+              <FaFacebookF />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <i className="fab fa-twitter"></i>
+              <a href="#" className="text-neutral-800 text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
+              <FaTwitter />
+
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <i className="fab fa-instagram"></i>
+              <a href="#" className="text-neutral-800 text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
+              <FaInstagram />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white">
-                <i className="fab fa-linkedin-in"></i>
+              <a href="#" className="text-neutral-800 text-[1.2vw] bg-gray-300 p-2 rounded-lg  hover:text-white">
+              <FaLinkedin />
               </a>
             </div>
           </div>

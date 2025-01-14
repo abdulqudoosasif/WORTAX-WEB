@@ -7,6 +7,7 @@ import WalletHoverEffect from "../components/home/services/Services";
 import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
+import FooterHeader from "../components/header/FooterHeade";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
       <ParallaxDemo />
       <GetStarted/>
       <Footer/>
+      <FooterHeader/>
     </div>
   );
 }

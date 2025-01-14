@@ -2,51 +2,13 @@ import React, { useState, useEffect } from "react";
 import Logo from "../../../assets/img/Logo.png"
 const MemberCard = (props) => {
     const [position, setPosition] = useState({ x: window.innerWidth / 2, y: window.innerHeight / 2 });
-      const [cursorText, setCursorText] = useState("");
-      const [cursorVariant, setCursorVariant] = useState("default");
    
 
     const handleClick = () => {
         props.onClick();
     };
 
-    const variants = {
-        default: {
-          opacity: 1,
-          height: 10,
-          width: 10,
-          x: 0,
-          y: 0,
-          transition: { type: "spring", mass: 0.6 },
-        },
-        card: {
-          opacity: 1,
-          height: 40,
-          width: 190,
-          backgroundColor: "#C9FF00",
-          x: 0,
-          y: 0,
-          transition: { type: "spring", stiffness: 300, damping: 28 },
-        },
-        hidden: {
-          opacity: 0,
-        },
-      }; 
-    
-      const handleMouseMove = (e) => {
-        document.documentElement.style.setProperty("--mouse-x", `${e.clientX}px`);
-        document.documentElement.style.setProperty("--mouse-y", `${e.clientY}px`);
-      };
-    
-      const handleCardEnter = (title) => {
-        setCursorText(title);
-        setCursorVariant("card");
-      };
-    
-      const handleCardLeave = () => {
-        setCursorText("");
-        setCursorVariant("default");
-      };
+
     return (
         <div
             className={`absolute member-card w-[75vw] h-[38vw] mx-auto bg-white rounded-lg flex flex-col justify-between p-[1vw] cursor-pointer
