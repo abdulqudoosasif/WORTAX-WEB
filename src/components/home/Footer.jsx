@@ -8,7 +8,7 @@ const Footer = () => {
     data-scroll-section
     data-scroll-speed="-.8"
     className=" bg-gray-50 justify-center relative
-     text-neutral-900  py-[200px] min-h-[100vh]  flex items-center">
+     text-neutral-900  py-[200px] px-[6vw] min-h-[100vh] ">
       <div className="px-6">
         <div className="flex md:flex-wrap gap-10 justify-between">
           {/* Left Section */}
@@ -41,39 +41,39 @@ const Footer = () => {
 
           {/* Links Section */}
           <div className="grid grid-cols-3 gap-8 lg:mb-0 mb-8 text-sm">
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col '>
               <h3 className="font-bold lg:text-[1.4vw] mb-2">Design by</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='lg:text-[1.2vw] mt-2'>Locations</li>
-                <li className='lg:text-[1.2vw] mt-2'>Industries</li>
-                <li className='lg:text-[1.2vw] mt-2'>Use cases</li>
-                <li className='lg:text-[1.2vw] mt-2'>Services</li>
+                <li className='lg:text-[1vw] mt-2'>Locations</li>
+                <li className='lg:text-[1vw] mt-2'>Industries</li>
+                <li className='lg:text-[1vw] mt-2'>Use cases</li>
+                <li className='lg:text-[1vw] mt-2'>Services</li>
               </ul>
             </div>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col '>
               <h3 className="font-bold lg:text-[1.4vw] mb-2">Resources</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='lg:text-[1.2vw] mt-2'>Blog</li>
-                <li className='lg:text-[1.2vw] mt-2'>Podcast</li>
-                <li className='lg:text-[1.2vw] mt-2'>E-book</li>
-                <li className='lg:text-[1.2vw] mt-2'>Guides</li>
+                <li className='lg:text-[1vw] mt-2'>Blog</li>
+                <li className='lg:text-[1vw] mt-2'>Podcast</li>
+                <li className='lg:text-[1vw] mt-2'>E-book</li>
+                <li className='lg:text-[1vw] mt-2'>Guides</li>
               </ul>
             </div>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col '>
               <h3 className="font-bold lg:text-[1.4vw] mb-2">Company</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='lg:text-[1.2vw] mt-2'>Case study</li>
-                <li className='lg:text-[1.2vw] mt-2'>Portfolio</li>
-                <li className='lg:text-[1.2vw] mt-2'>Careers</li>
-                <li className='lg:text-[1.2vw] mt-2'>Contact</li>
+                <li className='lg:text-[1vw] mt-2'>Case study</li>
+                <li className='lg:text-[1vw] mt-2'>Portfolio</li>
+                <li className='lg:text-[1vw] mt-2'>Careers</li>
+                <li className='lg:text-[1vw] mt-2'>Contact</li>
               </ul>
             </div>
           </div>
 
           {/* Call to Action Section */}
           <div className="text-right space-y-4">
-            <h3 className="lg:text-[3vw] lg:leading-[2.8vw] text-2xl text-left font-bold">
-              Let’s build  something <br /> great
+            <h3 className="lg:text-[2.3vw] lg:leading-[2.vw] text-2xl text-left font-bold">
+              Let's build  something <br /> great
             </h3>
             <a
               href="#"
