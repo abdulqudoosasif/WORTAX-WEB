@@ -2,19 +2,12 @@ import { useState, useEffect, useRef } from "react";
 
 const Magnet = ({
   children,
-  /** Distance around the magnet where the mouse can activate it. */
   padding = 100,
-  /** Disables the magnet effect entirely. */
   disabled = false,
-  /** Controls how strong the magnet pull is. Higher = less offset. */
   magnetStrength = 2,
-  /** Transition when the magnet is active (mouse in range). */
   activeTransition = "transform 0.3s ease-out",
-  /** Transition when the magnet is inactive (mouse out of range). */
   inactiveTransition = "transform 0.5s ease-in-out",
-  /** Optional class for the outer wrapper. */
   wrapperClassName = "",
-  /** Optional class for the moving/inner element. */
   innerClassName = "",
   ...props
 }) => {
