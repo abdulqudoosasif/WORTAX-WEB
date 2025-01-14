@@ -12,15 +12,17 @@ const HeroSection = () => {
             <div className='w-fit flex items-center'>
               {index === 1 && (
                 <motion.div initial={{ width: 0 }}
-                  animate={{ width: "9vw" }}
+                  animate={{ width: "10vw" }}
                   transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-                  className='w-[9vw] h-[5.2vw] relative top-[0.4vw]'>
-                  <img src={wortax} alt=""
-                    className="w-full h-full object-cover rounded-lg shadow-lg shadow-slate-400"
+                  className=" lg:h-[6vw] md:h-[6vw] h-[8.3vw] overflow-hidden relative rounded-md  lg:top-[0.3vw] lg:ml-[0.3vw] md:-top-[0.1vw] sm:top-0 top-[1.2vw] mr-2 origin-left">
+                  <img src={wortax} 
+                   className="w-full lg:h-[6vw] md:h-[6vw] h-[8.3vw] object-cover rounded-lg shadow-lg"
                   />
                 </motion.div>
               )}
-              <h1 className={`flex items-center text-[7.5vw] leading-[6vw] tracking-tight font-bold ${index === 1 && "ml-1"}`}>{item}</h1>
+              <h1 className="text-4xl uppercase lg:text-[7vw] font-bold lg:leading-[6vw] tracking-tighter  text-neutral-900">
+                {item}
+              </h1>
             </div>
           </div>
         })}

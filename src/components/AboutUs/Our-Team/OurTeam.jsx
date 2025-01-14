@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MemberCard from './MemberCard';
-import Marquee from './Marquee';
+import { motion } from 'framer-motion'
+
 
 const OurTeam = () => {
     const [activeCard, setActiveCard] = useState(0);
@@ -83,24 +84,35 @@ const OurTeam = () => {
     };
 
     return (
-        <div data-scroll
-        data-scroll-section
-        data-scroll-speed=".6"
-        className='-mt-[12vw]  relative z-30'>
-            <Marquee/>
-            <div className='relative top-[25vw] w-full h-screen bg-[#004d43] p-[6vw] flex flex-col items-center justify-center overflow-hidden'>
-            
-       
-            {members.map((member, index) => (
-                <MemberCard
-                    key={index}
-                    {...member}
-                    isActive={index === activeCard}
-                    onClick={handleNextCard}
-                    isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
-                />
-            ))}
-        </div>
+        <div className='relative top-[23vw] rounded-t-3xl w-full  bg-[#004d43]  flex flex-col items-center justify-center overflow-hidden'
+            data-scroll
+            data-scroll-section
+            data-scroll-speed=".2"
+        >
+            {/* Marquee */}
+            <div data-scroll data-scroll-section className='w-full  bg-transparent  mt-[3vw]'>
+                <div className=' border-y-[1px]  border-zinc-300 flex  overflow-hidden whitespace-nowrap'>
+                    <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '> WE ARE WORTAX • </motion.h1>
+                    <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '>   WE ARE WORTAX •</motion.h1>
+                </div>
+            </div>
+
+            {/* <div  className=' border-y-[1px]  border-zinc-300 flex  overflow-hidden whitespace-nowrap mt-[3vw]'>
+                <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '> WE ARE WORTAX • </motion.h1>
+                <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '>   WE ARE WORTAX •</motion.h1>
+            </div> */}
+
+            <div className='w-full h-screen flex items-center justify-center px-[6vw]'>
+                {members.map((member, index) => (
+                    <MemberCard
+                        key={index}
+                        {...member}
+                        isActive={index === activeCard}
+                        onClick={handleNextCard}
+                        isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
