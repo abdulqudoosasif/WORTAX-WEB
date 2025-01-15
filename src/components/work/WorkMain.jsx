@@ -21,21 +21,21 @@ function WorkMain() {
 
   return (
     <div className='px-[6vw] relative z-20'>
-      <div className="h-[60vh] flex items-center justify-center">
+      <div className="lg:h-[60vh] md:[50vh] h-[40vh] flex items-center justify-center">
         <div className="relative">
-          <h1 className="text-[7vw] leading-[7vw] font-semibold text-center text-neutral-900">
+          <h1 className="text-[7vw] lg:leading-[7vw]  font-semibold text-center text-neutral-900">
             Designing Unparalleled <br /> Success Stories
           </h1>
           <div className="absolute bottom-[-4vw] flex flex-col font-semibold items-center right-5 bg-[#e069fe] h-[4vw] rounded-3xl w-[20vw] overflow-hidden -rotate-[7deg]">
             <div
               className="transition-transform absolute   duration-100 ease-in-out"
-              style={{ transform: `translateY(-${activeIndex * 4}vw)` }}
+              style={{ transform: `translateY(-${activeIndex * 100}px)` }}
             >
               {messages.map((message, index) => (
                 <h2
                   key={index}
                   className=" text-[1.4vw] leading-[.3vw] text-center pt-[1.9vw] "
-                  style={{ height: "4vw" }}
+                  style={{ height: "100px" }}
                 >
                   {message}
                 </h2>

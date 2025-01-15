@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const TabComponent = () => {
   const [activeTab, setActiveTab] = useState('ALL');
-  const [activeSection, setActiveSection] = useState('Case Study');
+  const [activeSection, setActiveSection] = useState('Projects');
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
 
@@ -15,9 +15,6 @@ const TabComponent = () => {
     ],
     Branding: [
       { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/668795cd4ea05dbecc160678_UPSIDE%20Foods%20-%20Home%201-min-p-1080.webp', title: "Case Study 4" },
-    ],
-    "Product UI/UX": [
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp' ,title: "Case Study 5"},
     ],
     Website: [
       { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Case Study 6" },
@@ -79,10 +76,10 @@ const TabComponent = () => {
     setCursorVariant("default");
   };
 
-  const currentData = activeSection === 'Case Study' ? caseStudyData : clientData;
+  const currentData = activeSection === 'Projects' ? caseStudyData : clientData;
 
   return (
-    <section className="px-[6vw] py-[2vw] bg-[#F5F5F5]  h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
+    <section className="px-[6vw] py-[2vw] bg-[#F5F5F5]  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
 
           {/* Custom Cursor */}
           <motion.div
@@ -100,27 +97,27 @@ const TabComponent = () => {
 
 
       {/* Section Toggle */}
-      <div className="flex items-center gap-5">
-        {['Case Study', 'Clients'].map((section) => (
+      <div className="flex justify-center items-center gap-5">
+        {['Projects', 'Clients'].map((section) => (
           <h2
             key={section}
-            className={`text-[4vw] font-semibold cursor-pointer ${
-              activeSection === section ? 'text-neutral-900' : 'text-neutral-500'
+            className={`lg:text-[3.5vw] lg:my-0 text-[20px] my-5 font-semibold cursor-pointer border-b-2 -underline-offset-2 ${
+              activeSection === section ? 'text-neutral-900 border-neutral-900' : 'text-neutral-500 border-neutral-500'
             }`}
             onClick={() => setActiveSection(section)}
           >
             {section}
           </h2>
         ))}
-        <div className="h-[1vw] w-[1vw] rounded-full bg-slate-300"></div>
       </div>
-
+  
+        
       {/* Tabs */}
-      <div className="mt-[2vw]">
+      <div className="mt-[2vw] flex items-center justify-center mb-[4vw]">
         {Object.keys(currentData).map((tab) => (
           <button
             key={tab}
-            className={`px-4 py-0 text-[1.3vw] rounded-sm ${
+            className={`lg:px-4 px-2 py-0 lg:text-[1.3vw] text-[14px] text-nowrap rounded-sm ${
               activeTab === tab ? 'text-black font-bold' : 'text-gray-700'
             }`}
             onClick={() => setActiveTab(tab)}
@@ -131,7 +128,7 @@ const TabComponent = () => {
       </div>
 
       {/* Content */}
-      <div className="w-full grid lg:grid-cols-3 gap-5 justify-evenly mt-5">
+      <div className=" justify-center grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-5">
         {currentData[activeTab]?.map((item, index) => (
           <motion.div
             key={index}
@@ -143,7 +140,7 @@ const TabComponent = () => {
             className="relative overflow-hidden rounded-2xl group"
           >
             <img
-              className="h-[32vw] rounded-2xl object-cover object-center"
+              className="lg:h-[32vw]  rounded-2xl object-cover object-center"
               src={item.img}
               alt={`Tab ${activeTab} item ${index + 1}`}
             />

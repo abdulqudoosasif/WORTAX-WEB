@@ -11,9 +11,9 @@ const Footer = () => {
     className=" bg-gray-50 justify-center relative
      text-neutral-900  py-[200px] px-[6vw] min-h-[100vh] ">
       <div className="px-6">
-        <div className="flex md:flex-wrap gap-10 justify-between">
+        <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5">
           {/* Left Section */}
-          <div className="space-y-4 mt-14 lg:w-[25vw]">
+          <div className="space-y-4 lg:mt-0 md:mt-0 mt-14 lg:w-[25vw]">
             <div className="flex items-center space-x-2">
               <div className=" rounded-full ">
                 <img src={logoimg} alt="" className='w-16 h-16'/>
@@ -25,17 +25,17 @@ const Footer = () => {
             </p>
             <p className="font-medium">+1 (205) 687-8151</p>
             <div className="flex space-x-4">
-              <a href="#" className="text-neutral-900 text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
+              <a href="#" className="text-neutral-900 lg:text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
               <FaFacebookF />
               </a>
-              <a href="#" className="text-neutral-800 text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
+              <a href="#" className="text-neutral-800 lg:text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
               <FaTwitter />
 
               </a>
-              <a href="#" className="text-neutral-800 text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
+              <a href="#" className="text-neutral-800 lg:text-[1.2vw] bg-gray-300 p-2 rounded-lg hover:text-white">
               <FaInstagram />
               </a>
-              <a href="#" className="text-neutral-800 text-[1.2vw] bg-gray-300 p-2 rounded-lg  hover:text-white">
+              <a href="#" className="text-neutral-800 lg:text-[1.2vw] bg-gray-300 p-2 rounded-lg  hover:text-white">
               <FaLinkedin />
               </a>
             </div>

@@ -47,7 +47,7 @@ const FooterHeader = () => {
   return (
     <div
       ref={navbarRef}
-      className="w-[60vw] fixed bg-neutral-100 z-50 rounded-xl mx-[20vw] my-2 py-2 bottom-0 flex justify-between items-center lg:px-12"
+      className="w-[60vw]  fixed bg-neutral-100 z-50 rounded-xl mx-[20vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
     >
          <div className="flex items-center space-x-3">
         <img
@@ -75,7 +75,7 @@ const FooterHeader = () => {
       </div>
 
       {/* Buttons */}
-      
+
       <div className="flex items-center space-x-2">
         <button className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
           <span>View Pricing</span> <span>💰</span>
