@@ -81,6 +81,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="cursor-pointer lg:h-[4vw] md:h-10 h-10" />
         </div>
 
+
         {/* Hamburger Menu Icon for Mobile */}
         <div className="lg:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
           {menuOpen ? <HiX /> : <HiMenu />}
