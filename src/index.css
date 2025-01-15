@@ -17,6 +17,15 @@ main,
   padding: 0;
 }
 
+  /* fonts */
+
+  .poppins {
+    font-family: "Poppins", serif;
+  }
+  
+  
+  
+
 .content {
   overflow-x: hidden;
   width: 334px;
