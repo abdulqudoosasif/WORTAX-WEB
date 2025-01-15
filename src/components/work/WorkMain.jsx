@@ -29,13 +29,13 @@ function WorkMain() {
           <div className="absolute bottom-[-4vw] flex flex-col font-semibold items-center right-5 bg-[#e069fe] h-[4vw] rounded-3xl w-[20vw] overflow-hidden -rotate-[7deg]">
             <div
               className="transition-transform absolute   duration-100 ease-in-out"
-              style={{ transform: `translateY(-${activeIndex * 100}px)` }}
+              style={{ transform: `translateY(-${activeIndex * 4}vw)` }}
             >
               {messages.map((message, index) => (
                 <h2
                   key={index}
                   className=" text-[1.4vw] leading-[.3vw] text-center pt-[1.9vw] "
-                  style={{ height: "100px" }}
+                  style={{ height: "4vw" }}
                 >
                   {message}
                 </h2>
