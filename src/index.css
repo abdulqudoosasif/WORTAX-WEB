@@ -35,142 +35,167 @@ main,
 }
 
 
-  
-  .swiper {
-    width: 100%
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #ffffff;
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    
-    display: block;
-    width: 100%;
-    height: 22vw;
-    object-fit: cover;
-  }
-  .Scroll {
-    direction: rtl; 
-    } 
-    
-    /* cursor animatiion */
+
+.swiper {
+  width: 100%
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+
+  display: block;
+  width: 100%;
+  height: 22vw;
+  object-fit: cover;
+}
+
+.Scroll {
+  direction: rtl;
+}
+
+/* cursor animatiion */
 
 
 
-    .flair {
-      width: 100px;
-      height: 100px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      background-color: red; /* Add this for visibility */
-      border-radius: 50%; /* Optional: make it circular */
-    }
-    
+.flair {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: red;
+  /* Add this for visibility */
+  border-radius: 50%;
+  /* Optional: make it circular */
+}
 
 
-    /* hover effect on card */
 
-    .box {
-      position: relative;
-      cursor: pointer;
-      perspective: 2000px;
-      perspective-origin: 50% 100%;
-  }
-  
-  .bg {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: #F4EA0F;
-      background-size: cover;
-      transition: .6s;
-      border-radius: 10px;
-      transform-origin: bottom;
-  }
-  
-  .bg1 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: #6844E2;
-      background-size: cover;
-      transition: .6s;
-      border-radius: 10px;
-      transform-origin: bottom;
-  }
-  
-  .bg0 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: #97ffd4;
-      background-size: cover;
-      transition: .6s;
-      border-radius: 10px;
-      transform-origin: bottom;
-  }
-  
-  .bg2 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: #FF6AE6;
-      background-size: cover;
-      transition: .6s;
-      border-radius: 10px;
-      transform-origin: bottom;
-  }
-  
-  .bg3 {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      background-color: #ffffff;
-      background-size: cover;
-      transition: .6s;
-      border-radius: 10px;
-      transform-origin: bottom;
-  }
-  
-  /* Hover effects */
-  .box:hover .bg {
-      transform: rotateX(-14deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
-      transform-style: preserve-3d;
-  }
-  
-  .box:hover .bg0 {
-      transform: rotateX(-24deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
-      transform-style: preserve-3d;
-  }
-  
-  .box:hover .bg1 {
-      transform: rotateX(-30deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
-      transform-style: preserve-3d;
-  }
-  
-  .box:hover .bg2 {
-      transform: rotateX(-36deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
-      transform-style: preserve-3d;
-  }
-  
-  .box:hover .bg3 {
-      transform: rotateX(-42deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
-      transform-style: preserve-3d;
-  }
-  
+/* hover effect on card */
 
+.box {
+  position: relative;
+  cursor: pointer;
+  perspective: 2000px;
+  perspective-origin: 50% 100%;
+}
 
-  /* costom cursor */
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #F4EA0F;
+  background-size: cover;
+  transition: .6s;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+.bg1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #6844E2;
+  background-size: cover;
+  transition: .6s;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+.bg0 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #97ffd4;
+  background-size: cover;
+  transition: .6s;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+.bg2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #FF6AE6;
+  background-size: cover;
+  transition: .6s;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+.bg3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #ffffff;
+  background-size: cover;
+  transition: .6s;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+/* Hover effects */
+.box:hover .bg {
+  transform: rotateX(-14deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
+  transform-style: preserve-3d;
+}
+
+.box:hover .bg0 {
+  transform: rotateX(-24deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
+  transform-style: preserve-3d;
+}
+
+.box:hover .bg1 {
+  transform: rotateX(-30deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
+  transform-style: preserve-3d;
+}
+
+.box:hover .bg2 {
+  transform: rotateX(-36deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
+  transform-style: preserve-3d;
+}
+
+.box:hover .bg3 {
+  transform: rotateX(-42deg) scale3d(1, 1, 1) rotateY(0) rotateZ(0);
+  transform-style: preserve-3d;
+}
 
 
- 
+
+/* Navbar.css */
+.nav-link {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  /* Border color */
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  transform: translateX(0);
+}
+
+.nav-link:not(:hover)::before {
+  transform: translateX(-100%);
+}

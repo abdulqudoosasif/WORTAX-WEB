@@ -90,20 +90,16 @@ const OurTeam = () => {
             data-scroll-speed=".2"
         >
             {/* Marquee */}
-            <div data-scroll data-scroll-section className='w-full  bg-transparent  mt-[3vw]'>
+            <div data-scroll data-scroll-section className='w-full  bg-transparent  lg:mt-[3vw] mt-5'>
                 <div className=' border-y-[1px]  border-zinc-300 flex  overflow-hidden whitespace-nowrap'>
                     <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '> WE ARE WORTAX • </motion.h1>
                     <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '>   WE ARE WORTAX •</motion.h1>
                 </div>
             </div>
 
-            {/* <div  className=' border-y-[1px]  border-zinc-300 flex  overflow-hidden whitespace-nowrap mt-[3vw]'>
-                <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '> WE ARE WORTAX • </motion.h1>
-                <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '>   WE ARE WORTAX •</motion.h1>
-            </div> */}
-
-            <div className='w-full h-screen flex items-center justify-center px-[5vw]'>
+            <div className='w-full lg:h-screen h-[480px] flex lg:items-center justify-center lg:pt-0 pt-10 px-[5vw]'>
                 {members.map((member, index) => (
+                    <>
                     <MemberCard
                         key={index}
                         {...member}
@@ -111,7 +107,20 @@ const OurTeam = () => {
                         onClick={handleNextCard}
                         isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
                     />
+                    <button
+                    key={index}
+                    {...member}
+                    isActive={index === activeCard}
+                    onClick={handleNextCard}
+                    isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
+                    className="absolute bottom-[5%] z-50 lg:hidden w-24 h-24 bg-lime-300  rounded-full 
+                    flex items-center justify-center"
+                >
+                    NEXT
+                </button>
+                </>
                 ))}
+                
             </div>
         </div>
     );

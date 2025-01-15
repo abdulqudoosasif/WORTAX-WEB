@@ -5,7 +5,7 @@ import wortax from "../../../assets/img/logo1.png";
 const HeroSection = () => {
 
   return (
-    <div className='absolute w-full h-screen bg-[#F1F1F1] pt-1 '>
+    <div className='absolute w-full h-screen bg-[#F1F1F1] lg:py-1 py-4'>
       <div className='text-structure mt-[11.5vw] px-[5vw]'>
         {["WE ARE", "WORTAX IT", "SOLUTIONS"].map((item, index) => {
           return <div className='masker'>
