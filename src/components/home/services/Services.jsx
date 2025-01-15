@@ -6,7 +6,7 @@ const WalletHoverEffect = () => {
     <div className="lg:-mt-[9vw] -mt-[270px] lg:px-[5vw] flex flex-col py-10 min-h-screen bg-gray-50">
       <ServicesHeader />
 
-      <div className="flex items-center justify-evenly flex-wrap mt-3 gap-[2vw]">
+      <div className="flex items-center justify-evenly px-3 flex-wrap mt-3 gap-[2vw]">
         <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px]  ">
           <div className="bg"></div>
           <div className="bg0"></div>

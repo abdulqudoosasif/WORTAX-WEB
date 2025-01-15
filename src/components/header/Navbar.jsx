@@ -75,7 +75,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <div ref={navbarRef} className="fixed z-50 lg:backdrop-blur-md  w-full flex justify-between items-center lg:px-[4vw] px-5 py-2">
+      <div ref={navbarRef} className="fixed z-50 backdrop-blur-md  w-full flex justify-between items-center lg:px-[4vw] px-5 py-2">
         {/* Logo */}
         <div className='logo'>
           <img src={logo} alt="Logo" className="cursor-pointer lg:h-[4vw] md:h-10 h-10" />
