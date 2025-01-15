@@ -20,7 +20,7 @@ function WorkMain() {
   }, [messages.length]);
 
   return (
-    <div className='px-[6vw] relative z-20'>
+    <div className='px-[5vw] relative z-20'>
       <div className="lg:h-[60vh] md:[50vh] h-[40vh] flex items-center justify-center">
         <div className="relative">
           <h1 className="text-[7vw] lg:leading-[7vw]  font-semibold text-center text-neutral-900">

@@ -102,7 +102,7 @@ const OurTeam = () => {
                 <motion.h1 initial={{ x: 0 }} animate={{ x: '-100%' }} transition={{ repeat: Infinity, ease: "linear", duration: 15 }} className=' text-[20vw] leading-none text-gray-50 font-bold '>   WE ARE WORTAX •</motion.h1>
             </div> */}
 
-            <div className='w-full h-screen flex items-center justify-center px-[6vw]'>
+            <div className='w-full h-screen flex items-center justify-center px-[5vw]'>
                 {members.map((member, index) => (
                     <MemberCard
                         key={index}

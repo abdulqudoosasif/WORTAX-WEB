@@ -79,7 +79,7 @@ const TabComponent = () => {
   const currentData = activeSection === 'Projects' ? caseStudyData : clientData;
 
   return (
-    <section className="px-[6vw] py-[2vw] bg-[#F5F5F5]  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
+    <section className="px-[5vw] py-[2vw] bg-[#F5F5F5]  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
 
           {/* Custom Cursor */}
           <motion.div
@@ -97,7 +97,7 @@ const TabComponent = () => {
 
 
       {/* Section Toggle */}
-      <div className="flex justify-center items-center gap-5">
+      <div className="flex justify-center items-center lg:gap-[2vw] gap-5">
         {['Projects', 'Clients'].map((section) => (
           <h2
             key={section}
@@ -117,7 +117,7 @@ const TabComponent = () => {
         {Object.keys(currentData).map((tab) => (
           <button
             key={tab}
-            className={`lg:px-4 px-2 py-0 lg:text-[1.3vw] text-[14px] text-nowrap rounded-sm ${
+            className={`lg:px-[1.45vw] px-2 py-0 lg:text-[1.3vw] text-[14px] text-nowrap rounded-sm ${
               activeTab === tab ? 'text-black font-bold' : 'text-gray-700'
             }`}
             onClick={() => setActiveTab(tab)}
@@ -128,7 +128,7 @@ const TabComponent = () => {
       </div>
 
       {/* Content */}
-      <div className=" justify-center grid lg:grid-cols-3 md:grid-cols-2 gap-5 mt-5">
+      <div className=" justify-center grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[2vw] gap-5 mt-5">
         {currentData[activeTab]?.map((item, index) => (
           <motion.div
             key={index}
