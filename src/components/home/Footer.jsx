@@ -9,7 +9,7 @@ const Footer = () => {
     data-scroll-section
     data-scroll-speed="-.8"
     className=" bg-gray-50 justify-center relative
-     text-neutral-900  py-[200px] px-[6vw] min-h-[100vh] ">
+     text-neutral-900  py-[200px] px-[5vw] min-h-[100vh] ">
       <div className="px-6">
         <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5">
           {/* Left Section */}
