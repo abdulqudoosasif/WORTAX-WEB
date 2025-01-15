@@ -4,7 +4,7 @@ import Image from './Image'
 
 const About = () => {
     return (
-        <div className='relative lg:top-[38vw] top-[52vw] w-full px-[6vw] py-5  border-t-2 border-gray-300 bg-[#F1F1F1]'>
+        <div className='relative lg:top-[38vw] top-[52vw] w-full px-[5vw] py-5  border-t-2 border-gray-300 bg-[#F1F1F1]'>
             <div className='flex justify-between lg:flex-nowrap flex-wrap lg:gap-0 gap-3'>
                 <div className="lg:w-1/2 w-full">
                     <p className='lg:text-[1.2vw] text-[3.5vw] font-medium tracking-tight leading-none'>About Us:</p>

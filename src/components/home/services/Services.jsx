@@ -3,11 +3,11 @@ import ServicesHeader from "./ServicesHeader";
 
 const WalletHoverEffect = () => {
   return (
-    <div className="lg:-mt-[9vw] -mt-[270px] flex flex-col py-10 min-h-screen bg-gray-50">
+    <div className="lg:-mt-[9vw] -mt-[270px] lg:px-[5vw] flex flex-col py-10 min-h-screen bg-gray-50">
       <ServicesHeader />
 
-      <div className="flex items-center justify-evenly flex-wrap px-8 mt-3">
-        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 lg:h-[13vw] h-[100px]  ">
+      <div className="flex items-center justify-evenly flex-wrap mt-3 gap-[2vw]">
+        <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px]  ">
           <div className="bg"></div>
           <div className="bg0"></div>
           <div className="bg1"></div>
@@ -21,7 +21,7 @@ const WalletHoverEffect = () => {
             />
           </div>
         </div>
-        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 lg:h-[13vw] h-[100px] ">
+        <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px] ">
           <div className="bg"></div>
           <div className="bg0"></div>
           <div className="bg1"></div>
@@ -35,7 +35,7 @@ const WalletHoverEffect = () => {
             />
           </div>
         </div>
-        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 lg:h-[13vw] h-[100px] ">
+        <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px] ">
           <div className="bg"></div>
           <div className="bg0"></div>
           <div className="bg1"></div>
@@ -49,7 +49,7 @@ const WalletHoverEffect = () => {
             />
           </div>
         </div>
-        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 lg:h-[13vw] h-[100px] ">
+        <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px] ">
           <div className="bg"></div>
           <div className="bg0"></div>
           <div className="bg1"></div>
@@ -63,7 +63,7 @@ const WalletHoverEffect = () => {
             />
           </div>
         </div>
-        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 lg:h-[13vw] h-[100px] ">
+        <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px] ">
           <div className="bg"></div>
           <div className="bg0"></div>
           <div className="bg1"></div>
@@ -77,7 +77,7 @@ const WalletHoverEffect = () => {
             />
           </div>
         </div>
-        <div className="box lg:w-[calc(50%-70px)] md:w-[calc(100%-50px)] w-full my-5 lg:h-[13vw] h-[100px] ">
+        <div className="box xl:w-[calc(50%-80px)] lg:w-[calc(50%-20px)] md:w-[calc(100%-50px)] w-full  lg:h-[13vw] h-[100px] ">
           <div className="bg"></div>
           <div className="bg0"></div>
           <div className="bg1"></div>
