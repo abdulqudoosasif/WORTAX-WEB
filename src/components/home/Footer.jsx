@@ -46,28 +46,28 @@ const Footer = () => {
             <div className='flex flex-col '>
               <h3 className="font-bold lg:text-[1.4vw] leading-[1.5vw] mb-2">Design by</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Locations</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Industries</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Use cases</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Services</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Locations</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Industries</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Use cases</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Services</li>
               </ul>
             </div>
             <div className='flex flex-col '>
               <h3 className="font-bold lg:text-[1.4vw] leading-[1.5vw] mb-2">Resources</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Blog</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Podcast</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>E-book</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Guides</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Blog</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Podcast</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>E-book</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Guides</li>
               </ul>
             </div>
             <div className='flex flex-col '>
               <h3 className="font-bold lg:text-[1.4vw] leading-[1.5vw] mb-2">Company</h3>
               <ul className="space-y-4 text-gray-400">
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Case study</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Portfolio</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Careers</li>
-                <li className='lg:text-[1vw] leading-[1.3vw] '>Contact</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Case study</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Portfolio</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Careers</li>
+                <li className='lg:text-[1vw] lg:mt-0 mt-2 lg:leading-[1.3vw] '>Contact</li>
               </ul>
             </div>
           </div>
