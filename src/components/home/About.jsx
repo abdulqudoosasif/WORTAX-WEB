@@ -11,7 +11,7 @@ function About() {
           <h2 className="lg:text-[3vw] text-3xl text-neutral-900 font-semibold">
             ABOUT US
           </h2>
-          <p className="lg:text-[1vw] text-xs  mt-[1vw] tracking-wide">OUR COMPANY IN THE SIMPLEST TERMS</p>
+          <p className="lg:text-[1vw] text-xs xl:mt-[2vw] lg:mt-[1vw] tracking-wide">OUR COMPANY IN THE SIMPLEST TERMS</p>
           {/* <hr class="border-t-[0.15vw] border-black w-[7vw] mt-[1vw]" /> */}
           <div className='w-full flex flex-wrap items-center justify-center lg:gap-[1.8vw] gap-5 lg:py-[3vw] py-10'>
             <div className='lg:w-[calc(33%-3vw)] md:w-[calc(50%-3vw)] w-[calc(100%-3vw)] flex flex-col items-center  lg:gap-[1.8vw] gap-5 lg:px-[1.9vw] px-3 lg:pt-[4vw] pt-10 lg:pb-[6vw] pb-12 border rounded-lg lg:hover:scale-105 lg:hover:shadow-2xl shadow-slate-400 duration-300' >
