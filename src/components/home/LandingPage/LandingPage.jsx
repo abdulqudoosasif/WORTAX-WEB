@@ -8,12 +8,12 @@ function LandingPage() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.3"
-      className="h-full  pt-1"
+      className="h-full  px-[5vw]"
     >
       <div className="mt-[150px] lg:mt-[16vw] ">
         {["We Scale Local", "Roots to", "Digital Heights"].map((item, index) => {
           return (
-            <div className="masker flex mx-4 lg:mx-16">
+            <div className="masker flex">
               {index === 1 && (
                <motion.div
                initial={{ width: 0 }}

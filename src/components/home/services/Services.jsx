@@ -3,7 +3,7 @@ import ServicesHeader from "./ServicesHeader";
 
 const WalletHoverEffect = () => {
   return (
-    <div className="lg:-mt-[9vw] -mt-[220px] flex flex-col py-10 min-h-screen bg-gray-50">
+    <div className="lg:-mt-[9vw] -mt-[270px] flex flex-col py-10 min-h-screen bg-gray-50">
       <ServicesHeader />
 
       <div className="flex items-center justify-evenly flex-wrap px-8 mt-3">

@@ -1,98 +1,107 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import logo from "../../assets/img/Logo.png";
-import logoimg from "../../assets/img/logo-img.png";
-import Magnet from "./Magnet";
+import logo from "../../assets/img/wortax-black.png";
 import { Link } from "react-router-dom";
+import { HiMenu, HiX } from "react-icons/hi";
 
 const Navbar = () => {
   const navbarRef = useRef(null);
+  const menuRef = useRef(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    // GSAP Animation to hide Navbar on scroll
     let previousScrollY = 0;
 
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      if (
-        currentScrollY > previousScrollY &&
-        currentScrollY > window.innerHeight
-      ) {
-        // Scroll Down: Hide Navbar
-        gsap.to(navbarRef.current, { y: "-30vh", duration: 0.9 });
-      } else {
-        // Scroll Up: Show Navbar
-        gsap.to(navbarRef.current, { y: "0", duration: 0.9 });
+      // Close the mobile menu on scroll
+      if (menuOpen) {
+        setMenuOpen(false);
       }
 
+      if (currentScrollY > previousScrollY && currentScrollY > window.innerHeight) {
+        gsap.to(navbarRef.current, { y: "-30vh", duration: 0.9 });
+      } else {
+        gsap.to(navbarRef.current, { y: "0", duration: 0.9 });
+      }
       previousScrollY = currentScrollY;
-    });
-
-    return () => {
-      window.removeEventListener("scroll", null);
     };
-  }, []);
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [menuOpen]);
+
+  useEffect(() => {
+    if (menuOpen) {
+      gsap.fromTo(
+        menuRef.current,
+        { y: "-100%", opacity: 0, display: "flex", flexDirection: "column" },
+        { y: "0%", opacity: 1, duration: 0.5, ease: "power2.inOut" }
+      );
+    } else {
+      gsap.to(menuRef.current, {
+        y: "-100%",
+        opacity: 0,
+        duration: 0.5,
+        ease: "power2.inOut",
+      });
+    }
+  }, [menuOpen]);
+
+
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div
-      ref={navbarRef}
-      className="w-[92vw] fixed bg-neutral-900 z-50 rounded-xl mx-[3vw] my-2 py-2 px-6 flex justify-between items-center lg:px-12"
-    >
-      {/* Logo Hover Effect */}
-      <Magnet padding={50} disabled={false} magnetStrength={4}>
-        <div className="flex items-center">
-          {/* <div className=" rounded-full h-10 w-10">
-                          <img src={logoimg} alt="" />
-                        </div> */}
-          <img
-            src={logo}
-            alt="Logo"
-            className="cursor-pointer"
-            style={{
-              width: "100px",
-              height: "auto",
-            }}
-          />
-        </div>
-      </Magnet>
-
-      {/* Navigation Links */}
-      <div className="hidden lg:flex justify-between items-center gap-4">
+    <>
+      {/* Mobile Navigation Menu Behind Navbar */}
+      <div
+        ref={menuRef}
+        className={`lg:hidden fixed top-14 left-0 w-full h-60 bg-white flex flex-col items-start gap-5 text-lg font-medium px-8 z-40 ${menuOpen ? "block" : "hidden"
+          }`}
+      >
         {[
           { label: "Home", href: "/" },
           { label: "Work", href: "/work" },
           { label: "About us", href: "/about-us" },
           { label: "Blog", href: "#" },
-        ].map((item, index) => (
-          <React.Fragment key={item.label}>
-            <Link
-              to={item.href}
-              className="font-semibold text-xs text-white p-2 rounded-lg hover:bg-[#c9ff00] hover:text-black"
-            >
-              {item.label}
-            </Link>
-            {index !== 3 && (
-              <span className="w-1 h-1 rounded-full p-[3px] bg-[#c9ff00]"></span>
-            )}
-          </React.Fragment>
+          { label: "Contact Us", href: "#" },
+        ].map((item) => (
+          <Link key={item.label} to={item.href} className="capitalize text-gray-800" onClick={toggleMenu}>
+            {item.label}
+          </Link>
         ))}
       </div>
 
-      {/* Buttons */}
-      <div className="flex gap-3 lg:gap-5 justify-center items-center text-white text-xs font-semibold">
-        <Magnet padding={50} disabled={false} magnetStrength={4}>
-          <button className="relative py-3 px-5 lg:py-5 lg:px-7 overflow-visible shadow-md cursor-pointer">
-            <span>Book a call</span>
-          </button>
-        </Magnet>
-        <Magnet padding={50} disabled={false} magnetStrength={4}>
-          <button className="py-2 px-5 lg:py-3 lg:px-7 border-2 border-gray-500 rounded-xl">
-            Sign up
-          </button>
-        </Magnet>
+      {/* Navbar */}
+      <div ref={navbarRef} className="fixed z-50 lg:backdrop-blur-lg md:bg-white bg-white w-full flex justify-between items-center lg:px-[5vw] px-5 py-2">
+        {/* Logo */}
+        <div className='logo'>
+          <img src={logo} alt="Logo" className="cursor-pointer lg:h-[4vw] md:h-10 h-10" />
+        </div>
+
+        {/* Hamburger Menu Icon for Mobile */}
+        <div className="lg:hidden text-2xl cursor-pointer" onClick={toggleMenu}>
+          {menuOpen ? <HiX /> : <HiMenu />}
+        </div>
+
+        {/* Navigation Links for Desktop */}
+        <div className="hidden lg:flex justify-between items-center gap-[2vw] ">
+          {[
+            { label: "Home", href: "/" },
+            { label: "Work", href: "/work" },
+            { label: "About us", href: "/about-us" },
+            { label: "Blog", href: "#" },
+            { label: "Contact Us", href: "#" },
+          ].map((item) => (
+            <Link key={item.label} to={item.href} className="text-[1.2vw] font-medium capitalize">
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
