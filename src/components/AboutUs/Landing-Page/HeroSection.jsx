@@ -13,7 +13,7 @@ const HeroSection = () => {
               {index === 1 && (
                 <motion.div initial={{ width: 0 }}
                   animate={{ width: "10vw" }}
-                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1, delay:2.5 }}
                   className=" lg:h-[6vw] md:h-[6vw] h-[8.3vw] overflow-hidden relative rounded-md  lg:top-[0.3vw] lg:ml-[0.3vw] md:-top-[0.1vw] sm:top-0 top-[1.2vw] mr-2 origin-left">
                   <img src={wortax} 
                    className="w-full lg:h-[6vw] md:h-[6vw] h-[8.3vw] object-cover rounded-lg shadow-lg"

@@ -27,15 +27,13 @@ function ScrollWrapper({ children }) {
       smooth: true,
     });
 
-    // Cleanup on unmount
     return () => {
       if (scrollInstance.current) {
         scrollInstance.current.destroy();
         scrollInstance.current = null;
       }
     };
-  }, [location]); // Re-run on route change
-
+  }, [location]); 
   return (
     <div ref={scrollRef} data-scroll-container>
       {children}

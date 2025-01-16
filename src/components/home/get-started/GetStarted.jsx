@@ -12,14 +12,13 @@ function GetStarted() {
       borderColor='#fff'
       hoverFillColor='#fff'
     />
-    <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center  '>
+    <div className='absolute top-1/2 text-nowrap left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white '>
     <BlurText
   text="Get Started"
   delay={150}
   animateBy="words"
   direction="top"
-  className="lg:text-[9vw]  text-8xl text-center  font-bold"
-/>
+  className="lg:text-[8vw]  text-8xl text-center  font-bold"></BlurText>
     </div>
     </div>
   )

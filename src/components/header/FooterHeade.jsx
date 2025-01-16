@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const FooterHeader = () => {
   const navbarRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -47,7 +49,7 @@ const FooterHeader = () => {
   return (
     <div
       ref={navbarRef}
-      className="w-[60vw]  fixed bg-neutral-100 z-50 rounded-xl mx-[20vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
+      className="w-[60vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[20vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
     >
          <div className="flex items-center space-x-3">
         <img

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import LandingPage from "../components/home/LandingPage/LandingPage";
 import Marquee from "../components/home/Marquee";
 import About from "../components/home/About";
@@ -8,21 +8,32 @@ import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
 import FooterHeader from "../components/header/FooterHeade";
+import Preloader from "../components/Animation/HomePreloader";
 
 function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handlePreloaderFinish = () => {
+    setIsLoading(false);
+  };
+
   return (
-    <div className="bg-gray-50 overflow-hidden poppins ">
+    <>
+      {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
     
-      <LandingPage />
-      <Marquee />
-      <About />
-      <WalletHoverEffect />
-      <Scroller/>
-      <ParallaxDemo />
-      <GetStarted/>
-      <Footer/>
-      <FooterHeader/>
-    </div>
+        <div className="bg-gray-50 overflow-hidden poppins">
+          <LandingPage />
+          <Marquee />
+          <About />
+          <WalletHoverEffect />
+          <Scroller />
+          <ParallaxDemo />
+          <GetStarted />
+          <Footer />
+          {/* <FooterHeader /> */}
+        </div>
+
+    </>
   );
 }
 

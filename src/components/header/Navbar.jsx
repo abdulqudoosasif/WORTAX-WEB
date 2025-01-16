@@ -14,8 +14,6 @@ const Navbar = () => {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      // Close the mobile menu on scroll
       if (menuOpen) {
         setMenuOpen(false);
       }
