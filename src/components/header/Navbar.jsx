@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import logo from "../../assets/img/wortax-black.png";
+import logo from "../../assets/img/wortax-black-new.png";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
 
