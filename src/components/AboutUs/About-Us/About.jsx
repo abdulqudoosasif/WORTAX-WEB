@@ -11,15 +11,15 @@ const About = () => {
                 </div>
                 <div className="lg:w-1/2 w-full  flex lg:flex-nowrap flex-wrap justify-between">
                     <div className="lg:w-1/2 w-full  flex flex-col lg:gap-7 gap-3">
-                        <p className='lg:text-[1.2vw] text-lg lg:leading-normal md:leading-6 leading-6 lg:max-w-full max-w-80 tracking-tight lg:px-[6px]'>
+                        <p className='lg:text-[1.2vw] text-lg lg:leading-normal md:leading-6 leading-6 lg:max-w-full md:max-w-full max-w-80 tracking-tight lg:px-[6px]'>
                             In Ukrainian, ochi - means eyes. It's not just a beautiful word, but our philosophy. Almost everything that needs to be communicated is better shown than explained.
                         </p>
-                        <p className='lg:text-[1.2vw] text-lg lg:leading-normal md:leading-6 leading-6 lg:max-w-full max-w-80 tracking-tight lg:px-[6px]'>
+                        <p className='lg:text-[1.2vw] text-lg lg:leading-normal md:leading-6 leading-6 lg:max-w-full md:max-w-full max-w-80 tracking-tight lg:px-[6px]'>
                             We believe a great presentation evokes interest and drives business results far better than any saying can. Hence, we founded ochi to help you persuade colleagues and clients by creating eye-opening presentations.
                         </p>
                     </div>
-                    <div className='lg:w-fit w-full lg:mt-0 mt-3'>
-                        <button className="relative lg:px-[1.2vw] px-[3vw]  lg:text-[1vw] text-[2.5vw] py-[0.5vw] overflow-hidden border border-gray-700 rounded-full text-[#1e2124] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
+                    <div className='lg:w-fit w-full lg:mt-0 md:mt-5 mt-3'>
+                        <button className="relative lg:px-[1.2vw] px-[3vw]  lg:text-[1vw] md:text-sm text-[2.5vw] py-[0.5vw] overflow-hidden border border-gray-700 rounded-full text-[#1e2124] transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
                             <span className="relative z-10 tracking-wide font-medium">
                                 Our Work
                             </span>
