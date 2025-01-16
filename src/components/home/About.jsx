@@ -8,8 +8,8 @@ function About() {
       className='bg-gray-50 rounded-t-3xl xl:-mt-[15vw]  lg:-mt-[10vw] -mt-[15vw] overflow-hidden relative px-[5vw] pb-[2vw] z-20 '>
       <div className="py-[4vw]">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="lg:text-[3vw] text-3xl text-neutral-900 font-semibold">
-            ABOUT US
+          <h2 className="lg:text-[3.6vw] text-3xl font-semibold">
+            ABOUT <span className='text-gray-500'>US</span>
           </h2>
           <p className="lg:text-[1vw] text-xs xl:mt-[2vw] lg:mt-[1vw] tracking-wide">OUR COMPANY IN THE SIMPLEST TERMS</p>
           {/* <hr class="border-t-[0.15vw] border-black w-[7vw] mt-[1vw]" /> */}

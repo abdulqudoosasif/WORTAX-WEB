@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 function WorkPreloader({ onFinish }) {
   useEffect(() => {
     const timeline = gsap.timeline({
-      onComplete: onFinish, // Trigger callback after animation completes
+      onComplete: onFinish, 
     });
 
     timeline

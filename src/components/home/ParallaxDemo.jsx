@@ -20,9 +20,8 @@ const ParallaxDemo = () => {
 
     <div className='lg:w-[30vw] md:w-full w-full flex items-center lg:justify-start md:justify-center justify-center'>
       <div className='lg:py-0 md:py-10 py-6'>
-      <h1 className='lg:text-[3.6vw] text-3xl font-semibold lg:leading-[3vw] '>Results that<br className='lg:block md:hidden hidden'/>
-        speak for</h1>
-        <h1 className='lg:text-[3.6vw] lg:mb-0  mb-4 text-2xl font-semibold leading-tight text-gray-500 text-center'>themselves</h1>
+      <h1 className='lg:text-[3.6vw] text-3xl font-semibold lg:leading-[3vw] '>The Evidence of </h1>
+        <h1 className='lg:text-[3.6vw] lg:mb-0  mb-4 text-2xl font-semibold leading-tight text-gray-500 lg:text-start text-center'>Excellence</h1>
       </div>
     </div>
 <ParallaxProvider>
@@ -50,6 +49,16 @@ const ParallaxDemo = () => {
           <div className='lg:w-[29vw] rounded-lg   text-white flex items-center justify-center'>
            <img src={Img11} alt="" className=' shadow-lg border w-full' />
           </div>
+
+          {/* repeat  */}
+
+          <div className='lg:w-[29vw] rounded-lg   text-white flex items-center justify-center'>
+           <img src={Img10} alt="" className=' shadow-lg border w-full' />
+          </div>
+          <div className='lg:w-[29vw] rounded-lg   text-white flex items-center justify-center'>
+           <img src={Img11} alt="" className=' shadow-lg border w-full' />
+          </div>
+
         </Parallax>
 
         <Parallax speed={30} className='flex flex-col gap-4'>
@@ -73,6 +82,16 @@ const ParallaxDemo = () => {
           </div>
           <div className='lg:w-[29vw] rounded-lg  bg-slate-400  text-white flex items-center justify-center'>
            <img src={Img14} alt="" className=' shadow-lg border w-full' />
+          </div>
+          {/* repeat  */}
+       <div className='lg:w-[29vw] rounded-lg  bg-slate-400  text-white flex items-center justify-center'>
+           <img src={Img6} alt="" className=' shadow-lg border w-full' />
+          </div>
+          <div className='lg:w-[29vw] rounded-lg  bg-slate-400  text-white flex items-center justify-center'>
+           <img src={Img7} alt="" className=' shadow-lg border w-full' />
+          </div>
+          <div className='lg:w-[29vw] rounded-lg  bg-slate-400  text-white flex items-center justify-center'>
+           <img src={Img8} alt="" className=' shadow-lg border w-full' />
           </div>
         </Parallax>
       </div>
