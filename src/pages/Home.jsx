@@ -11,7 +11,7 @@ import FooterHeader from "../components/header/FooterHeade";
 
 function Home() {
   return (
-    <div className="bg-gray-50 overflow-hidden ">
+    <div className="bg-gray-50 overflow-hidden poppins ">
     
       <LandingPage />
       <Marquee />
