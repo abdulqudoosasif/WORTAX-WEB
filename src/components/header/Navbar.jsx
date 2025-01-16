@@ -88,19 +88,31 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links for Desktop */}
-        <div className="hidden lg:flex justify-between items-center gap-[2vw] ">
-          {[
-            { label: "Home", href: "/" },
-            { label: "Work", href: "/work" },
-            { label: "About us", href: "/about-us" },
-            { label: "Blog", href: "#" },
-            { label: "Contact Us", href: "#" },
-          ].map((item) => (
-            <Link key={item.label} to={item.href} className="text-[1.2vw] font-medium capitalize nav-link">
-              {item.label}
-            </Link>
-          ))}
-        </div>
+        <div className="hidden lg:flex justify-between items-center gap-[2vw]">
+  {[
+    { label: "Home", href: "/" },
+    { label: "Work", href: "/work" },
+    { label: "About us", href: "/about-us" },
+    { label: "Blog", href: "#" },
+    { label: "Contact Us", href: "#" },
+  ].map((item) => (
+    <div key={item.label} className="nav-link-container relative overflow-hidden">
+      <Link
+        to={item.href}
+        className="nav-link block text-[1.2vw] font-medium capitalize translate-y-0 transition-transform duration-300"
+      >
+        {item.label}
+      </Link>
+      <Link
+        to={item.href}
+        className="nav-link-duplicate block text-[1.2vw] font-medium capitalize absolute top-full left-0 transition-transform duration-300"
+      >
+        {item.label}
+      </Link>
+    </div>
+  ))}
+</div>
+
       </div>
     </>
   );
