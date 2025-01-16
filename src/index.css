@@ -166,29 +166,42 @@ main,
 
 
 
-/* Navbar.css */
-.nav-link {
+/* Container for nav links */
+.nav-link-container {
+  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.nav-link::before {
-  content: "";
+/* Nav links transition */
+.nav-link,
+.nav-link-duplicate {
+  transition: transform 0.3s ease;
+}
+
+/* Sliding text effect */
+.nav-link-container:hover .nav-link {
+  transform: translateY(-100%);
+}
+
+.nav-link-container:hover .nav-link-duplicate {
+  transform: translateY(-100%);
+}
+
+/* Bottom border effect */
+.nav-link-container::after {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 0%;
+  height: 2px; /* Border thickness */
+  background-color: #000; /* Border color */
+  transition: width 0.3s ease;
+}
+
+/* Border expands on hover */
+.nav-link-container:hover::after {
   width: 100%;
-  height: 2px;
-  background-color: #000;
-  /* Border color */
-  transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
 }
 
-.nav-link:hover::before {
-  transform: translateX(0);
-}
-
-.nav-link:not(:hover)::before {
-  transform: translateX(-100%);
-}

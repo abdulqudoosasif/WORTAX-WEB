@@ -98,29 +98,35 @@ const OurTeam = () => {
             </div>
 
             <div className='w-full lg:h-screen h-[480px] flex lg:items-center justify-center lg:pt-0 pt-10 px-[5vw]'>
+                <div className='lg:block hidden w-10/12 ml-[3vw] bg-white opacity-25 h-[36vw] rounded-lg py-[2vw]'>
+                    <div className=' w-full ml-[1.2vw] opacity-30 bg-white h-[32vw] rounded-lg'></div>
+                </div>
+                <div className='lg:hidden flex justify-center w-[calc(100%-30px)] relative bottom-2 h-72  bg-white opacity-25 rounded-lg '>
+                    <div className='absolute bottom-2 w-[calc(100%-30px)] h-full mx-auto  opacity-50 bg-white  rounded-lg'></div>
+                </div>
                 {members.map((member, index) => (
                     <>
-                    <MemberCard
-                        key={index}
-                        {...member}
-                        isActive={index === activeCard}
-                        onClick={handleNextCard}
-                        isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
-                    />
-                    <button
-                    key={index}
-                    {...member}
-                    isActive={index === activeCard}
-                    onClick={handleNextCard}
-                    isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
-                    className="absolute bottom-[5%] z-50 lg:hidden w-24 h-24 bg-lime-300  rounded-full 
+                        <MemberCard
+                            key={index}
+                            {...member}
+                            isActive={index === activeCard}
+                            onClick={handleNextCard}
+                            isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
+                        />
+                        <button
+                            key={index}
+                            {...member}
+                            isActive={index === activeCard}
+                            onClick={handleNextCard}
+                            isPrevActive={index === (activeCard === 0 ? members.length - 1 : activeCard - 1)}
+                            className="absolute bottom-[5%] z-50 lg:hidden w-24 h-24 bg-lime-300  rounded-full 
                     flex items-center justify-center"
-                >
-                    NEXT
-                </button>
-                </>
+                        >
+                            NEXT
+                        </button>
+                    </>
                 ))}
-                
+
             </div>
         </div>
     );
