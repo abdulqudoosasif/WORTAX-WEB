@@ -7,7 +7,7 @@ const Footer = () => {
     <footer 
     data-scroll
     data-scroll-section
-    data-scroll-speed="-.8"
+    data-scroll-speed="-0.9"
     className=" bg-gray-50 justify-center relative
      text-neutral-900  py-[200px]  px-5 lg:px-[5vw] min-h-[100vh] ">
       <div className="px-6">
