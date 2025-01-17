@@ -4,7 +4,7 @@ import img from "../../assets/img/logo1.png";
 
 function ContactHero() {
   return (
-    <div className='px-[5vw]'>
+    <div className='px-[5vw] bg-gray-50'>
        <div className="pt-[150px] lg:pt-[16vw] ">
         {["Contact Us", "for Support", "and Help"].map((item, index) => {
           return (

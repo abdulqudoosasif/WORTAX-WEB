@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import ContactForm from '../components/ContactUs/ContactForm'
 import ContactHero from '../components/ContactUs/ContactHero'
 import ContactPreloader from '../components/Animation/ContactPreloader';
+import Footer from '../components/home/Footer';
 
 function Contact() {
 
@@ -13,9 +14,10 @@ function Contact() {
   return (
 <>
 {isLoading && <ContactPreloader onFinish={handlePreloaderFinish} />}
-    <div className='poppins'>
+    <div className='poppins bg-gray-50'>
       <ContactHero/>
       <ContactForm/>
+      <Footer/>
     </div>
 </>
   )

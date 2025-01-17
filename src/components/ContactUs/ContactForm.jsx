@@ -1,8 +1,8 @@
 import React from "react";
 
-const ContactForm = () => {
+const  ContactForm = () => {
   return (
-    <div className="flex flex-col h-[150vh] md:flex-row mt-[8vw] border-t-[1px] items-start  justify-between p-8 md:p-16">
+    <div className="flex relative z-30 bg-gray-50 lg:py-[5vw] flex-col md:flex-row mt-[8vw] border-t-[1px] items-start  justify-between p-8 md:p-16">
       {/* Left Section */}
       <div className="md:w-1/2 lg:sticky lg:top-[7vw] space-y-4">
         <p className="uppercase text-[2vw]font-medium tracking-wide">Contact</p>
@@ -38,7 +38,7 @@ const ContactForm = () => {
                   type="text"
                   id="firstName"
                   placeholder="First Name"
-                  className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                  className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                   required
                 />
               </div>
@@ -50,7 +50,7 @@ const ContactForm = () => {
                   type="text"
                   id="lastName"
                   placeholder="Last Name"
-                  className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                  className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                   required
                 />
               </div>
@@ -65,7 +65,7 @@ const ContactForm = () => {
                 type="email"
                 id="email"
                 placeholder="Work Email"
-                className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
@@ -79,7 +79,7 @@ const ContactForm = () => {
                 type="text"
                 id="company"
                 placeholder="Company Name"
-                className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
@@ -93,7 +93,7 @@ const ContactForm = () => {
                 type="text"
                 id="title"
                 placeholder="Your Title"
-                className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
@@ -105,7 +105,7 @@ const ContactForm = () => {
                 type="email"
                 id="email"
                 placeholder="Work Email"
-                className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
@@ -119,7 +119,7 @@ const ContactForm = () => {
                 type="text"
                 id="company"
                 placeholder="Company Name"
-                className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
@@ -133,7 +133,7 @@ const ContactForm = () => {
                 type="text"
                 id="title"
                 placeholder="Your Title"
-                className="mt-1 w-full border-b-2 border-gray-300 text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-full border-b-2 bg-gray-50 border-gray-300 text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
