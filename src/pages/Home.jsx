@@ -9,6 +9,7 @@ import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
 import FooterHeader from "../components/header/FooterHeade";
 import Preloader from "../components/Animation/HomePreloader";
+import OurServices from "../components/home/services/OurServices";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,18 +21,19 @@ function Home() {
   return (
     <>
       {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
-    
-        <div className="bg-gray-50 overflow-hidden poppins">
-          <LandingPage />
-          <Marquee />
-          <About />
-          <WalletHoverEffect />
-          <Scroller />
-          <ParallaxDemo />
-          <GetStarted />
-          <Footer />
-          {/* <FooterHeader /> */}
-        </div>
+
+      <div className="bg-gray-50 overflow-hidden poppins">
+        <LandingPage />
+        <Marquee />
+        <About />
+        {/* <WalletHoverEffect /> */}
+        <OurServices />
+        <Scroller />
+        <ParallaxDemo />
+        <GetStarted />
+        <Footer />
+        {/* <FooterHeader /> */}
+      </div>
 
     </>
   );

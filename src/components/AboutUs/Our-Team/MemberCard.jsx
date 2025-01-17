@@ -27,7 +27,7 @@ const MemberCard = (props) => {
     return (
         <div
             className={`absolute member-card lg:w-[75vw] w-[calc(100%-50px)] lg:h-[38vw] md:h-80 h-72 mx-auto bg-white rounded-lg flex flex-col justify-between lg:p-[1vw] p-1 cursor-pointer
-                        transition-all duration-500 ease-in-out 
+                        transition-all duration-700 ease-in-out 
                         ${props.isActive ? 'translate-x-0 translate-y-0 opacity-100 z-10' :
                     props.isPrevActive ? 'translate-x-0 translate-y-full opacity-0 z-0 scale-90' :
                         'translate-x-0 translate-y-0 opacity-0 z-0'}`}
