@@ -98,6 +98,7 @@ const OurTeam = () => {
             </div>
 
             <div className='w-full lg:h-screen h-[600px] flex lg:items-center justify-center lg:pt-0 pt-10 px-[5vw]'>
+                {/* Shadows */}
                 <div className='lg:block hidden w-10/12 ml-[3vw] bg-white opacity-25 h-[36vw] rounded-lg py-[2vw]'>
                     <div className=' w-full ml-[1.2vw] opacity-30 bg-white h-[32vw] rounded-lg'></div>
                 </div>
