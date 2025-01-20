@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
-function HomePreloader({ onFinish }) {
+function ContactPreloader({ onFinish }) {
   useEffect(() => {
     const timeline = gsap.timeline({
       onComplete: onFinish, 
@@ -21,10 +21,10 @@ function HomePreloader({ onFinish }) {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-gray-100 z-50">
       <h1 className="preloader-text text-[15vw] uppercase poppins font-bold text-neutral-900">
-        Wortax
+        Contact Us
       </h1>
     </div>
   );
 }
 
-export default HomePreloader;
+export default ContactPreloader;

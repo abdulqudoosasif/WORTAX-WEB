@@ -64,7 +64,7 @@ const Navbar = () => {
           { label: "Work", href: "/work" },
           { label: "About us", href: "/about-us" },
           { label: "Blog", href: "#" },
-          { label: "Contact Us", href: "#" },
+          { label: "Contact Us", href: "/contact" },
         ].map((item) => (
           <Link key={item.label} to={item.href} className="capitalize text-gray-800" onClick={toggleMenu}>
             {item.label}
@@ -92,7 +92,7 @@ const Navbar = () => {
     { label: "Work", href: "/work" },
     { label: "About us", href: "/about-us" },
     { label: "Blog", href: "#" },
-    { label: "Contact Us", href: "#" },
+    { label: "Contact Us", href: "/contact" },
   ].map((item) => (
     <div key={item.label} className="nav-link-container relative overflow-hidden">
       <Link
