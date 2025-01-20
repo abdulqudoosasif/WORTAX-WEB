@@ -23,7 +23,7 @@ function WorkMain() {
 
   return (
 
-    <div className=" lg:pt-[16vw] lg:pb-[8vw] px-[5vw] ">
+    <div className=" pt-[150px] lg:pt-[16vw] lg:pb-[8vw] px-[5vw] ">
       {["Designing", "Unparalleled ", "Success Stories"].map((item, index) => {
         return (
           <div className="masker flex">
