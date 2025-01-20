@@ -22,7 +22,7 @@ function ContactHero() {
                   />
                 </motion.div>
               )}
-              <h1 className="text-4xl uppercase md:text-[5vw] lg:text-[7vw] font-bold lg:leading-[6vw] tracking-tighter  text-neutral-900">
+              <h1 className="text-[42px] leading-[39px] uppercase md:text-[5vw] lg:text-[7vw] font-bold lg:leading-[6vw] tracking-tighter  text-neutral-900">
                 {item}
               </h1>
             </div>
