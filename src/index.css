@@ -205,3 +205,15 @@ main,
   width: 100%;
 }
 
+/* Active nav link border */
+.nav-link-container.active-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Border thickness */
+  background-color: #000; /* Border color */
+}
+
+

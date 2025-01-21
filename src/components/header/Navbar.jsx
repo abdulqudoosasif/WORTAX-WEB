@@ -66,7 +66,7 @@ const Navbar = () => {
           { label: "Blog", href: "#" },
           { label: "Contact Us", href: "/contact" },
         ].map((item) => (
-          <Link key={item.label} to={item.href} className="capitalize text-gray-800" onClick={toggleMenu}>
+          <Link key={item.label} to={item.href} className="capitalize text-gray-800 w-full b" onClick={toggleMenu}>
             {item.label}
           </Link>
         ))}
