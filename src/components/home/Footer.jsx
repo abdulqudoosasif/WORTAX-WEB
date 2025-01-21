@@ -11,7 +11,7 @@ const Footer = () => {
 
 className=" w-full bg-gray-50 justify-center 
  fixed -bottom-3 left-0 -z-10
- text-neutral-900 pb-[20px] px-5 lg:px-[5vw] ] h-[100vh] ">
+ text-neutral-900 pb-[20px] px-5 lg:px-[5vw] ] h-[100vh] lg:pt-[15vw] ">
   <div className="px-6">
     <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5">
       {/* Left Section */}
