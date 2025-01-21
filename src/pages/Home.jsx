@@ -22,7 +22,7 @@ function Home() {
     <>
       {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
 
-      <div className="bg-gray-50 overflow-hidden poppins">
+      <div className=" overflow-hidden poppins">
         <LandingPage />
         <Marquee />
         <About />

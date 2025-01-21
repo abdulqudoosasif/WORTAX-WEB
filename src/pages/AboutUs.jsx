@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <>
     {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
-    <div className='bg-[#f1f1f1] poppins'>
+    <div className=' poppins'>
       <HeroSection />
       <About />
       <OurTeam />

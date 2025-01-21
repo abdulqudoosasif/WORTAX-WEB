@@ -13,7 +13,7 @@ function Work() {
 <>
     {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
 
-    <div className='bg-[#F5F5F5] poppins'>
+    <div className=' poppins'>
       <WorkMain/>
     <TabComponent/>
     <Footer/>

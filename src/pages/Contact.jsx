@@ -14,7 +14,7 @@ function Contact() {
   return (
 <>
 {isLoading && <ContactPreloader onFinish={handlePreloaderFinish} />}
-    <div className='poppins bg-gray-50'>
+    <div className='poppins '>
       <ContactHero/>
       <ContactForm/>
       <Footer/>

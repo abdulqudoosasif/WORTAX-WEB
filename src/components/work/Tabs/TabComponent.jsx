@@ -79,7 +79,7 @@ const TabComponent = () => {
   const currentData = activeSection === 'Projects' ? caseStudyData : clientData;
 
   return (
-    <section className="px-[5vw] py-[2vw] bg-[#F5F5F5]  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
+    <section className="px-[5vw] py-[2vw] bg-gray-50  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
 
           {/* Custom Cursor */}
           <motion.div
