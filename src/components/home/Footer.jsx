@@ -90,7 +90,7 @@ className=" w-full bg-gray-50 justify-center
     </div>
 
     {/* Bottom Section */}
-    <div className=" border-t border-gray-800 lg:mt-[6vw] mt-6 pt-6 text-sm lg:flex justify-between">
+    <div className=" border-t md:block hidden border-gray-800 lg:mt-[6vw] mt-6 pt-6 text-sm lg:flex justify-between">
       <p className="text-gray-400 lg:text-[1vw]">Wortax IT Solution © 2025</p>
       <div className="lg:flex hidden mt-4 lg:text-[1vw] lg:mt-0 space-x-6">
         <a href="#" className="text-gray-400 hover:text-white">
