@@ -5,7 +5,6 @@ const BookAppointment = () => {
   return (
     <div className="flex lg:flex-row flex-col lg:justify-between lg:items-center mt-3 lg:mb-[3vw]   gap-5 ">
         {[
-            
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => (
