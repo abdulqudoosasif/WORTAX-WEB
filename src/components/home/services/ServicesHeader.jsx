@@ -6,7 +6,7 @@ const ServicesHeader = () => {
     <div className='flex flex-col justify-center items-center gap-3 flex-wrap mb-[4vw]'>
       <h2 className='lg:text-[3vw] text-3xl font-semibold'>What 
       <span className=' text-gray-500'> We Do</span></h2>
-      <p className="lg:text-[1vw] text-xs xl:mt-[2vw] lg:mt-[1vw] tracking-wide text-center">WE PLAN, DESIGN, BUILD AND MARKET HIGH QUALITY PRODUCTS</p>
+      <p className="lg:text-[1vw] text-xs lg:mt-[1.2vw] tracking-wide text-center">WE PLAN, DESIGN, BUILD AND MARKET HIGH QUALITY PRODUCTS</p>
     </div>
   )
 }
