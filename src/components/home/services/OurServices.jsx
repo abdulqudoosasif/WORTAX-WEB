@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const OurServices = () => {
     return (
-        <div className='flex flex-col justify-center px-[5vw]  lg:-mt-[15.6vw] -mt-[32vh] lg:pt-[5vw] pt-10  bg-gray-50'>
+        <div className='flex flex-col justify-center px-[5vw]  lg:-mt-[15.6vw] -mt-[32vh] lg:pt-[8vw] pt-10  bg-gray-50'>
             <ServicesHeader />
             <div className='flex flex-col duration-500 mb-[5vw]'>
                 <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
