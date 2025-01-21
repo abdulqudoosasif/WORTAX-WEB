@@ -3,7 +3,11 @@ import { PopupButton } from "react-calendly";
 
 const BookAppointment = () => {
   return (
+
     <div className="flex lg:flex-row flex-col lg:justify-between lg:items-center mt-3 lg:mb-[3vw]  gap-5 ">
+
+    <div className="lg:flex justify-between pb-[50px] items-center mt-3 lg:mb-[3vw] lg:mx-16 mx-4">
+
         {[
           "For public and private companies",
           "From the first pitch to IPO",

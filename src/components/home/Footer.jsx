@@ -6,11 +6,11 @@ const Footer = () => {
   return (
  <>
 
- <div className='h-[100vh] ' ></div>
+ <div className='lg:h-[100vh] h-[110vh]' ></div>
     <footer 
 
-className=" w-full bg-gray-50 justify-center fixed bottom-0 -z-10
- text-neutral-900  py-[200px]  px-5 lg:px-[5vw] min-h-[100vh] ">
+className=" w-full bg-gray-50 justify-center pt-[200px] fixed -bottom-3 left-0 -z-10
+ text-neutral-900 pb-[20px] px-5 lg:px-[5vw] min-h-[100vh] ">
   <div className="px-6">
     <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5">
       {/* Left Section */}

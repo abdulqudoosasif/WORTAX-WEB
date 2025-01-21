@@ -8,7 +8,7 @@ function LandingPage() {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.3"
-      className="h-full  px-[5vw] bg-gray-50"
+      className="h-full   px-[5vw] bg-gray-50"
     >
       <HeroContent item={item} />
       <div className="border-t-[1px] border-black mt-[11vw]"></div>
