@@ -3,7 +3,6 @@ import LandingPage from "../components/home/LandingPage/LandingPage";
 import Marquee from "../components/home/Marquee";
 import About from "../components/home/About";
 import ParallaxDemo from "../components/home/ParallaxDemo";
-import WalletHoverEffect from "../components/home/services/Services";
 import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
 import Footer from "../components/home/Footer";
