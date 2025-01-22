@@ -18,7 +18,7 @@ function GetStarted() {
   delay={150}
   animateBy="words"
   direction="top"
-  className="lg:text-[8vw]  text-8xl text-center  font-bold"></BlurText>
+  className="lg:text-[8vw]  text-7xl text-center  font-bold"></BlurText>
     </div>
     </div>
   )
