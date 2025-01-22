@@ -16,7 +16,7 @@ function Work() {
     <div className=' poppins'>
       <WorkMain/>
     <TabComponent/>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
     </>
   )

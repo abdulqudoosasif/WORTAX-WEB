@@ -17,7 +17,7 @@ function Contact() {
     <div className='poppins '>
       <ContactHero/>
       <ContactForm/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
 </>
   )

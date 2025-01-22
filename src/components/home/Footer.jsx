@@ -9,7 +9,7 @@ const Footer = () => {
  <div className='lg:h-[100vh] h-[110vh] ' >
  <footer 
 
-className=" w-full bg-gray-50 justify-center 
+className=" w-full bg-gray-900 justify-center 
  fixed -bottom-3 left-0 -z-10
  text-neutral-900 pb-[20px] px-5 lg:px-[5vw] ] h-[100vh] lg:pt-[15vw] ">
   <div className="px-6">
