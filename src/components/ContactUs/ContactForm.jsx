@@ -134,10 +134,11 @@ const  ContactForm = () => {
                 type="text"
                 id="title"
                 placeholder="Your Title"
-                className="mt-1 w-[82vw] md:w-full lg:w-full border-b-2 bg-neutral-900 border-gray-300  lg:text-[1.2vw] focus:border-black outline-none"
+                className="mt-1 w-[82vw] mb-[2vw] md:w-full lg:w-full border-b-2 bg-neutral-900 border-gray-300  lg:text-[1.2vw] focus:border-black outline-none"
                 required
               />
             </div>
+            <button className=" uppercase lg:px-[2vw] rounded-sm lg:py-[1vw]  bg-gray-50 text-neutral-900 font-semibold lg:text-[1.2vw] text-[14px] px-6 py-2" > Submit </button>
           </form>
         </div>
       </div>
