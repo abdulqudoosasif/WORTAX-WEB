@@ -11,7 +11,7 @@ const Footer = () => {
 
 className=" w-full bg-gray-50 justify-center 
  fixed -bottom-3 left-0 -z-10
- text-neutral-900 pb-[20px] px-5 lg:px-[5vw] ] h-[100vh] ">
+ text-neutral-900 pb-[20px] px-5 lg:px-[5vw] ] h-[100vh] lg:pt-[15vw] ">
   <div className="px-6">
     <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5">
       {/* Left Section */}
@@ -90,7 +90,7 @@ className=" w-full bg-gray-50 justify-center
     </div>
 
     {/* Bottom Section */}
-    <div className=" border-t border-gray-800 lg:mt-[6vw] mt-6 pt-6 text-sm lg:flex justify-between">
+    <div className=" border-t md:block hidden border-gray-800 lg:mt-[6vw] mt-6 pt-6 text-sm lg:flex justify-between">
       <p className="text-gray-400 lg:text-[1vw]">Wortax IT Solution © 2025</p>
       <div className="lg:flex hidden mt-4 lg:text-[1vw] lg:mt-0 space-x-6">
         <a href="#" className="text-gray-400 hover:text-white">

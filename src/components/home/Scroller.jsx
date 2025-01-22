@@ -34,7 +34,8 @@ function Scroller() {
       help local businesses thrive. Below are the Website which we have crafted
       </p>
         </div> 
-      <Swiper
+        <div className='lg:block md:block hidden'>
+     <Swiper
         slidesPerView={4}
         spaceBetween={5}
         loop={true}
@@ -86,6 +87,68 @@ function Scroller() {
        
       </div>
       </Swiper>
+     </div>
+     
+
+
+       {/* Mobile Screen Proview */}
+
+
+
+      <div className='lg:hidden md:hidden block'>
+     <Swiper
+        slidesPerView={2}
+        spaceBetween={5}
+        loop={true}
+        speed={800}
+        autoplay={{
+            delay: 2000,
+               }}
+          modules={[Pagination, Autoplay]}
+        className="mySwiper Scroll mb-3 lg:mt-0 mt-10"  >
+       <div dir="ltr"> {/* Add this wrapper to force RTL */}
+       <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img1} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img2} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img3} alt="" /></SwiperSlide>
+
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img4} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img14} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img6} alt="" /></SwiperSlide>
+        
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img16} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img12} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1 '><img style={{height:'100%'}} className='rounded-lg shadow-lg ' src={Img13} alt="" /></SwiperSlide>
+       
+      </div>
+      </Swiper>
+
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={5}
+        loop={true}
+        speed={800}
+        autoplay={{
+            delay: 2000, 
+             
+          }}
+          modules={[Pagination, Autoplay]}
+        className="mySwiper lg:mb-0 mb-5" >
+       <div dir="ltr "> {/* Add this wrapper to force RTL */}
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img11} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img10} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img17} alt="" /></SwiperSlide>
+
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img  style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img6} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img15} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img4} alt="" /></SwiperSlide>
+        
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img3} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img2} alt="" /></SwiperSlide>
+        <SwiperSlide style={{height:'190px'}} className='mx-1 rounded-lg overflow-hidden lg:p-3 p-1'><img style={{height:'100%'}} className=' rounded-lg shadow-lg' src={Img1} alt="" /></SwiperSlide>
+       
+      </div>
+      </Swiper>
+     </div>
 
     </div>
     
