@@ -5,10 +5,11 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const OurServices = () => {
     return (
-        <div className='flex flex-col justify-center px-[5vw]  lg:-mt-[15.6vw] -mt-[32vh] lg:pt-[8vw] pt-10  bg-gray-50'>
+        <div 
+         className='flex flex-col justify-center px-[5vw]  lg:-mt-[24vw] -mt-[32vh] lg:pt-[8vw] pt-10  bg-gray-50'>
             <ServicesHeader />
             <div className='flex flex-col duration-500 mb-[5vw]'>
-                <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
+                <div className='group w-full lg:h-[7vw] h-36 pl-2 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
                     <div className='title lg:w-4/12 w-full'>
                         <h2 className='lg:text-[2.3vw] text-lg font-medium'>Website Development</h2>
                     </div>
@@ -20,7 +21,7 @@ const OurServices = () => {
                         <div><button className='rounded-full border border-black lg:text-[2.3vw] p-1 group-hover:bg-black group-hover:text-white duration-700 '><IoIosArrowRoundForward /></button></div>
                     </div>
                 </div>
-                <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
+                <div className='group w-full lg:h-[7vw] h-36 pl-2 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
                     <div className='title lg:w-4/12 w-full'>
                         <h2 className='lg:text-[2.3vw] text-lg font-medium'>LocalStory Suite</h2>
                     </div>
@@ -33,7 +34,7 @@ const OurServices = () => {
                         <div><button className='rounded-full border border-black lg:text-[2.3vw] p-1 group-hover:bg-black group-hover:text-white duration-700 '><IoIosArrowRoundForward /></button></div>
                     </div>
                 </div>
-                <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
+                <div className='group w-full lg:h-[7vw] h-36 pl-2 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
                     <div className='title lg:w-4/12 w-full'>
                         <h2 className='lg:text-[2.3vw] text-lg font-medium'>BizCraft Design</h2>
                     </div>
@@ -45,7 +46,7 @@ const OurServices = () => {
                         <div><button className='rounded-full border border-black lg:text-[2.3vw] p-1 group-hover:bg-black group-hover:text-white duration-700 '><IoIosArrowRoundForward /></button></div>
                     </div>
                 </div>
-                <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
+                <div className='group w-full lg:h-[7vw] h-36 pl-2 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
                     <div className='title lg:w-4/12 w-full'>
                         <h2 className='lg:text-[2.3vw] text-lg font-medium'>LocalConnect CRM</h2>
                     </div>
@@ -57,7 +58,7 @@ const OurServices = () => {
                         <div><button className='rounded-full border border-black lg:text-[2.3vw] p-1 group-hover:bg-black group-hover:text-white duration-700 '><IoIosArrowRoundForward /></button></div>
                     </div>
                 </div>
-                <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
+                <div className='group w-full lg:h-[7vw] h-36 pl-2 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
                     <div className='title lg:w-4/12 w-full'>
                         <h2 className='lg:text-[2.3vw] text-lg font-medium'>LocalReach SEO</h2>
                     </div>
@@ -69,7 +70,7 @@ const OurServices = () => {
                         <div><button className='rounded-full border border-black lg:text-[2.3vw] p-1 group-hover:bg-black group-hover:text-white duration-700 '><IoIosArrowRoundForward /></button></div>
                     </div>
                 </div>
-                <div className='group w-full lg:h-[7vw] h-36 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
+                <div className='group w-full lg:h-[7vw] h-36 pl-2 flex lg:flex-row flex-col lg:justify-between justify-center items-center border-b-2 border-black  overflow-y-visible hover:bg-gray-300  duration-700'>
                     <div className='title lg:w-4/12 w-full'>
                         <h2 className='lg:text-[2.3vw] text-lg font-medium'>MainStreet Solutions</h2>
                     </div>

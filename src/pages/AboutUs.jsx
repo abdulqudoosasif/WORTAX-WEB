@@ -13,11 +13,11 @@ const AboutUs = () => {
   return (
     <>
     {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
-    <div className=' poppins'>
+    <div className='poppins'>
       <HeroSection />
       <About />
       <OurTeam />
-      <Footer />
+      {/* <Footer /> */}
     </div>
     </>
   )

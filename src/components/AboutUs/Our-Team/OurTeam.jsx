@@ -41,7 +41,7 @@ const OurTeam = () => {
             First_name: "Kseniia",
             Last_name: "Palamarchuk",
             Member_number: "5",
-        }, 
+        },
         {
             Image: "https://ochi.design/wp-content/uploads/2022/05/Kseniia-Palamarchuk-608x660.jpg",
             Role: "Lead Designer",
@@ -123,7 +123,7 @@ const OurTeam = () => {
                             className="absolute bottom-[15%] z-50 lg:hidden w-24 h-24 bg-lime-300  rounded-full 
                     flex items-center justify-center"
                         >
-                            NEXT
+                            Tap Here!
                         </button>
                     </>
                 ))}
