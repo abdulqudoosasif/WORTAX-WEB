@@ -3,7 +3,8 @@ import WorkMain from "../components/work/WorkMain";
 import TabComponent from "../components/work/Tabs/TabComponent";
 import Footer from "../components/home/Footer";
 import Preloader from "../components/Animation/WorkPreloader";
-import EyesMovement from "../components/AboutUs/About-Us/EyesMovement";
+import MovingEyes from "../components/work/MovingEyes";
+
 function Work() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -17,7 +18,7 @@ function Work() {
 
       <div className=" poppins">
         <WorkMain />
-        <EyesMovement />
+        <MovingEyes />
         <TabComponent />
         <Footer />
       </div>

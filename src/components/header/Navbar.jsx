@@ -56,7 +56,7 @@ const Navbar = () => {
       {/* Mobile Navigation Menu Behind Navbar */}
       <div
         ref={menuRef}
-        className={`lg:hidden fixed top-14 left-0 w-full h-60 bg-white flex flex-col items-start gap-5 text-lg font-medium px-8 z-40 ${menuOpen ? "block" : "hidden"
+        className={`lg:hidden fixed top-14 left-0 w-full h-60 bg-white flex flex-col items-start gap-5 text-lg v px-8 z-40 ${menuOpen ? "block" : "hidden"
           }`}
       >
         {[
@@ -97,13 +97,13 @@ const Navbar = () => {
     <div key={item.label} className="nav-link-container relative overflow-hidden">
       <Link
         to={item.href}
-        className="nav-link block text-[1.2vw] font-medium capitalize translate-y-0 transition-transform duration-300"
+        className="nav-link block text-[1.2vw] font-normal capitalize translate-y-0 transition-transform duration-300"
       >
         {item.label}
       </Link>
       <Link
         to={item.href}
-        className="nav-link-duplicate block text-[1.2vw] font-medium capitalize absolute top-full left-0 transition-transform duration-300"
+        className="nav-link-duplicate block text-[1.2vw] font-normal capitalize absolute top-full left-0 transition-transform duration-300"
       >
         {item.label}
       </Link>
