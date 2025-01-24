@@ -10,12 +10,12 @@ export const MobileSec = () => {
       <LogoRolodex
         items={[
           <LogoItem key={1} className="bg-transparent text-neutral-900">
-            <img src={Img1} alt="" className="  border mt-4" />
-            <img src={Img2} alt="" className=" border w-full mt-4" />
+            <img src={Img1} alt="" className=" rounded-t-lg border mt-4" />
+            <img src={Img2} alt="" className=" border rounded-b-lg w-full mt-4" />
           </LogoItem>,
           <LogoItem key={2} className="bg-transparent text-neutral-900">
-            <img src={Img1} alt="" className=" border mt-4" />
-            <img src={Img2} alt="" className=" border w-full mt-4" />
+            <img src={Img1} alt="" className=" border rounded-t-lg mt-4" />
+            <img src={Img2} alt="" className=" border rounded-b-lg w-full mt-4" />
           </LogoItem>,
         ]}
       />
