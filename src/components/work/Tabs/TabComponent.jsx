@@ -1,5 +1,18 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import img1 from '../../../assets/img/worksection/1.png'
+import img2 from '../../../assets/img/worksection/2.png'
+import img3 from '../../../assets/img/worksection/3.png'
+import img4 from '../../../assets/img/worksection/4.png'
+import img5 from '../../../assets/img/worksection/5.png'
+import img6 from '../../../assets/img/worksection/6.png'
+import img7 from '../../../assets/img/worksection/7.png'
+import img8 from '../../../assets/img/worksection/8.png'
+import img9 from '../../../assets/img/worksection/9.png'
+import img10 from '../../../assets/img/worksection/10.png'
+import img11 from '../../../assets/img/worksection/12.png'
+import img12 from '../../../assets/img/worksection/1.png'
+import img13 from '../../../assets/img/worksection/11.png'
 
 const TabComponent = () => {
   const [activeTab, setActiveTab] = useState('ALL');
@@ -9,33 +22,40 @@ const TabComponent = () => {
 
   const caseStudyData = {
     ALL: [
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/668795cd4ea05dbecc160678_UPSIDE%20Foods%20-%20Home%201-min-p-1080.webp',title: "Case Study 1" },
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/668795cd4ea05dbecc160678_UPSIDE%20Foods%20-%20Home%201-min-p-1080.webp',title: "we want design 2" },
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/668795cd4ea05dbecc160678_UPSIDE%20Foods%20-%20Home%201-min-p-1080.webp',title: "Case Study 3" },
+      { img: img1,title: "Case Study 1" },
+      { img: img2 ,title: "we want design 2" },
+      { img:img3 ,title: "Case Study 3" },
+      { img: img4, title: "Case Study 4" },
+      { img: img6, title: "Case Study 6" },
+      { img:img5 , title: "Case Study 7" },
     ],
     Branding: [
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/668795cd4ea05dbecc160678_UPSIDE%20Foods%20-%20Home%201-min-p-1080.webp', title: "Case Study 4" },
+      { img: img4, title: "Case Study 4" },
     ],
     Website: [
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Case Study 6" },
+      { img: img6, title: "Case Study 6" },
     ],
     Decks: [
-      { img: 'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/668795cd4ea05dbecc160678_UPSIDE%20Foods%20-%20Home%201-min-p-1080.webp', title: "Case Study 7" },
+      { img:img5 , title: "Case Study 7" },
     ],
   };
 
   const clientData = {
     ALL:  [
-      { img:  'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Client 1" },
-      { img:  'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Client 2" },
-      { img:   'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Client 3" },
+      { img:  img7, title: "Client 1" },
+      { img:  img8, title: "Client 2" },
+      { img:   img9, title: "Client 3" },
+      { img:  img10, title: "Client 4" },
+      { img:img11, title: "Client 5"   },
+      { img:   img12, title: "Client 6"   },
+      { img:  img13 ,title: "Client 7"  },
     ],
     Food: [
-      { img:  'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Client 4" },
+      { img:  img10, title: "Client 4" },
     ],
-    Fintech: [{ img:'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Client 5"   },],
-    SaaS: [{ img:   'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp', title: "Client 6"   },],
-    eCommerce: [{ img:  'https://cdn.prod.website-files.com/646c6ec121d9bb039374fb89/66420ac36fe417df0e5cd373_Flo%20(1)%201-p-1080.webp' ,title: "Client 7"  },],
+    Fintech: [{ img:img11, title: "Client 5"   },],
+    SaaS: [{ img:   img12, title: "Client 6"   },],
+    eCommerce: [{ img:  img13 ,title: "Client 7"  },],
   };
 
   const variants = {
@@ -79,11 +99,11 @@ const TabComponent = () => {
   const currentData = activeSection === 'Projects' ? caseStudyData : clientData;
 
   return (
-    <section className="px-[5vw] py-[2vw] bg-gray-50  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
+    <section className="px-[5vw] py-[2vw] bg-neutral-50  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
 
           {/* Custom Cursor */}
           <motion.div
-        className="fixed z-10 pointer-events-none flex items-center justify-center rounded-xl  text-center text-black "
+        className="fixed z-20 pointer-events-none flex items-center justify-center rounded-xl  text-center text-black "
         style={{
           top: "var(--mouse-y)",
           left: "var(--mouse-x)",
@@ -137,13 +157,15 @@ const TabComponent = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             onMouseEnter={() => handleCardEnter(item.title)}
             onMouseLeave={handleCardLeave}
-            className="relative overflow-hidden rounded-2xl group"
+            className="relative hover:z-10  group"
           >
-            <img
-              className="lg:h-[32vw]  rounded-2xl object-cover object-center"
+            <div className='lg:h-[32vw] md:h-[400px] h-[300px] duration-200 rounded-2xl overflow-hidden  hover:scale-[1.1] '>
+              <img
+              className="  object-cover object-center"
               src={item.img}
               alt={`Tab ${activeTab} item ${index + 1}`}
-            />
+              />
+              </div>
            
           </motion.div>
         ))}
