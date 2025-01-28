@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LandingPage from "../components/home/LandingPage/LandingPage";
 import Marquee from "../components/home/Marquee";
-import About from "../components/home/About";
+import About from "../components/home/About-Us/About";
 import ParallaxDemo from "../components/home/parallax/ParallaxDemo";
 import Scroller from "../components/home/Scroller";
 import GetStarted from "../components/home/get-started/GetStarted";
