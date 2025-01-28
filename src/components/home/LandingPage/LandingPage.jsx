@@ -2,7 +2,7 @@ import React from "react";
 import HeroContent from "../../Global/HeroContent";
 import BookAppointment from "./BookAppointment";
 function LandingPage() {
-  const item = ["We Scale Local", "Roots to", "Digital Heights"];
+  const item = ["Where Ideas", " Fuels Digital ", "Excellence"];
   return (
     <div
       data-scroll

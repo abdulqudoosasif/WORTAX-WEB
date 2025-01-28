@@ -36,7 +36,7 @@ const TabComponent = () => {
       { img: img6, title: "Case Study 6" },
     ],
     Decks: [
-      { img:img5 , title: "Case Study 7" },
+      { img:img5 , title: "Case  7" },
     ],
   };
 
