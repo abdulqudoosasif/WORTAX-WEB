@@ -18,7 +18,7 @@ function About() {
               <img className='lg:w-[3.5vw] w-12' src="https://prium.github.io/reign-IV/v5.0.0/assets/img/line-icons/icons/fountain-pen.svg" alt="Content Not Found" />
               <h5 className='lg:text-[1.25vw] md:text-xl text-base tracking-[0.08vw]'>Accelerate Your Growth</h5>
               <p className="lg:text-[1.03vw]  md:text-sm text-xs lg:leading-[1.5vw]  text-[#5f656c] text-center lg:px-[1.5vw] px-6">
-              We combine advanced technology and personalized service to rapidly enhance your local presence while maintaining your brand's unique identity.
+              We combine advanced technology and personalized service to enhance your local presence while maintaining your brand's unique identity.
               </p>
             </div>
             <div className='lg:w-[calc(33%-3vw)] md:w-[calc(50%-3vw)] w-[calc(100%-3vw)] flex flex-col items-center  lg:gap-[1.8vw] gap-5 lg:px-[1.9vw] px-3 lg:pt-[3.5vw] pt-10 lg:pb-[3.5vw] pb-12 border rounded-lg lg:hover:scale-105 lg:hover:shadow-2xl shadow-slate-400 duration-300' >

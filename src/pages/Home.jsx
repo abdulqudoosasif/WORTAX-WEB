@@ -33,7 +33,7 @@ function Home() {
         <MobileSec/>
         <GetStarted />
         <Footer />
-        {/* <FooterHeader /> */}
+        <FooterHeader />
       </div>
 
     </>
