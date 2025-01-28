@@ -20,7 +20,7 @@ import '../../index.css';
 function Scroller() {
   return (
     <div  
-    className='bg-neutral-900 pt-6 lg:pt-[2vw] pb-[5vw] relative z-10'>
+    className='bg-neutral-900 pt-6 lg:pt-[2vw] pb-[5vw] rounded-t-3xl relative z-10'>
     
        <div className=' lg:px-16 px-4 flex flex-col pb-[4vw] items-center justify-center lg:pt-[2vw]  '>
         <h2 className='text-[#fff] lg:text-[3.6vw] text-3xl font-semibold'>

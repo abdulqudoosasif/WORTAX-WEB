@@ -22,40 +22,32 @@ const TabComponent = () => {
 
   const caseStudyData = {
     ALL: [
-      { img: img1,title: "Case Study 1" },
-      { img: img2 ,title: "we want design 2" },
-      { img:img3 ,title: "Case Study 3" },
+      { img: img1, title: "Case Study 1" },
+      { img: img2, title: "We want design 2" },
+      { img: img3, title: "Case Study 3" },
       { img: img4, title: "Case Study 4" },
       { img: img6, title: "Case Study 6" },
-      { img:img5 , title: "Case Study 7" },
+      { img: img5, title: "Case Study 7" },
     ],
-    Branding: [
-      { img: img4, title: "Case Study 4" },
-    ],
-    Website: [
-      { img: img6, title: "Case Study 6" },
-    ],
-    Decks: [
-      { img:img5 , title: "Case  7" },
-    ],
+    Branding: [{ img: img4, title: "Case Study 4" }],
+    Website: [{ img: img6, title: "Case Study 6" }],
+    Decks: [{ img: img5, title: "Case 7" }],
   };
 
   const clientData = {
-    ALL:  [
-      { img:  img7, title: "Client 1" },
-      { img:  img8, title: "Client 2" },
-      { img:   img9, title: "Client 3" },
-      { img:  img10, title: "Client 4" },
-      { img:img11, title: "Client 5"   },
-      { img:   img12, title: "Client 6"   },
-      { img:  img13 ,title: "Client 7"  },
+    ALL: [
+      { img: img7, title: "Client 1" },
+      { img: img8, title: "Client 2" },
+      { img: img9, title: "Client 3" },
+      { img: img10, title: "Client 4" },
+      { img: img11, title: "Client 5" },
+      { img: img12, title: "Client 6" },
+      { img: img13, title: "Client 7" },
     ],
-    Food: [
-      { img:  img10, title: "Client 4" },
-    ],
-    Fintech: [{ img:img11, title: "Client 5"   },],
-    SaaS: [{ img:   img12, title: "Client 6"   },],
-    eCommerce: [{ img:  img13 ,title: "Client 7"  },],
+    Food: [{ img: img10, title: "Client 4" }],
+    Fintech: [{ img: img11, title: "Client 5" }],
+    SaaS: [{ img: img12, title: "Client 6" }],
+    eCommerce: [{ img: img13, title: "Client 7" }],
   };
 
   const variants = {
@@ -79,7 +71,7 @@ const TabComponent = () => {
     hidden: {
       opacity: 0,
     },
-  }; 
+  };
 
   const handleMouseMove = (e) => {
     document.documentElement.style.setProperty("--mouse-x", `${e.clientX}px`);
@@ -96,14 +88,21 @@ const TabComponent = () => {
     setCursorVariant("default");
   };
 
+  const handleSectionChange = (section) => {
+    setActiveSection(section);
+    setActiveTab('ALL'); // Reset activeTab to 'ALL' when section changes
+  };
+
   const currentData = activeSection === 'Projects' ? caseStudyData : clientData;
 
   return (
-    <section className="px-[5vw] py-[2vw] bg-neutral-50  min-h-[100vh] relative z-10"  onMouseMove={handleMouseMove}>
-
-          {/* Custom Cursor */}
-          <motion.div
-        className="fixed z-20 pointer-events-none flex items-center justify-center rounded-xl  text-center text-black "
+    <section
+      className="px-[5vw] py-[5vw] pb-[7vw] rounded-b-3xl bg-neutral-900 min-h-[100vh] relative z-10"
+      onMouseMove={handleMouseMove}
+    >
+      {/* Custom Cursor */}
+      <motion.div
+        className="fixed z-20 pointer-events-none flex items-center justify-center rounded-xl text-center text-black"
         style={{
           top: "var(--mouse-y)",
           left: "var(--mouse-x)",
@@ -115,30 +114,30 @@ const TabComponent = () => {
         <span className="text-sm font-semibold">{cursorText}</span>
       </motion.div>
 
-
       {/* Section Toggle */}
       <div className="flex justify-center items-center lg:gap-[2vw] gap-5">
         {['Projects', 'Clients'].map((section) => (
           <h2
             key={section}
             className={`lg:text-[3.5vw] lg:my-0 text-[20px] my-5 font-semibold cursor-pointer border-b-2 -underline-offset-2 ${
-              activeSection === section ? 'text-neutral-900 border-neutral-900' : 'text-neutral-500 border-neutral-500'
+              activeSection === section
+                ? 'text-neutral-50 border-neutral-50'
+                : 'text-neutral-500 border-neutral-500'
             }`}
-            onClick={() => setActiveSection(section)}
+            onClick={() => handleSectionChange(section)}
           >
             {section}
           </h2>
         ))}
       </div>
-  
-        
+
       {/* Tabs */}
       <div className="mt-[2vw] flex items-center justify-center mb-[4vw]">
         {Object.keys(currentData).map((tab) => (
           <button
             key={tab}
             className={`lg:px-[1.45vw] px-2 py-0 lg:text-[1.3vw] text-[14px] text-nowrap rounded-sm ${
-              activeTab === tab ? 'text-black font-bold' : 'text-gray-700'
+              activeTab === tab ? 'text-white font-bold' : 'text-neutral-500'
             }`}
             onClick={() => setActiveTab(tab)}
           >
@@ -148,7 +147,7 @@ const TabComponent = () => {
       </div>
 
       {/* Content */}
-      <div className=" justify-center grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[2vw] gap-5 mt-5">
+      <div className="justify-center grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[2vw] gap-5 mt-5">
         {currentData[activeTab]?.map((item, index) => (
           <motion.div
             key={index}
@@ -157,16 +156,15 @@ const TabComponent = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             onMouseEnter={() => handleCardEnter(item.title)}
             onMouseLeave={handleCardLeave}
-            className="relative hover:z-10  group"
+            className="relative hover:z-10 group"
           >
-            <div className='lg:h-[32vw] md:h-[400px] h-[300px] duration-200 rounded-2xl overflow-hidden  hover:scale-[1.1] '>
+            <div className="lg:h-[32vw] md:h-[400px] h-[300px] duration-300 rounded-2xl overflow-hidden hover:scale-105">
               <img
-              className="  object-cover object-center"
-              src={item.img}
-              alt={`Tab ${activeTab} item ${index + 1}`}
+                className="object-cover object-center"
+                src={item.img}
+                alt={`Tab ${activeTab} item ${index + 1}`}
               />
-              </div>
-           
+            </div>
           </motion.div>
         ))}
       </div>

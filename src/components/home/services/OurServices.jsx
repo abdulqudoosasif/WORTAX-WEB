@@ -7,10 +7,8 @@ import Service from './Service';
 const OurServices = () => {
     return (
         <div
-            data-scroll
-            data-scroll-section
-            data-scroll-speed="-.3"
-            className='flex flex-col justify-center px-[5vw]  lg:-mt-[35vw] md:-mt-[40vh] -mt-[49vh] md:pt-[20vh]  lg:pt-[8vw] pt-20  bg-gray-50'>
+
+            className='flex flex-col xl:pt-[10vw] justify-center px-[5vw]  lg:-mt-[36vw] md:-mt-[40vh] -mt-[49vh] md:pt-[20vh] lg:pt-[8vw] pt-20  bg-gray-50'>
             <ServicesHeader />
             <div className='flex flex-col duration-500 mb-[5vw]'>
                 <Service
