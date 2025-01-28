@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const FooterHeader = () => {
@@ -73,7 +74,7 @@ const FooterHeader = () => {
   return (
     <div
       ref={navbarRef}
-      className="w-[60vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[20vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
+      className="w-[48vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[26vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
     >
       <div className="flex items-center space-x-3">
         <img
@@ -88,9 +89,9 @@ const FooterHeader = () => {
 
       {/* Buttons */}
       <div className="flex items-center space-x-2">
-        <button className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
-          <span>View Pricing</span> <span>💰</span>
-        </button>
+        <Link to={'/work'} className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
+          <span>View Work</span> <span>💰</span>
+        </Link>
         <button 
           onClick={() => {
             window.open("https://cal.com/wortaxgamechanger/30min", "_blank");
