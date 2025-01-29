@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import img1 from '../../../assets/img/worksection/1.png'
-import img2 from '../../../assets/img/worksection/2.png'
-import img3 from '../../../assets/img/worksection/3.png'
-import img4 from '../../../assets/img/worksection/4.png'
-import img5 from '../../../assets/img/worksection/5.png'
-import img6 from '../../../assets/img/worksection/6.png'
-import img7 from '../../../assets/img/worksection/7.png'
-import img8 from '../../../assets/img/worksection/8.png'
-import img9 from '../../../assets/img/worksection/9.png'
-import img10 from '../../../assets/img/worksection/10.png'
-import img11 from '../../../assets/img/worksection/12.png'
-import img12 from '../../../assets/img/worksection/1.png'
-import img13 from '../../../assets/img/worksection/11.png'
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import img1 from "../../../assets/img/worksection/1.png";
+import img2 from "../../../assets/img/worksection/2.png";
+import img3 from "../../../assets/img/worksection/3.png";
+import img4 from "../../../assets/img/worksection/4.png";
+import img5 from "../../../assets/img/worksection/5.png";
+import img6 from "../../../assets/img/worksection/6.png";
+import img7 from "../../../assets/img/worksection/7.png";
+import img8 from "../../../assets/img/worksection/8.png";
+import img9 from "../../../assets/img/worksection/9.png";
+import img10 from "../../../assets/img/worksection/10.png";
+import img11 from "../../../assets/img/worksection/12.png";
+import img12 from "../../../assets/img/worksection/1.png";
+import img13 from "../../../assets/img/worksection/11.png";
 
 const TabComponent = () => {
-  const [activeTab, setActiveTab] = useState('ALL');
-  const [activeSection, setActiveSection] = useState('Projects');
+  const [activeTab, setActiveTab] = useState("ALL");
+  const [activeSection, setActiveSection] = useState("Projects");
   const [cursorText, setCursorText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
 
@@ -90,10 +90,10 @@ const TabComponent = () => {
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
-    setActiveTab('ALL'); // Reset activeTab to 'ALL' when section changes
+    setActiveTab("ALL"); // Reset activeTab to 'ALL' when section changes
   };
 
-  const currentData = activeSection === 'Projects' ? caseStudyData : clientData;
+  const currentData = activeSection === "Projects" ? caseStudyData : clientData;
 
   return (
     <section
@@ -116,13 +116,13 @@ const TabComponent = () => {
 
       {/* Section Toggle */}
       <div className="flex justify-center items-center lg:gap-[2vw] gap-5">
-        {['Projects', 'Clients'].map((section) => (
+        {["Projects", "Clients"].map((section) => (
           <h2
             key={section}
             className={`lg:text-[3.5vw] lg:my-0 text-[20px] my-5 font-semibold cursor-pointer border-b-2 -underline-offset-2 ${
               activeSection === section
-                ? 'text-neutral-50 border-neutral-50'
-                : 'text-neutral-500 border-neutral-500'
+                ? "text-neutral-50 border-neutral-50"
+                : "text-neutral-500 border-neutral-500"
             }`}
             onClick={() => handleSectionChange(section)}
           >
@@ -137,7 +137,7 @@ const TabComponent = () => {
           <button
             key={tab}
             className={`lg:px-[1.45vw] px-2 py-0 lg:text-[1.3vw] text-[14px] text-nowrap rounded-sm ${
-              activeTab === tab ? 'text-white font-bold' : 'text-neutral-500'
+              activeTab === tab ? "text-white font-bold" : "text-neutral-500"
             }`}
             onClick={() => setActiveTab(tab)}
           >
@@ -158,9 +158,9 @@ const TabComponent = () => {
             onMouseLeave={handleCardLeave}
             className="relative hover:z-10 group"
           >
-            <div className="lg:h-[32vw] md:h-[400px] h-[300px] duration-300 rounded-2xl overflow-hidden hover:scale-105">
+            <div className="lg:h-[32vw] md:h-[400px] h-[300px] duration-300 rounded-2xl hover:shadow-2xl hover:shadow-black overflow-hidden  group">
               <img
-                className="object-cover object-center"
+                className="w-full h-auto object-cover transition-transform duration-[20s] lg:group-hover:translate-y-[calc(-100%+32vw)]"
                 src={item.img}
                 alt={`Tab ${activeTab} item ${index + 1}`}
               />

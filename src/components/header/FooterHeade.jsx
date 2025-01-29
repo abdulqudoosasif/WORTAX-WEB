@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { getCalApi } from "@calcom/embed-react";
-import { BiSolidPhoneCall } from "react-icons/bi";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const FooterHeader = () => {
@@ -88,7 +85,7 @@ const FooterHeader = () => {
   return (
     <div
       ref={navbarRef}
-      className="w-[60vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[20vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
+      className="w-[48vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[26vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
     >
       <div className="flex items-center space-x-3">
         <img
@@ -106,10 +103,12 @@ const FooterHeader = () => {
         <button className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
           <span>View Pricing</span> <span>💰</span>
         </button>
-        <button data-cal-link="wortaxgamechanger" data-cal-config='{"theme":"dark"}'
-          className="bg-lime-400 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center gap-1">
-          Book a Call  <span><BiSolidPhoneCall size={20} />
-          </span>
+        <button 
+          onClick={() => {
+            window.open("https://cal.com/wortaxgamechanger/30min", "_blank");
+          }}
+        className="bg-lime-400 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1">
+          <span>Book a Call</span> <span>📞</span>
         </button>
       </div>
     </div>
