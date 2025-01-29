@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { getCalApi } from "@calcom/embed-react";
+import { BiSolidPhoneCall } from "react-icons/bi";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const FooterHeader = () => {
@@ -18,6 +21,18 @@ const FooterHeader = () => {
     "Webflow Expert ",
     "Framer Expert",
   ];
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        theme: "dark",
+        styles: {
+          branding: { brandColor: "#000000" },
+        },
+      });
+    })();
+  }, []);
 
   useEffect(() => {
     let typingTimeout;
@@ -91,12 +106,10 @@ const FooterHeader = () => {
         <button className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
           <span>View Pricing</span> <span>💰</span>
         </button>
-        <button 
-          onClick={() => {
-            window.open("https://cal.com/wortaxgamechanger/30min", "_blank");
-          }}
-        className="bg-lime-400 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1">
-          <span>Book a Call</span> <span>📞</span>
+        <button data-cal-link="wortaxgamechanger" data-cal-config='{"theme":"dark"}'
+          className="bg-lime-400 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center gap-1">
+          Book a Call  <span><BiSolidPhoneCall size={20} />
+          </span>
         </button>
       </div>
     </div>
