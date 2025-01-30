@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const WeDo = () => {
   return (
-    <div className="md:w-[38vw] w-72 lg:w-[23vw] relative h-auto">
+    <div className="md:w-[38vw] w-[calc(100%-20px)] lg:w-[23vw] relative h-auto">
       <img
         className="absolute top-0 left-0 h-full w-full"
         src="https://appsians.com/images/media/1632921978quin-service-webdesign1.webp"
