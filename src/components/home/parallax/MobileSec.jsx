@@ -1,126 +1,62 @@
-import React, { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import React, { useRef, useState, useEffect } from 'react';
+import { motion, useTransform, useScroll } from 'framer-motion';
 import Img1 from '../../../assets/img/Review/1.png';
 import Img2 from '../../../assets/img/Review/2.png';
-import { twMerge } from "tailwind-merge";
+import Img3 from '../../../assets/img/Review/3.png';
+import Img4 from '../../../assets/img/Review/4.png';
+import Img5 from '../../../assets/img/Review/5.png';
+import Img6 from '../../../assets/img/Review/6.png';
+import Img7 from '../../../assets/img/Review/7.png';
+import Img8 from '../../../assets/img/Review/8.png';
+import Img9 from '../../../assets/img/Review/15.png';
+import Img10 from '../../../assets/img/Review/10.png';
+import Img11 from '../../../assets/img/Review/11.png';
+import Img12 from '../../../assets/img/Review/12.png';
+import Img13 from '../../../assets/img/Review/13.png';
+import Img14 from '../../../assets/img/Review/14.png';
 
-export const MobileSec = () => {
-  return (
-    <section className="flex md:hidden h-72 flex-col items-center justify-center gap-12 bg-white px-4 py-24 md:flex-row">
-      <LogoRolodex
-        items={[
-          <LogoItem key={1} className="bg-transparent text-neutral-900">
-            <img src={Img1} alt="" className=" rounded-t-lg border mt-4" />
-            <img src={Img2} alt="" className=" border rounded-b-lg w-full mt-4" />
-          </LogoItem>,
-          <LogoItem key={2} className="bg-transparent text-neutral-900">
-            <img src={Img1} alt="" className=" border rounded-t-lg mt-4" />
-            <img src={Img2} alt="" className=" border rounded-b-lg w-full mt-4" />
-          </LogoItem>,
-        ]}
-      />
-    </section>
-  );
-};
+const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10, Img11, Img12, Img13, Img14];
 
-const DELAY_IN_MS = 2500;
-const TRANSITION_DURATION_IN_SECS = 1.5;
-
-const LogoRolodex = ({ items }) => {
-  const intervalRef = useRef(null);
-  const [index, setIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
+const MobileSec = () => {
+  const [activeIndex, setActiveIndex] = useState(2); // Start with the third image as active
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({ container: containerRef });
+  const yRange = useTransform(scrollYProgress, [0, 1], [0, images.length - 1]);
 
   useEffect(() => {
-    if (!isPaused) {
-      intervalRef.current = setInterval(() => {
-        setIndex((pv) => pv + 1);
-      }, DELAY_IN_MS);
-    } else {
-      clearInterval(intervalRef.current);
-    }
+    const unsubscribe = yRange.onChange((v) => {
+      const newIndex = Math.round(v);
+      // Ensure the active index is always the third visible image
+      setActiveIndex(Math.min(Math.max(newIndex, 2), images.length - 3));
+    });
 
-    return () => {
-      clearInterval(intervalRef.current);
-    };
-  }, [isPaused]);
-
-  const toggleAnimation = () => {
-    setIsPaused((prev) => !prev);
-  };
+    return () => unsubscribe();
+  }, [yRange]);
 
   return (
     <div
-      onClick={toggleAnimation} 
-      style={{
-        transform: "rotateY(-20deg)",
-        transformStyle: "preserve-3d",
-        cursor: "pointer", 
-      }}
-      className="relative z-0 h-44 w-full shrink-0 rounded-xl  "
+      className="lg:hidden relative z-10  md:hidden flex flex-col h-[50vh] overflow-y-scroll no-scrollbar snap-y snap-mandatory"
+      ref={containerRef}
     >
-      <AnimatePresence mode="sync">
+      {images.map((img, index) => (
         <motion.div
-          style={{
-            y: "-50%",
-            x: "-50%",
-            clipPath: "polygon(0 0, 100% 0, 100% 50%, 0 50%)",
-            zIndex: -index,
-            backfaceVisibility: "hidden",
-          }}
           key={index}
-          transition={{
-            duration: TRANSITION_DURATION_IN_SECS,
-            ease: "easeInOut",
-          }}
-          initial={{ rotateX: "0deg" }}
-          animate={{ rotateX: "0deg" }}
-          exit={{ rotateX: "-180deg" }}
-          className="absolute left-1/2 top-1/2"
-        >
-          {items[index % items.length]}
-        </motion.div>
-        <motion.div
+          className="w-full h-[20vh] flex items-center justify-center snap-center"
           style={{
-            y: "-50%",
-            x: "-50%",
-            clipPath: "polygon(0 50%, 100% 50%, 100% 100%, 0 100%)",
-            zIndex: index,
-            backfaceVisibility: "hidden",
+            scale: activeIndex === index ? 0.9 : 0.75,
+            opacity: activeIndex === index ? 1 : 0.8,
+            transition: 'scale 0.3s, opacity 0.3s',
           }}
-          key={(index + 1) * 2}
-          initial={{ rotateX: "180deg" }}
-          animate={{ rotateX: "0deg" }}
-          exit={{ rotateX: "0deg" }}
-          transition={{
-            duration: TRANSITION_DURATION_IN_SECS,
-            ease: "easeInOut",
-          }}
-          className="absolute left-1/2 top-1/2"
         >
-          {items[index % items.length]}
+          <img
+            src={img}
+            alt=""
+            className="w-full h-full object-cover rounded-lg shadow-lg border"
+          />
         </motion.div>
-      </AnimatePresence>
-
-      <hr
-        style={{
-          transform: "translateZ(1px)",
-        }}
-        className="absolute left-0 right-0 top-1/2 z-[999999999] -translate-y-1/2 border-t-2 border-neutral-800"
-      />
+      ))}
     </div>
   );
 };
 
-const LogoItem = ({ children, className }) => {
-  return (
-    <div
-      className={twMerge(
-        "grid h-[250px] w-[100vw] place-content-center rounded-lg bg-neutral-200 text-6xl text-neutral-50",
-        className
-      )}
-    >
-      {children}
-    </div>
-  );
-};
+export default MobileSec;

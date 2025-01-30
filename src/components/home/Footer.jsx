@@ -1,16 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logoimg from '../../assets/img/logo-img.png';
 import { FaFacebookF, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { getCalApi } from "@calcom/embed-react";
+
 
 const Footer = () => {
+  useEffect(() => {
+      (async function () {
+        const cal = await getCalApi();
+        cal("ui", {
+          theme: "dark",
+          styles: {
+            branding: { brandColor: "#000000" },
+          },
+        });
+      })();
+    }, []);
   return (
  <>
 
- <div className='lg:h-[100vh] h-[110vh] ' >
+ <div className='  lg:h-[100vh] h-[110vh] ' >
  <footer 
 
 className=" w-full bg-gray-50 justify-center 
- fixed -bottom-3 left-0 -z-10
+ fixed -bottom-3 left-0
  text-neutral-900 pb-[20px] px-5 lg:px-[5vw] ] h-[100vh] md:pt-[20vh] lg:pt-[15vw] ">
   <div className="px-6">
     <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5">
@@ -79,13 +92,12 @@ className=" w-full bg-gray-50 justify-center
         <h3 className="lg:text-[2.3vw] lg:leading-[2.5vw] text-2xl text-left font-bold">
           Let's build  something <br /> great
         </h3>
-        <a
-          href="#"
+        <button data-cal-link="wortaxgamechanger" data-cal-config='{"theme":"dark"}'
           className="text-blue-500 font-bold lg:text-[2vw] lg:leading-[2vw] text-xl flex items-center space-x-2 hover:underline"
         >
           <span>let's talk</span>
           <span className="text-xl">&#8599;</span>
-        </a>
+        </button>
       </div>
     </div>
 

@@ -9,7 +9,6 @@ import Footer from "../components/home/Footer";
 import FooterHeader from "../components/header/FooterHeade";
 import Preloader from "../components/Animation/HomePreloader";
 import OurServices from "../components/home/services/OurServices";
-import { MobileSec } from "../components/home/parallax/MobileSec";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,12 +24,11 @@ function Home() {
       <div className=" overflow-hidden poppins">
         <LandingPage />
         <Marquee />
+        {/* <OurServices /> */}
         <About />
         {/* <WalletHoverEffect /> */}
-        <OurServices />
         <Scroller />
         <ParallaxDemo />
-        <MobileSec/>
         <GetStarted />
         <Footer />
         <FooterHeader />

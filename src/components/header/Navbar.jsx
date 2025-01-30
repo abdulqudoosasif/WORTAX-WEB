@@ -3,6 +3,7 @@ import gsap from "gsap";
 import logo from "../../assets/img/wortax-black-new.png";
 import { Link } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const Navbar = () => {
   const navbarRef = useRef(null);
@@ -70,6 +71,7 @@ const Navbar = () => {
             {item.label}
           </Link>
         ))}
+      
       </div>
 
       {/* Navbar */}
@@ -91,8 +93,7 @@ const Navbar = () => {
     { label: "Home", href: "/" },
     { label: "Work", href: "/work" },
     { label: "About us", href: "/about-us" },
-    { label: "Blog", href: "#" },
-    { label: "Contact Us", href: "/contact" },
+    { label: "Blog", href: "/blogs" },
   ].map((item) => (
     <div key={item.label} className="nav-link-container relative overflow-hidden">
       <Link
@@ -109,6 +110,12 @@ const Navbar = () => {
       </Link>
     </div>
   ))}
+      <Link to={'/contact'}
+        className="relative w-fit px-5 lg:mb-0 mb-4 lg:py-2 py-0 overflow-hidden border border-zinc-800 rounded-full transition-all before:absolute before:top-0 before:left-0 before:right-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-500 hover:text-white hover:before:left-0 hover:before:w-full">
+        <span className="relative text-[1vw] flex items-center gap-2  z-10 tracking-wide font-medium">
+        Request Proposal <MdOutlineArrowOutward  className="text-[1.2vw]"/>
+        </span>
+      </Link>
 </div>
 
       </div>

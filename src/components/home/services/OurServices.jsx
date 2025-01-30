@@ -8,7 +8,7 @@ const OurServices = () => {
     return (
         <div
 
-            className='flex flex-col xl:pt-[10vw] justify-center px-[5vw]  lg:-mt-[36vw] md:-mt-[40vh] -mt-[49vh] md:pt-[20vh] lg:pt-[8vw] pt-20  bg-gray-50'>
+            className='flex pt-[4vw] flex-col'>
             <ServicesHeader />
             <div className='flex flex-col duration-500 mb-[5vw]'>
                 <Service

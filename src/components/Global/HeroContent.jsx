@@ -4,7 +4,7 @@ import img from '../../assets/img/logo1.png'
 
 function HeroContent({item}) {
   return (
-    <div className="pt-[150px] lg:pt-[16vw]">
+    <div className="pt-[150px] relative z-10 lg:pt-[16vw]">
       {item.map((item, index) => {
         return (
           <div key={index} className="masker flex">

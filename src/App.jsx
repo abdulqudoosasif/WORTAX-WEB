@@ -12,6 +12,7 @@ import Work from "./pages/Work";
 import Navbar from "./components/header/Navbar";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function ScrollWrapper({ children }) {
   const scrollRef = useRef(null);
@@ -52,6 +53,7 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs" element={<Blog />} />
         </Routes>
       </ScrollWrapper>
     </Router>

@@ -6,7 +6,7 @@ import Footer from '../components/home/Footer'
 import Preloader from "../components/Animation/AboutPraloader";
 const AboutUs = () => {
    const [isLoading, setIsLoading] = useState(true);
-  
+   
     const handlePreloaderFinish = () => {
       setIsLoading(false);
     };

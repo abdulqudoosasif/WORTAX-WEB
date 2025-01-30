@@ -9,8 +9,8 @@ import Details from './Details'
 function About() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed='0.35'
-      className='bg-gray-50 rounded-t-3xl xl:-top-[14vw] lg:-top-[14vw] md:-top-28 -top-24  overflow-hidden relative px-[5vw]  z-20 '>
-      <div className="py-[4vw]">
+      className='bg-gray-50 py-[5vw] rounded-t-3xl xl:-top-[19vw] rounded-b-3xl lg:-top-[14vw] md:-top-[350px] -top-80  overflow-hidden relative px-[5vw]  z-20 '>
+      <div className="">
         <div className="flex flex-col items-center justify-center">
           <h2 className="lg:text-[3.6vw] text-3xl font-semibold">
             ABOUT <span className='text-gray-500'>US</span>

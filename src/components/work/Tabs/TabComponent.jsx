@@ -160,7 +160,7 @@ const TabComponent = () => {
           >
             <div className="lg:h-[32vw] md:h-[400px] h-[300px] duration-300 rounded-2xl hover:shadow-2xl hover:shadow-black overflow-hidden  group">
               <img
-                className="w-full h-auto object-cover transition-transform duration-[20s] lg:group-hover:translate-y-[calc(-100%+32vw)]"
+                className="w-full h-auto object-cover ease-linear transition-transform duration-[10s] lg:group-hover:translate-y-[calc(-100%+32vw)]"
                 src={item.img}
                 alt={`Tab ${activeTab} item ${index + 1}`}
               />

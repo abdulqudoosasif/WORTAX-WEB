@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { getCalApi } from "@calcom/embed-react";
+import { IoCall, IoGitNetworkOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 const FooterHeader = () => {
@@ -57,7 +60,10 @@ const FooterHeader = () => {
       }
     };
 
-    typingTimeout = setTimeout(handleTyping, isDeleting ? deletingSpeed : typingSpeed);
+    typingTimeout = setTimeout(
+      handleTyping,
+      isDeleting ? deletingSpeed : typingSpeed
+    );
 
     return () => clearTimeout(typingTimeout);
   }, [displayText, isDeleting, activeIndex, messages]);
@@ -68,7 +74,10 @@ const FooterHeader = () => {
     window.addEventListener("scroll", () => {
       const currentScrollY = window.scrollY;
 
-      if (currentScrollY < previousScrollY && currentScrollY > window.innerHeight) {
+      if (
+        currentScrollY < previousScrollY &&
+        currentScrollY > window.innerHeight
+      ) {
         gsap.to(navbarRef.current, { y: "30vh", duration: 5.9 });
       } else {
         gsap.to(navbarRef.current, { y: "0", duration: 0.9 });
@@ -100,15 +109,15 @@ const FooterHeader = () => {
 
       {/* Buttons */}
       <div className="flex items-center space-x-2">
-        <button className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
-          <span>View Pricing</span> <span>💰</span>
-        </button>
-        <button 
-          onClick={() => {
-            window.open("https://cal.com/wortaxgamechanger/30min", "_blank");
-          }}
-        className="bg-lime-400 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1">
-          <span>Book a Call</span> <span>📞</span>
+        <Link to={'/work'} className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
+          <span>View Work</span> <span><IoGitNetworkOutline className="text-[20px]" /></span>
+        </Link>
+        <button
+          data-cal-link="wortaxgamechanger"
+          data-cal-config='{"theme":"dark"}'
+          className="bg-blue-300 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1"
+        >
+          <span>Book a Call</span> <span ><IoCall className="text-[20px]"/></span>
         </button>
       </div>
     </div>
