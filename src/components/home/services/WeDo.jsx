@@ -7,7 +7,7 @@ const WeDo = () => {
   return (
     <div className="md:w-[38vw] w-[calc(100%-20px)] lg:w-[23vw] relative h-auto">
       <img
-        className="absolute top-0 left-0 h-full w-full"
+        className="absolute top-0 left-0 h-full w-full "
         src="https://appsians.com/images/media/1632921978quin-service-webdesign1.webp"
         alt=""
       />
@@ -20,14 +20,14 @@ const WeDo = () => {
         translate-y-0 group-hover:translate-y-[500%]"
         ></div>
         <div className="flex flex-col items-start justify-center gap-3 h-[45vh] md:h-[45vh] lg:h-[50vh] border border-zinc-400 text-white lg:py-16 lg:pl-5 pl-3 lg:pr-10 pr-5">
-          <PiCrownLight size={75} />
-          <h2 className="lg:text-xl text-lg font-semibold">Web Development</h2>
-          <p className="text-sm leading-5">
+          <PiCrownLight className=" lg:text-[4vw]" />
+          <h2 className="lg:text-[1.4vw] text-lg font-semibold">Web Development</h2>
+          <p className="lg:text-[1vw] md:text-sm lg:leading-[1.2vw] ">
             Need a new website? Our team of experienced web developers can bring
             your vision to life with custom design and functionality. Contact us
             for a quote today!
           </p>
-          <Link className="text-sm tracking-widest flex items-center justify-center gap-2 border-b-[1.3px] ">LET'S START <BsArrowUpRight size={15}/></Link>
+          <Link className="lg:text-[0.8vw] md:text-sm tracking-widest flex items-center justify-center gap-2 border-b-[1.3px] ">LET'S START <BsArrowUpRight size={15}/></Link>
         </div>
       </div>
     </div>
