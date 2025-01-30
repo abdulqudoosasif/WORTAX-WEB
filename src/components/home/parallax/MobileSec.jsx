@@ -35,7 +35,7 @@ const MobileSec = () => {
 
   return (
     <div
-      className="lg:hidden relative z-10  md:hidden flex flex-col h-[50vh] overflow-y-scroll no-scrollbar snap-y snap-mandatory"
+      className="lg:hidden relative z-10  md:hidden flex flex-col h-[70vh] overflow-y-scroll no-scrollbar snap-y snap-mandatory"
       ref={containerRef}
     >
       {images.map((img, index) => (
@@ -43,7 +43,7 @@ const MobileSec = () => {
           key={index}
           className="w-full h-[20vh] flex items-center justify-center snap-center"
           style={{
-            scale: activeIndex === index ? 0.9 : 0.75,
+            scale: activeIndex === index ? 0.95 : 0.75,
             opacity: activeIndex === index ? 1 : 0.8,
             transition: 'scale 0.3s, opacity 0.3s',
           }}
@@ -51,7 +51,7 @@ const MobileSec = () => {
           <img
             src={img}
             alt=""
-            className="w-full h-full object-cover rounded-lg shadow-lg border"
+            className="w-fit h-fit object-cover object-center rounded-lg shadow-lg border"
           />
         </motion.div>
       ))}
