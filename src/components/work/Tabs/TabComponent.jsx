@@ -11,8 +11,12 @@ import img8 from "../../../assets/img/worksection/8.png";
 import img9 from "../../../assets/img/worksection/9.png";
 import img10 from "../../../assets/img/worksection/10.png";
 import img11 from "../../../assets/img/worksection/12.png";
-import img12 from "../../../assets/img/worksection/1.png";
+import img12 from "../../../assets/img/worksection/14.png";
 import img13 from "../../../assets/img/worksection/11.png";
+import img14 from "../../../assets/img/worksection/13.png";
+import img15 from "../../../assets/img/worksection/15.png";
+import img16 from "../../../assets/img/worksection/16.png";
+import img17 from "../../../assets/img/worksection/14copy.png";
 
 const TabComponent = () => {
   const [activeTab, setActiveTab] = useState("ALL");
@@ -27,7 +31,11 @@ const TabComponent = () => {
       { img: img3, title: "Case Study 3" },
       { img: img4, title: "Case Study 4" },
       { img: img6, title: "Case Study 6" },
-      { img: img5, title: "Case Study 7" },
+      { img: img14, title: "Case Study 7" },
+      { img: img15, title: "Case Study 3" },
+      { img: img16, title: "Case Study 4" },
+      { img: img17, title: "Case Study 6" },
+      { img: img13, title: "Case Study 7" },
     ],
     Branding: [{ img: img4, title: "Case Study 4" }],
     Website: [{ img: img6, title: "Case Study 6" }],
@@ -90,7 +98,7 @@ const TabComponent = () => {
 
   const handleSectionChange = (section) => {
     setActiveSection(section);
-    setActiveTab("ALL"); // Reset activeTab to 'ALL' when section changes
+    setActiveTab("ALL"); 
   };
 
   const currentData = activeSection === "Projects" ? caseStudyData : clientData;
