@@ -94,12 +94,12 @@ const FooterHeader = () => {
   return (
     <div
       ref={navbarRef}
-      className="w-[48vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[26vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-12"
+      className="w-[48vw]  fixed bg-neutral-100 z-40 rounded-xl mx-[26vw] my-2 py-2 bottom-0 lg:flex hidden justify-between items-center lg:px-4 xl:px-12"
     >
       <div className="flex items-center space-x-3">
         <img
           src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          className="w-[50px] h-[50px] xl:h-[72px] xl:w-[72px] object-cover rounded-full"
+          className="lg:w-[3.5vw] lg:h-[3.5vw] xl:h-[72px] xl:w-[72px] object-cover rounded-full"
         />
         <div className="text-black flex gap-1 justify-center font-semibold">
           <p className="text-[1vw]">Hire a</p>
@@ -110,14 +110,14 @@ const FooterHeader = () => {
       {/* Buttons */}
       <div className="flex items-center space-x-2">
         <Link to={'/work'} className="bg-black text-[1vw] text-white px-4 py-2 rounded-full font-medium flex items-center space-x-1">
-          <span>View Work</span> <span><IoGitNetworkOutline className="text-[20px]" /></span>
+          <span>View Work</span> <span><IoGitNetworkOutline className="text-[1.5vw]" /></span>
         </Link>
         <button
           data-cal-link="wortaxgamechanger"
           data-cal-config='{"theme":"dark"}'
-          className="bg-blue-300 text-[1vw] text-black px-4 py-2 rounded-full font-medium flex items-center space-x-1"
+          className="bg-blue-300 text-[1vw] text-black  px-4 lg:py-2 rounded-full font-medium flex items-center space-x-1"
         >
-          <span>Book a Call</span> <span ><IoCall className="text-[20px]"/></span>
+          <span>Book a Call</span> <span ><IoCall className="text-[1.5vw]"/></span>
         </button>
       </div>
     </div>
