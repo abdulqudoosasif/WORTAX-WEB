@@ -21,7 +21,7 @@ function Home() {
     <>
       {isLoading && <Preloader onFinish={handlePreloaderFinish} />}
 
-      <div className=" overflow-hidden poppins">
+      <div className=" poppins">
         <LandingPage />
         <Marquee />
         {/* <OurServices /> */}

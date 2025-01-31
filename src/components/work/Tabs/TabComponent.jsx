@@ -16,7 +16,8 @@ import img13 from "../../../assets/img/worksection/11.png";
 import img14 from "../../../assets/img/worksection/13.png";
 import img15 from "../../../assets/img/worksection/15.png";
 import img16 from "../../../assets/img/worksection/16.png";
-import img17 from "../../../assets/img/worksection/14copy.png";
+import img17 from "../../../assets/img/worksection/14 copy.png";
+import img18 from "../../../assets/img/worksection/17.png";
 
 const TabComponent = () => {
   const [activeTab, setActiveTab] = useState("ALL");
@@ -32,10 +33,11 @@ const TabComponent = () => {
       { img: img4, title: "Case Study 4" },
       { img: img6, title: "Case Study 6" },
       { img: img14, title: "Case Study 7" },
-      { img: img15, title: "Case Study 3" },
+      { img: img15, title: "Case Study 15" },
       { img: img16, title: "Case Study 4" },
       { img: img17, title: "Case Study 6" },
-      { img: img13, title: "Case Study 7" },
+      { img: img13, title: "Case Study 12" },
+      { img: img18, title: "Case Study 17" },
     ],
     Branding: [{ img: img4, title: "Case Study 4" }],
     Website: [{ img: img6, title: "Case Study 6" }],
