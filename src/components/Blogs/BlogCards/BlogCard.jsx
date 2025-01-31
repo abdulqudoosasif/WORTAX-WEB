@@ -1,186 +1,110 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../../../assets/img/Service/service1.jpg";
+
 function BlogCard() {
   return (
-    <div className="flex flex-col bg-black rounded-b-3xl relative z-10 items-center justify-center py-20 ">
-      <div className="flex sticky top-[7vh] flex-col justify-center items-center gap-3 flex-wrap mb-[4vw]">
-        <h2 className="lg:text-[3vw] text-3xl text-white  font-semibold">
-          THE BLOGS
-        </h2>
-        <p className="lg:text-[1vw] text-xs text-white lg:mt-[1.2vw]  tracking-wide text-center">
-          Articles from the blogs
-        </p>
+    <div className="p-[5vw] bg-black z-10 relative">
+      {/* Main Articles */}
+      <div className=" w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Main Articles Section */}
+        <div className="md:col-span-2 space-y-6">
+          {/* Article 1 */}
+          <div className="relative bg-white h-[60vh] rounded-lg shadow-md overflow-hidden group">
+            <div className="w-full h-[50vh] bg-black bg-opacity-70 absolute hidden group-hover:flex items-center justify-center duration-500">
+              <p className="text-white text-3xl">Read more</p>
+            </div>
+            <img src={image} alt="" className="w-full h-[50vh] object-cover" />
+
+            <div className="p-4">
+              <p className="text-blue-500 text-sm font-semibold">Company</p>
+              <h3 className="text-lg font-bold text-gray-900 mt-1">
+                How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+                Self-Doubt
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        {/* Staff Picks Section */}
+        <div className="bg-white rounded-lg shadow-md p-4">
+          <h2 className="text-lg font-bold mb-4">⭐ Recomendations</h2>
+        </div>
       </div>
-      <div className="flex flex-col gap-[13vh]">
-        <div className="card  overflow-hidden group sticky top-[20vh] rounded-3xl h-[72vh] w-[80vw] bg-blue-500">
-          <img
-            className="h-full w-full duration-1000 lg:group-hover:scale-[1.2] object-cover object-center filter grayscale group-hover:filter-none "
-            src="https://static.wixstatic.com/media/955908_0e7b2334d4c94afaa997f974522bd2de~mv2.jpg/v1/fill/w_1794,h_1346,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Landscape4.jpg"
-            alt=""
-          />
-            <div className="bg-[#0000007c] md:flex h-full w-full absolute top-0 ">
-            
-              {/* <!-- Left Section --> */}
-              <div className="md:w-1/2 bg-cover flex flex-col justify-between bg-center p-10 text-white">
-               <div>
-               <h2 className="lg:text-[3vw] text-2xl font-semibold">Business Strategy</h2>
-               <p className="lg:text-[1.7vw] text-xl mb-4">Clarity in Action.</p>
-               </div>
-            <div>
-            <p className="md:text-[12px] text-[12px] lg:text-[1.3vw]">
-                  We help you navigate the complexities of growth with
-                  strategies that are simple, actionable, and scalable. NOIZE®
-                  ensures your business stays focused on what matters most.
-                </p>
-                <ul className="mt-4 space-y-2 text-[12px] md:text-[14px] lg:text-[1.2vw]">
-                  <li>✱ Market Research</li>
-                  <li>✱ Business Model Development</li>
-                  <li>✱ Growth Strategy</li>
-                  <li>✱ KPI Setting & Performance Metrics</li>
-                </ul>
-            </div>
-              </div>
 
-              {/* <!-- Right Section --> */}
-              <div
-                className="md:w-1/2 bg-cover  p-10 text-white flex flex-col items-end justify-end"
-              >
-                <Link
-                  
-                  className="mt-4 inline-block text-nowrap text-[12px] w-fit bg-white text-black py-2 px-4 rounded-md shadow-md hover:bg-red-500 transition"
-                >
-                  Explore Strategy →
-                </Link>
-              </div>
+      {/* Cards Section */}
+      <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center items-center mt-6">
+        {/* Card 1 */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src={image} alt="" className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <p className="text-blue-500 text-sm font-semibold">Company</p>
+            <h3 className="text-lg font-bold text-gray-900 mt-1">
+              How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+              Self-Doubt
+            </h3>
           </div>
         </div>
-        <div className="card  overflow-hidden  sticky top-[22vh] group rounded-3xl h-[72vh] w-[80vw] bg-blue-500">
-          <img
-            className="h-full w-full duration-1000 lg:group-hover:scale-[1.2] object-cover object-center filter grayscale group-hover:filter-none"
-            src="https://static.wixstatic.com/media/955908_53bdf2fe123f47a299445a6b4eac8408~mv2.jpg/v1/fill/w_1346,h_1346,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Group%20890.jpg"
-            alt=""
-          />
-            <div className="bg-[#0000007c] md:flex h-full w-full absolute top-0 ">
-            
-              {/* <!-- Left Section --> */}
-              <div className="md:w-1/2 bg-cover flex flex-col justify-between bg-center p-10 text-white">
-               <div>
-               <h2 className="lg:text-[3vw] text-2xl font-semibold">Business Strategy</h2>
-               <p className="lg:text-[1.7vw] text-xl mb-4">Clarity in Action.</p>
-               </div>
-            <div>
-            <p className="md:text-[12px] text-[12px] lg:text-[1.3vw]">
-                  We help you navigate the complexities of growth with
-                  strategies that are simple, actionable, and scalable. NOIZE®
-                  ensures your business stays focused on what matters most.
-                </p>
-                <ul className="mt-4 space-y-2 text-[12px] md:text-[14px] lg:text-[1.2vw]">
-                  <li>✱ Market Research</li>
-                  <li>✱ Business Model Development</li>
-                  <li>✱ Growth Strategy</li>
-                  <li>✱ KPI Setting & Performance Metrics</li>
-                </ul>
-            </div>
-              </div>
 
-              {/* <!-- Right Section --> */}
-              <div
-                className="md:w-1/2 bg-cover  p-10 text-white flex flex-col items-end justify-end"
-              >
-                <Link
-                  
-                  className="mt-4 inline-block w-fit bg-white text-black py-2 px-4 rounded-md shadow-md hover:bg-red-500 transition"
-                >
-                  Explore Strategy →
-                </Link>
-              </div>
+        {/* Card 2 */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src={image} alt="" className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <p className="text-blue-500 text-sm font-semibold">Company</p>
+            <h3 className="text-lg font-bold text-gray-900 mt-1">
+              How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+              Self-Doubt
+            </h3>
           </div>
         </div>
-        <div className="card  overflow-hidden  sticky top-[24vh] group rounded-3xl h-[72vh] w-[80vw] bg-blue-500">
-          <img
-            className="h-full w-full duration-1000 lg:group-hover:scale-[1.2] object-cover object-center filter grayscale group-hover:filter-none"
-            src="https://static.wixstatic.com/media/955908_7ae609150ad24b1bbf2bc40de5bb174c~mv2.jpg/v1/fill/w_1346,h_1346,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DRK_LBL_the-brand%20(8)%201.jpg"
-            alt=""
-          />
-            <div className="bg-[#0000007c] md:flex h-full w-full absolute top-0 ">
-            
-              {/* <!-- Left Section --> */}
-              <div className="md:w-1/2 bg-cover flex flex-col justify-between bg-center p-10 text-white">
-               <div>
-               <h2 className="lg:text-[3vw] text-2xl font-semibold">Business Strategy</h2>
-               <p className="lg:text-[1.7vw] text-xl mb-4">Clarity in Action.</p>
-               </div>
-            <div>
-            <p className="md:text-[12px] text-[12px] lg:text-[1.3vw]">
-                  We help you navigate the complexities of growth with
-                  strategies that are simple, actionable, and scalable. NOIZE®
-                  ensures your business stays focused on what matters most.
-                </p>
-                <ul className="mt-4 space-y-2 text-[12px] md:text-[14px] lg:text-[1.2vw]">
-                  <li>✱ Market Research</li>
-                  <li>✱ Business Model Development</li>
-                  <li>✱ Growth Strategy</li>
-                  <li>✱ KPI Setting & Performance Metrics</li>
-                </ul>
-            </div>
-              </div>
 
-              {/* <!-- Right Section --> */}
-              <div
-                className="md:w-1/2 bg-cover  p-10 text-white flex flex-col items-end justify-end"
-              >
-                <Link
-                  
-                  className="mt-4 inline-block w-fit bg-white text-black py-2 px-4 rounded-md shadow-md hover:bg-red-500 transition"
-                >
-                  Explore Strategy →
-                </Link>
-              </div>
+        {/* Card 3 */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src={image} alt="" className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <p className="text-blue-500 text-sm font-semibold">Company</p>
+            <h3 className="text-lg font-bold text-gray-900 mt-1">
+              How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+              Self-Doubt
+            </h3>
           </div>
         </div>
-        <div className="card  overflow-hidden  sticky top-[26vh] group rounded-3xl h-[72vh] w-[80vw] bg-blue-500">
-          <img
-            className="h-full w-full duration-1000 lg:group-hover:scale-[1.2] object-cover object-center filter grayscale group-hover:filter-none"
-            src="https://static.wixstatic.com/media/955908_a41f8362011d43bea0fede19c35405e8~mv2.jpg/v1/fill/w_1346,h_1346,fp_0.65_0.08,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/DigitalMarketing.jpg"
-            alt=""
-          />
-          <div className="bg-[#0000007c] md:flex h-full w-full absolute top-0 ">
-            
-              {/* <!-- Left Section --> */}
-              <div className="md:w-1/2 bg-cover flex flex-col justify-between bg-center p-10 text-white">
-               <div>
-               <h2 className="lg:text-[3vw] text-2xl font-semibold">Business Strategy</h2>
-               <p className="lg:text-[1.7vw] text-xl mb-4">Clarity in Action.</p>
-               </div>
-            <div>
-            <p className="md:text-[12px] text-[12px] lg:text-[1.3vw]">
-                  We help you navigate the complexities of growth with
-                  strategies that are simple, actionable, and scalable. NOIZE®
-                  ensures your business stays focused on what matters most.
-                </p>
-                <ul className="mt-4 space-y-2 text-[12px] md:text-[14px] lg:text-[1.2vw]">
-                  <li>✱ Market Research</li>
-                  <li>✱ Business Model Development</li>
-                  <li>✱ Growth Strategy</li>
-                  <li>✱ KPI Setting & Performance Metrics</li>
-                </ul>
-            </div>
-              </div>
 
-              {/* <!-- Right Section --> */}
-              <div
-                className="md:w-1/2 bg-cover  p-10 text-white flex flex-col items-end justify-end"
-              >
-                <Link
-                  
-                  className="mt-4 inline-block w-fit bg-white text-black py-2 px-4 rounded-md shadow-md hover:bg-red-500 transition"
-                >
-                  Explore Strategy →
-                </Link>
-              </div>
+        {/* Card 4 */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src={image} alt="" className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <p className="text-blue-500 text-sm font-semibold">Company</p>
+            <h3 className="text-lg font-bold text-gray-900 mt-1">
+              How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+              Self-Doubt
+            </h3>
           </div>
         </div>
-        <div className="card  overflow-hidden  sticky top-[26vh]"></div>
+
+        {/* Card 5 */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src={image} alt="" className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <p className="text-blue-500 text-sm font-semibold">Company</p>
+            <h3 className="text-lg font-bold text-gray-900 mt-1">
+              How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+              Self-Doubt
+            </h3>
+          </div>
+        </div>
+
+        {/* Card 6 */}
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src={image} alt="" className="w-full h-48 object-cover" />
+          <div className="p-4">
+            <p className="text-blue-500 text-sm font-semibold">Company</p>
+            <h3 className="text-lg font-bold text-gray-900 mt-1">
+              How Travel Writer and Vlogger Welmis Gutierrez Overcomes
+              Self-Doubt
+            </h3>
+          </div>
+        </div>
       </div>
     </div>
   );
