@@ -35,6 +35,9 @@ const ContactForm = () => {
     // Add your form submission logic here
   };
 
+  // Calculate progress percentage
+  const progressPercentage = ((step - 1) / 3) * 100; // 4 steps = 0%, 33%, 66%, 100%
+
   return (
     <div className="flex relative z-30 lg:min-h-[75vh] rounded-b-3xl text-white bg-neutral-900 lg:py-[5vw] flex-col md:flex-row border-t-[1px] items-start justify-between p-8 md:p-16">
       <div className="md:w-1/2 lg:sticky lg:top-[7vw] space-y-4">
@@ -269,6 +272,15 @@ const ContactForm = () => {
               </>
             )}
 
+            {/* Progress Bar */}
+            <div style={{marginTop:"3vw",}} className="w-8/12 mx-auto bg-gray-100 rounded-full h-1.5 ">
+              <div
+                className="bg-red-500 h-1.5 duration-500 rounded-full"
+                style={{ width: `${progressPercentage}%` }}
+              ></div>
+            </div>
+
+            {/* Navigation Buttons */}
             <div className="flex justify-between mt-4">
               {step > 1 && (
                 <button type="button" onClick={prevStep} className="px-6 py-2 bg-gray-50 text-neutral-900">
