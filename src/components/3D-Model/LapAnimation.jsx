@@ -46,7 +46,7 @@ export default function LapAnimation() {
   const props = useSpring({ open: Number(open) })
   return (
     <div className='z-10 relative bg-[]'>
-          <web.main style={{ background: props.open.to([0, 1], ['#171717', '#d25578']), height:'100vh', }} className=' rounded-3xl'>
+          <web.main style={{ background: props.open.to([0, 1], ['#171717', '#171717']), height:'100vh', }} className=' rounded-3xl'>
       <web.h1 style={{ opacity: props.open.to([0, 1], [1, 0]), transform: props.open.to((o) => `translate3d(-50%,${o * 50 - 100}px,0)`) }} className='md:text-[8vw] text-[48px] text-white font-bold m-0 p-0 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  tracking-[-0.045em] whitespace-nowrap' >GET STARTED</web.h1>
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, -30], fov: 35 }}>
         <three.pointLight position={[10, 10, 10]} intensity={1.5} color={props.open.to([0, 1], ['#f0f0f0', '#d25578'])} />
