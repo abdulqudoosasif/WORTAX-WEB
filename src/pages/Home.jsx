@@ -9,6 +9,7 @@ import Footer from "../components/home/Footer";
 import FooterHeader from "../components/header/FooterHeade";
 import Preloader from "../components/Animation/HomePreloader";
 import OurServices from "../components/home/services/OurServices";
+import LapAnimation from "../components/3D-Model/LapAnimation";
 
 function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +30,8 @@ function Home() {
         {/* <WalletHoverEffect /> */}
         <Scroller />
         <ParallaxDemo />
-        <GetStarted />
+        {/* <GetStarted /> */}
+        <LapAnimation/>
         <Footer />
         <FooterHeader />
       </div>

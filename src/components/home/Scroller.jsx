@@ -19,7 +19,7 @@ import Img17 from "./../../assets/img/17.png";
 import "../../index.css";
 function Scroller() {
   return (
-    <div className="bg-neutral-900 xl:pt-[14vw] relative z-10 xl:-mt-[40vw] lg:-mt-[36vw] md:-mt-[78vh] -mt-[69vh] md:pt-[20vh] lg:pt-[14vw] pt-20  pb-[5vw]   ">
+    <div className="bg-neutral-900 xl:pt-[14vw] relative z-10 xl:-mt-[40vw] lg:-mt-[36vw] md:-mt-[78vh] -mt-[72vh] md:pt-[20vh] lg:pt-[14vw] pt-20  pb-[5vw]   ">
       <div className=" lg:px-16 px-4 flex flex-col pb-[4vw] items-center justify-center lg:pt-[2vw]  ">
         <h2 className="text-[#fff] lg:text-[3.6vw] text-3xl font-semibold">
           Our Featured Projects
