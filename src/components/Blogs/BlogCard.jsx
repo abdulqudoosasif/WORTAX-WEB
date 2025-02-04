@@ -31,10 +31,10 @@ function BlogCard() {
         <div className="md:col-span-2 space-y-6">
           {/* Article 1 */}
           <div className="relative bg-white lg:rounded-[0.5vw] rounded-lg shadow-md overflow-hidden group">
-            <div className="w-full h-[47vh] bg-neutral-900  bg-opacity-30 absolute hidden lg:group-hover:flex items-center justify-center duration-500 cursor-pointer">
+            <div className="w-full h-[60vh] bg-neutral-900  bg-opacity-30 absolute hidden lg:group-hover:flex items-center justify-center duration-500 cursor-pointer">
               {/* <p className="text-white text-xl">Read more</p> */}
             </div>
-            <img src={image} alt="" className="w-full lg:h-[47vh] object-cover" />
+            <img src={image} alt="" className="w-full lg:h-[60vh] object-cover" />
 
             <div className="lg:p-[1.3vw] p-4">
               <p className="text-blue-500 text-sm lg:text-[0.8vw] lg:leading-[0.9vw] font-semibold uppercase">

@@ -5,10 +5,13 @@ import { Link } from "react-router-dom";
 const TheBlog = (props) => {
   return (
     <div className="bg-white lg:rounded-[0.5vw] rounded-lg shadow-md overflow-hidden relative group">
-      <div className="w-full h-[26vh] bg-neutral-900 bg-opacity-30 absolute hidden lg:group-hover:flex items-center justify-center duration-500 ">
+      <div className="w-full h-[29vh] bg-neutral-900 bg-opacity-30  z-10 absolute hidden lg:group-hover:flex items-center justify-center duration-500 ">
         {/* <p className="text-white text-xl">Read more</p> */}
       </div>
-      <img src={props.Image} alt="" className="w-full lg:h-[26vh] md:h-44 h-44 lg:object-cover md:object-cover  object-center" />
+      <div className="lg:h-[29vh] overflow-hidden">
+      <img src={props.Image} alt="" className="w-full lg:w-[28.2vw] md:h-44 h-44 lg:object-cover md:object-cover object-center lg:group-hover:scale-[1.02] duration-500" />
+      </div>
+      
       <div className="lg:p-[1vw] p-4">
         <p className="text-blue-500 text-sm lg:text-[0.83vw] lg:leading-[0.83vw] font-semibold uppercase">
           {props.catagory}
