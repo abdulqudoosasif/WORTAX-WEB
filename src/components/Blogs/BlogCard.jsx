@@ -26,42 +26,42 @@ function BlogCard() {
       </div>
 
       {/* Main Articles */}
-      <div className=" w-full mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className=" w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Main Articles Section */}
         <div className="md:col-span-2 space-y-6">
           {/* Article 1 */}
-          <div className="relative bg-white  rounded-lg shadow-md overflow-hidden group">
-            <div className="w-full h-[47vh] bg-neutral-900  bg-opacity-30 absolute hidden group-hover:flex items-center justify-center duration-500 cursor-pointer">
+          <div className="relative bg-white lg:rounded-[0.5vw] rounded-lg shadow-md overflow-hidden group">
+            <div className="w-full h-[47vh] bg-neutral-900  bg-opacity-30 absolute hidden lg:group-hover:flex items-center justify-center duration-500 cursor-pointer">
               {/* <p className="text-white text-xl">Read more</p> */}
             </div>
-            <img src={image} alt="" className="w-full h-[47vh] object-cover" />
+            <img src={image} alt="" className="w-full lg:h-[47vh] object-cover" />
 
-            <div className="p-4">
-              <p className="text-blue-500 text-sm font-semibold uppercase">
+            <div className="lg:p-[1.3vw] p-4">
+              <p className="text-blue-500 text-sm lg:text-[0.8vw] lg:leading-[0.9vw] font-semibold uppercase">
                 TECH
               </p>
-              <h3 className="text-lg font-bold text-gray-900 mt-1">
+              <h3 className="text-lg lg:text-[1.3vw] lg:leading-[1.5vw] font-bold text-gray-900 mt-1">
                 Wortax IT Solutions – Stepping Into the Tech World
               </h3>
-              <p className="text-sm tracking-wide text-[#5f656c]">
+              <p className="text-sm tracking-wide lg:text-[0.8vw] lg:leading-[1vw] text-[#5f656c]">
                 Stepping Into the Tech World With Us! Welcome to the Wortax IT
                 Solutions! We will explore the realm of technology today. This
                 voyage offers unlimited ...
               </p>
               <Link
                 to={"https://wortax.io/wortax-step-into-tech-world/"}
-                className="mt-3 text-sm font-medium flex items-center hover:underline"
+                className="mt-3 text-sm lg:text-[0.85vw] font-medium flex items-center hover:underline"
               >
-                Read more <MdOutlineKeyboardDoubleArrowRight size={18} />
+                Read more <MdOutlineKeyboardDoubleArrowRight className="text-[1.2vw]" />
               </Link>
             </div>
           </div>
         </div>
 
         {/* Staff Picks Section */}
-        <div className="bg-white rounded-lg shadow-md p-4 flex flex-col">
-          <h2 className="text-2xl font-semibold">Recomendations</h2>
-          <h2 className="text-2xl text-[#99a0a9] font-semibold mb-6">by Wortax IT Solutions</h2>
+        <div className="bg-white lg:rounded-[0.5vw] rounded-lg shadow-md hidden  p-[1.3vw] lg:flex flex-col">
+          <h2 className="text-[1.4vw] leading-[1.5vw] font-semibold">Recomendations</h2>
+          <h2 className="text-[1.4vw] leading-[1.5vw] text-[#99a0a9] font-semibold mb-6">by Wortax IT Solutions</h2>
           <RecommendedBlog
             title="Wortax IT Solutions – Stepping Into the Tech World"
             description="Stepping Into the Tech World With Us! Welcome to the Wortax IT
@@ -87,7 +87,7 @@ function BlogCard() {
       </div>
 
       {/* Blogs */}
-      <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-7 justify-center items-center mt-6">
+      <div className=" grid md:grid-cols-2 lg:grid-cols-3 gap-7 justify-center items-center mt-6">
         <TheBlog
           Image={blog_1}
           catagory="SEO"
@@ -112,7 +112,7 @@ function BlogCard() {
           title="5 Ways to Acquire Customer Review"
           description="What is Customer Review? In today’s digital world client reviews
               have become a pivotal element of business success. A customer
-              review is feedback provided by"
+              review is feedback provided"
           BlogLink="https://wortax.io/5-ways-to-acquire-customer-review/"
         />
         <TheBlog

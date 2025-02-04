@@ -5,17 +5,17 @@ import { Link } from "react-router-dom";
 const RecommendedBlog = (props) => {
   return (
     <div className="flex flex-col mb-6 group">
-      <h4 className="text-xl font-medium group-hover:underline">
+      <Link to={props.BlogLink} className="text-[1.3vw]  font-medium group-hover:underline">
        {props.title}
-      </h4>
-      <p className="text-sm tracking-wide text-[#5f656c]">
+      </Link>
+      <p className="text-[0.8vw] tracking-wide text-[#5f656c]">
         {props.description} ...
       </p>
       <Link
         to={props.BlogLink}
-        className="mt-3 text-sm font-medium flex items-center group-hover:underline"
+        className="mt-3 text-[0.8vw] font-medium flex items-center group-hover:underline"
       >
-        Read more <MdOutlineKeyboardDoubleArrowRight size={18} />
+        Read more <MdOutlineKeyboardDoubleArrowRight className="text-[1.2vw]" />
       </Link>
     </div>
   );
