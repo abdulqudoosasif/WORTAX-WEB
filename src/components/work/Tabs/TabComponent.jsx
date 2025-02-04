@@ -27,17 +27,17 @@ const TabComponent = () => {
 
   const caseStudyData = {
     ALL: [
-      { img: img1, title: "Case Study 1" },
-      { img: img2, title: "We want design 2" },
-      { img: img3, title: "Case Study 3" },
-      { img: img4, title: "Case Study 4" },
-      { img: img6, title: "Case Study 6" },
-      { img: img14, title: "Case Study 7" },
-      { img: img15, title: "Case Study 15" },
-      { img: img16, title: "Case Study 4" },
-      { img: img17, title: "Case Study 6" },
-      { img: img13, title: "Case Study 12" },
-      { img: img18, title: "Case Study 17" },
+      { img: img1, title: "AXCEND" },
+      { img: img2, title: "RECORD AI MUSIC" },
+      { img: img3, title: "SUCCESS IN TRUCKING" },
+      { img: img4, title: "JG" },
+      { img: img6, title: "LIGHTING RESELLERS" },
+      { img: img14, title: "LYNC DENTAL" },
+      { img: img15, title: "GREEN ROOMS" },
+      { img: img16, title: "WODKA SODA" },
+      { img: img17, title: "KISS MARKETERS" },
+      { img: img13, title: "STARFIRE SNOWBOARDS" },
+      { img: img18, title: "CODE BRAVE" },
     ],
     Branding: [{ img: img4, title: "Case Study 4" }],
     Website: [{ img: img6, title: "Case Study 6" }],
@@ -168,7 +168,7 @@ const TabComponent = () => {
             onMouseLeave={handleCardLeave}
             className="relative hover:z-10 group"
           >
-            <div className="lg:h-[32vw] md:h-[400px] h-[300px] duration-300 rounded-2xl hover:shadow-2xl hover:shadow-black overflow-hidden  group">
+            <div className="lg:h-[32vw] md:h-[400px] h-[300px] duration-300 rounded-3xl hover:shadow-2xl hover:shadow-black overflow-hidden  group">
               <img
                 className="w-full h-auto object-cover ease-linear transition-transform duration-[10s] lg:group-hover:translate-y-[calc(-100%+32vw)]"
                 src={item.img}

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import img1 from '../../../assets/img/Service/service1.jpg'
 
-// Reusable Card Component
 const Card = ({ title, subtitle, description, points, image, linkText, topOffset }) => {
   return (
     <div className={`card overflow-hidden group sticky rounded-3xl h-[72vh] w-[80vw] bg-blue-500`} style={{ top: topOffset }}>

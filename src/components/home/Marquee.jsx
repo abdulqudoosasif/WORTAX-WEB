@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import WhatWeDo from './services/WhatWeDo'
-import BlogCard from '../Blogs/BlogCards/BlogCard'
 import Stacking from './services/Stacking'
 
 function Marquee() {
@@ -12,8 +10,6 @@ function Marquee() {
  <motion.h1 initial={{x:0}} animate={{x:'-100%'}} transition={{repeat:Infinity, ease:"linear",duration:15}}  className=' text-[20vw] leading-none text-gray-50 font-bold '> WE ARE WORTAX • </motion.h1>
  <motion.h1 initial={{x:0}} animate={{x:'-100%'}} transition={{repeat:Infinity, ease:"linear",duration:15}} className=' text-[20vw] leading-none text-gray-50 font-bold '>   WE ARE WORTAX •</motion.h1>
       </div>
-      {/* <WhatWeDo/> */}
-      {/* <BlogCard/> */}
       <Stacking/>
     </div>
   )

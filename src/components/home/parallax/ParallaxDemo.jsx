@@ -25,11 +25,11 @@ const ParallaxDemo = () => {
         <h1 className='lg:text-[3.6vw] lg:mb-0   text-2xl font-semibold leading-tight text-gray-500 lg:text-start text-center'>Excellence</h1>
       </div>
     </div>
-    <MobileSec/>
+    {/* <MobileSec/> */}
 <ParallaxProvider>
-      <div className='lg:flex md:flex hidden overflow-hidden  gap-3  '>
+      <div className='lg:flex md:flex overflow-hidden  gap-3  '>
         {/* Parallax Content */}
-        <Parallax speed={-30} className='flex flex-col gap-4'>
+        <Parallax speed={-30} className='md:flex hidden flex-col gap-4'>
           <div className='lg:w-[29vw] rounded-lg   text-white flex items-center justify-center'>
           <img src={Img1} alt="" className=' shadow-lg border '  />
           </div>

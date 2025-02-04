@@ -36,7 +36,7 @@ const ContactForm = () => {
   };
 
   // Calculate progress percentage
-  const progressPercentage = ((step - 1) / 3) * 100; // 4 steps = 0%, 33%, 66%, 100%
+  const progressPercentage = ((step - 1) / 2) * 100; // 3 steps = 0%, 50%, 100%
 
   return (
     <div className="flex relative z-30 lg:min-h-[75vh] rounded-b-3xl text-white bg-neutral-900 lg:py-[5vw] flex-col md:flex-row border-t-[1px] items-start justify-between p-8 md:p-16">
@@ -65,7 +65,7 @@ const ContactForm = () => {
             {step === 1 && (
               <>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="firstName">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="firstName">
                     First Name<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -74,12 +74,12 @@ const ContactForm = () => {
                     placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="lastName">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="lastName">
                     Last Name<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -88,12 +88,12 @@ const ContactForm = () => {
                     placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="email">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="email">
                     Email<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -102,7 +102,22 @@ const ContactForm = () => {
                     placeholder="Work Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="company">
+                    Company Name<span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="company"
+                    placeholder="Company Name"
+                    value={formData.company}
+                    onChange={handleChange}
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
@@ -113,21 +128,7 @@ const ContactForm = () => {
             {step === 2 && (
               <>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="company">
-                    Company Name<span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    placeholder="Company Name"
-                    value={formData.company}
-                    onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="jobTitle">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="jobTitle">
                     Job Title<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -136,12 +137,12 @@ const ContactForm = () => {
                     placeholder="Job Title"
                     value={formData.jobTitle}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="phoneNumber">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="phoneNumber">
                     Phone Number (Optional)
                   </label>
                   <input
@@ -150,24 +151,18 @@ const ContactForm = () => {
                     placeholder="Phone Number"
                     value={formData.phoneNumber}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                   />
                 </div>
-              </>
-            )}
-
-            {/* Step 3: Project Information */}
-            {step === 3 && (
-              <>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="projectType">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="projectType">
                     Project Type<span className="text-red-500">*</span>
                   </label>
                   <select
                     id="projectType"
                     value={formData.projectType}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   >
                     <option value="">Select Project Type</option>
@@ -178,7 +173,7 @@ const ContactForm = () => {
                   </select>
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="projectDescription">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="projectDescription">
                     Project Description<span className="text-red-500">*</span>
                   </label>
                   <textarea
@@ -186,13 +181,19 @@ const ContactForm = () => {
                     placeholder="Describe your project in detail"
                     value={formData.projectDescription}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     rows="1"
                     required
                   ></textarea>
                 </div>
+              </>
+            )}
+
+            {/* Step 3: Project Information */}
+            {step === 3 && (
+              <>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="timeline">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="timeline">
                     Timeline<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -201,12 +202,12 @@ const ContactForm = () => {
                     placeholder="E.g., 2 weeks, 1 month"
                     value={formData.timeline}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="budgetRange">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="budgetRange">
                     Budget Range<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -215,18 +216,12 @@ const ContactForm = () => {
                     placeholder="E.g., $5,000 - $10,000"
                     value={formData.budgetRange}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
-              </>
-            )}
-
-            {/* Step 4: Additional Information */}
-            {step === 4 && (
-              <>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="hearAboutUs">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="hearAboutUs">
                     How Did You Hear About Us?<span className="text-red-500">*</span>
                   </label>
                   <input
@@ -235,19 +230,19 @@ const ContactForm = () => {
                     placeholder="E.g., Google, Referral, Social Media"
                     value={formData.hearAboutUs}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   />
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="communicationMethod">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="communicationMethod">
                     Preferred Communication Method<span className="text-red-500">*</span>
                   </label>
                   <select
                     id="communicationMethod"
                     value={formData.communicationMethod}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     required
                   >
                     <option value="">Select Communication Method</option>
@@ -257,7 +252,7 @@ const ContactForm = () => {
                   </select>
                 </div>
                 <div>
-                  <label className="block lg:text-[1.6vw] font-light" htmlFor="additionalNotes">
+                  <label className="block lg:text-[1.3vw] font-light" htmlFor="additionalNotes">
                     Additional Notes or Requirements
                   </label>
                   <textarea
@@ -265,35 +260,60 @@ const ContactForm = () => {
                     placeholder="Add any specific details or requirements here (Optional)"
                     value={formData.additionalNotes}
                     onChange={handleChange}
-                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.2vw] focus:border-black outline-none"
+                    className="mt-1 w-[85vw] md:w-full border-b-2 bg-neutral-900 border-gray-300 lg:text-[1.1vw] outline-none"
                     rows="1"
                   ></textarea>
                 </div>
               </>
             )}
 
-            {/* Progress Bar */}
-            <div style={{marginTop:"3vw",}} className="w-8/12 mx-auto bg-gray-100 rounded-full h-1.5 ">
-              <div
-                className="bg-red-500 h-1.5 duration-500 rounded-full"
-                style={{ width: `${progressPercentage}%` }}
-              ></div>
+            {/* Progress Bar and Steps Display */}
+            <div style={{ marginTop: "3vw" }} className="w-7/12 mx-auto">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-sm font-medium text-gray-300">
+                  Step {step} of 3
+                </span>
+                <span className="text-sm font-medium text-gray-300">
+                  {step === 1
+                    ? "Personal Info"
+                    : step === 2
+                    ? "Company Info"
+                    : "Project Info"}
+                </span>
+              </div>
+              <div className="bg-gray-500 rounded-full h-1.5">
+                <div
+                  className="bg-zinc-100 h-1.5 duration-700 rounded-full"
+                  style={{ width: `${progressPercentage}%` }}
+                ></div>
+              </div>
             </div>
 
             {/* Navigation Buttons */}
             <div className="flex justify-between mt-4">
               {step > 1 && (
-                <button type="button" onClick={prevStep} className="px-6 py-2 bg-gray-50 text-neutral-900">
+                <button
+                  type="button"
+                  onClick={prevStep}
+                  className="px-6 py-2 bg-gray-50 text-neutral-900"
+                >
                   Back
                 </button>
               )}
-              {step < 4 && (
-                <button type="button" onClick={nextStep} className="px-6 py-2 bg-gray-50 text-neutral-900">
+              {step < 3 && (
+                <button
+                  type="button"
+                  onClick={nextStep}
+                  className="px-6 py-2 bg-gray-50 text-neutral-900"
+                >
                   Next
                 </button>
               )}
-              {step === 4 && (
-                <button type="submit" className="px-6 py-2 bg-gray-50 text-neutral-900">
+              {step === 3 && (
+                <button
+                  type="submit"
+                  className="px-6 py-2 bg-gray-50 text-neutral-900"
+                >
                   Submit
                 </button>
               )}
