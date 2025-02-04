@@ -160,7 +160,7 @@ const TabComponent = () => {
       </div>
 
       {/* {/ Content /} */}
-      <div className="justify-center grid lg:grid-cols-2 md:grid-cols-2 lg:gap-[2vw] gap-5 mt-5">
+      <div className="justify-center grid lg:grid-cols-3 md:grid-cols-2 lg:gap-[2vw] gap-5 mt-5">
         {currentData[activeTab]?.map((item, index) => (
           <motion.div
             key={index}
@@ -169,10 +169,10 @@ const TabComponent = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
             onMouseEnter={() => handleCardEnter(item.title)}
             onMouseLeave={handleCardLeave}
-            className="relative hover:z-10 overflow-hidden group"
+            className="relative hover:z-10 overflow-hidden border border-neutral-400 rounded-3xl  group"
           >
-            <div className="lg:h-[32vw]  md:h-[400px] h-[300px] duration-300 rounded-3xl   overflow-hidden  group">
-              <div className=" bg-black lg:h-[32vw]  md:h-[400px] h-[300px]  rounded-3xl flex items-center justify-center opacity-[0.3] duration-200 z-20  w-full top-0 left-0  absolute">
+            <div className="lg:h-[32vw]  md:h-[400px] h-[300px] duration-300 rounded-t-3xl   overflow-hidden  group">
+              <div className=" bg-black lg:h-[32vw]  md:h-[400px] h-[300px]  rounded-t-3xl flex items-center justify-center lg:group-hover:opacity-[0.1] opacity-[0.3] duration-200 z-20  w-full top-0 left-0  absolute">
                 <div className="flex flex-col items-center text-white text-[1.4vw]">
                   <IoIosArrowUp />
                   <CgMouse />
@@ -185,14 +185,14 @@ const TabComponent = () => {
                 alt={`Tab ${activeTab} item ${index + 1}`}
               />
             </div>
-            <div className="mt-4">
+            <div className="m-4">
               <h3 className="text-xl font-bold text-white">{item.title}</h3>
               <p className="text-neutral-400 mt-2">{item.description}</p>
               <Link
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-block px-6 py-2 bg-[#C9FF00] text-black font-semibold rounded-lg hover:bg-[#B2E000] transition-colors"
+                className="mt-4 inline-block px-6 py-2  text-white underline font-light rounded-lg hover:bg-[#B2E000] transition-colors"
               >
                 Read More
               </Link>
