@@ -30,6 +30,9 @@ function ScrollWrapper({ children }) {
       smooth: true,
     });
 
+    // Reset scroll position to top on route change
+    scrollInstance.current.scrollTo(0, { duration: 0, disableLerp: true });
+
     return () => {
       if (scrollInstance.current) {
         scrollInstance.current.destroy();
@@ -37,12 +40,14 @@ function ScrollWrapper({ children }) {
       }
     };
   }, [location]); 
+
   return (
     <div ref={scrollRef} data-scroll-container>
       {children}
     </div>
   );
 }
+
 
 function App() {
   return (
