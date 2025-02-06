@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import img1 from "../../../assets/img/worksection/1.png";
-import img2 from "../../../assets/img/worksection/2.png";
-import img3 from "../../../assets/img/worksection/3.png";
-import img4 from "../../../assets/img/worksection/4.png";
-import img5 from "../../../assets/img/worksection/5.png";
-import img6 from "../../../assets/img/worksection/6.png";
-import img7 from "../../../assets/img/worksection/7.png";
-import img8 from "../../../assets/img/worksection/8.png";
-import img9 from "../../../assets/img/worksection/9.png";
-import img10 from "../../../assets/img/worksection/10.png";
-import img11 from "../../../assets/img/worksection/12.png";
-import img12 from "../../../assets/img/worksection/14.png";
-import img13 from "../../../assets/img/worksection/11.png";
-import img14 from "../../../assets/img/worksection/13.png";
-import img15 from "../../../assets/img/worksection/15.png";
-import img16 from "../../../assets/img/worksection/16.png";
-import img17 from "../../../assets/img/worksection/14 copy.png";
-import img18 from "../../../assets/img/worksection/17.png";
+import img1 from "../../../assets/img/worksection/1-min.png";
+import img2 from "../../../assets/img/worksection/2-min.png";
+import img3 from "../../../assets/img/worksection/3-min.png";
+import img4 from "../../../assets/img/worksection/4-min.png";
+import img5 from "../../../assets/img/worksection/5-min.png";
+import img6 from "../../../assets/img/worksection/6-min.png";
+import img7 from "../../../assets/img/worksection/7-min.png";
+import img8 from "../../../assets/img/worksection/8-min.png";
+import img9 from "../../../assets/img/worksection/9-min.png";
+import img10 from "../../../assets/img/worksection/10-min.png";
+import img11 from "../../../assets/img/worksection/12-min.png";
+import img12 from "../../../assets/img/worksection/14-min.png";
+import img13 from "../../../assets/img/worksection/11-min.png";
+import img14 from "../../../assets/img/worksection/13-min.png";
+import img15 from "../../../assets/img/worksection/15-min.png";
+import img16 from "../../../assets/img/worksection/16-min.png";
+import img17 from "../../../assets/img/worksection/14 copy-min.png";
+import img18 from "../../../assets/img/worksection/17-min.png";
 import { CgMouse } from "react-icons/cg";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const TabComponent = () => {
   const [activeTab, setActiveTab] = useState("ALL");
@@ -192,9 +194,9 @@ const TabComponent = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-block px-6 py-2  text-white underline font-light rounded-lg hover:bg-[#B2E000] transition-colors"
+                className="flex gap-1 items-center  w-fit mt-4   py-2  text-white underline font-light rounded-lg hover:text-blue-500"
               >
-                Read More
+                <p>Visit Site</p> <p><BsArrowUpRight className="text-[1vw]"/></p>
               </Link>
             </div>
           </motion.div>

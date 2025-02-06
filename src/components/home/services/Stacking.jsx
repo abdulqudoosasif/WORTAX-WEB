@@ -33,7 +33,7 @@ const Card = ({ title, subtitle, description, points, image, linkText, topOffset
         {/* Right Section */}
         <div className="md:w-1/2 bg-cover p-10 text-white flex flex-col items-end justify-end">
           <Link
-            to="#"
+            to={"/webdev"}
             className="mt-4 inline-block w-fit bg-white text-black py-2 px-4 rounded-md shadow-md hover:bg-red-500 transition"
           >
             {linkText} →

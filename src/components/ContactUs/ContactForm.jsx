@@ -39,7 +39,7 @@ const ContactForm = () => {
   const progressPercentage = ((step - 1) / 2) * 100; // 3 steps = 0%, 50%, 100%
 
   return (
-    <div className="flex relative z-30 lg:min-h-[75vh] rounded-b-3xl text-white bg-neutral-900 lg:py-[5vw] flex-col md:flex-row border-t-[1px] items-start justify-between p-8 md:p-16">
+    <div className="flex relative z-30 lg:h-[100vh] rounded-b-3xl text-white bg-neutral-900 lg:py-[5vw] flex-col md:flex-row border-t-[1px] items-start justify-between p-8 md:p-16">
       <div className="md:w-1/2 lg:sticky lg:top-[7vw] space-y-4">
         <p className="uppercase text-[2vw] font-medium tracking-wide">Contact</p>
         <h1 className="lg:text-[3vw] font-semibold leading-tight">
