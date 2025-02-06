@@ -1,11 +1,11 @@
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef, useState } from "react";
-import ContactForm from "../../../ContactUs/ContactForm";
-import Footer from "../../Footer";
-import img from '../../../../assets/img/Service/web_dev.webp'
-import BlogHeroSec from "../../../Blogs/BlogHeroSec";
-import Preloader from "../../../Animation/Servicespreloader";
-const WebDev = () => {
+import ContactForm from "../../../../ContactUs/ContactForm";
+import Footer from "../../../Footer";
+import img from '../../../../../assets/img/Service/Ai-2.png'
+import BlogHeroSec from "../../../../Blogs/BlogHeroSec";
+import Preloader from "../../../../Animation/AiPreloader";
+const AiSolutions = () => {
 
   return (
       <HorizontalScrollCarousel />
@@ -104,4 +104,4 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
-export default WebDev;
+export default AiSolutions;

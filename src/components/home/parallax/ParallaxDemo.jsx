@@ -14,7 +14,6 @@ import Img11 from '../../../assets/img/Review/11.png'
 import Img12 from '../../../assets/img/Review/12.png'
 import Img13 from '../../../assets/img/Review/13.png'
 import Img14 from '../../../assets/img/Review/14.png'
-import MobileSec  from './MobileSec';
 const ParallaxDemo = () => {
   return (
 <div className='lg:flex relative z-10  bg-white justify-between lg:h-[100vh] px-4 lg:px-16'> 
@@ -25,7 +24,7 @@ const ParallaxDemo = () => {
         <h1 className='lg:text-[3.6vw] lg:mb-0   text-2xl font-semibold leading-tight text-gray-500 lg:text-start text-center'>Excellence</h1>
       </div>
     </div>
-    {/* <MobileSec/> */}
+
 <ParallaxProvider>
       <div className='lg:flex md:flex overflow-hidden  gap-3  '>
         {/* Parallax Content */}
