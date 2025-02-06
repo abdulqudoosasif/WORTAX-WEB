@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Ai_Solutions from '../../../assets/img/Service/Ai_Solution.webp';
-import app_dev from '../../../assets/img/Service/app_dev.webp';
-import web_dev from '../../../assets/img/Service/web_dev.webp';
-import web_design from '../../../assets/img/Service/web_design.webp';
+import Ai_Solutions from '../../../assets/img/Service/Ai-2.png';
+import app_dev from '../../../assets/img/Service/app.webp';
+import web_dev from '../../../assets/img/Service/web.webp';
+import web_design from '../../../assets/img/Service/design.webp';
 
 const Card = ({ title, subtitle, description, points, image, linkText, topOffset }) => {
   return (
