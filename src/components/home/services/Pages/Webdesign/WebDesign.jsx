@@ -23,42 +23,36 @@ const HorizontalScrollCarousel = () => {
   const steps = [
     {
       number: "01",
-      title: "Discovery",
+      title: "Discovery & Research",
       description:
-        "We dive deep into your business, understanding your goals, target audience, and the digital landscape.",
+        "We start by understanding your business, goals, and target audience. Through competitor analysis and market research, we identify opportunities to create a website that stands out in your industry.",
     },
     {
       number: "02",
-      title: "Planning",
+      title: "Planning & Wireframing",
       description:
-        "Our team creates a comprehensive sitemap and wireframes, ensuring that every detail is planned with precision.",
+        "With insights in place, we map out the website structure, creating wireframes and user flows. This step ensures an intuitive user experience and a solid foundation for development.",
     },
     {
       number: "03",
-      title: "Design",
+      title: "UI/UX Design",
       description:
-        "Bringing your vision to life, our creative team develops stunning visuals that resonate with your audience.",
+        "Our creative team brings your vision to life by designing a visually engaging, user-friendly interface. We focus on aesthetics, accessibility, and brand consistency to leave a lasting impact on your audience.",
     },
     {
       number: "04",
-      title: "Development",
-      description: "", 
+      title: "Development & Optimization",
+      description:
+        "We transform designs into a fully functional, high-performance website using the latest web technologies. Our team ensures responsiveness, speed optimization, and SEO best practices for a seamless user experience.",
     },
     {
-        number: "01",
-        title: "Discovery",
-        description:
-          "We dive deep into your business, understanding your goals, target audience, and the digital landscape.",
-      },
-      {
-        number: "02",
-        title: "Planning",
-        description:
-          "Our team creates a comprehensive sitemap and wireframes, ensuring that every detail is planned with precision.",
-      },
-
-      
+      number: "05",
+      title: "Launch & Maintenance",
+      description:
+        "After thorough testing, we deploy your website, ensuring a smooth launch. Post-launch, we offer ongoing maintenance, updates, and improvements to keep your website secure, fast, and aligned with evolving business needs.",
+    },
   ];
+  
      const [isLoading, setIsLoading] = useState(true);
     
       const handlePreloaderFinish = () => {
@@ -83,7 +77,7 @@ const HorizontalScrollCarousel = () => {
       </div>
       <div className="h-[300vh] ">
       <div className=" h-[100vh]   w-full"></div>
-        <div className=" h-[100vh]  pl-[25vw] ">
+        <div className=" h-[100vh]  pl-[25vw] pr-[15vw] ">
         {steps.map((step, index) => (
         <div key={index} className="border-b py-6">
           <p className="text-lg font-bold">{step.number}</p>

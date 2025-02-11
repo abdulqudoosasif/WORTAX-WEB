@@ -47,16 +47,16 @@ const TabComponent = () => {
 
   const caseStudyData = {
     ALL: [
-      { img: img1, title: "AXCEND", description: "Axcend is a cutting-edge platform for...", link: "https://example.com/axcend" },
-      { img: img2, title: "RECORD AI MUSIC", description: "Record AI Music allows users to...", link: "https://example.com/record-ai-music" },
-      { img: img3, title: "SUCCESS IN TRUCKING", description: "Success in Trucking is a program designed to...", link: "https://example.com/success-in-trucking" },
-      { img: img4, title: "JG", description: "JG is a branding project focused on...", link: "https://example.com/jg" },
+      { img: img1, title: "AXCEND", description: "A business consulting firm offering strategic solutions for growth, market expansion, and operational efficiency.", link: "https://example.com/axcend" },
+      { img: img2, title: "RECORD AI MUSIC", description: "Record AI Music is a cutting-edge platform designed for music enthusiasts, offering AI-powered tools to enhance music production and creativity. Built for seamless user experience, it combines innovation with intuitive design. 🎵🚀", link: "https://example.com/record-ai-music" },
+      { img: img3, title: "SUCCESS IN TRUCKING", description: "A platform supporting trucking entrepreneurs with financing, business strategies, and operational guidance.", link: "https://example.com/success-in-trucking" },
+      { img: img4, title: "JG", description: "A floral design studio creating elegant, custom arrangements for weddings, events, and special occasions.", link: "https://example.com/jg" },
       { img: img6, title: "LIGHTING RESELLERS", description: "Lighting Resellers is an e-commerce platform for...", link: "https://example.com/lighting-resellers" },
       { img: img14, title: "LYNC DENTAL", description: "Lync Dental provides innovative solutions for...", link: "https://example.com/lync-dental" },
       { img: img15, title: "GREEN ROOMS", description: "Green Rooms is a sustainable living initiative...", link: "https://example.com/green-rooms" },
       { img: img16, title: "WODKA SODA", description: "Wodka Soda is a modern beverage brand...", link: "https://example.com/wodka-soda" },
       { img: img17, title: "KISS MARKETERS", description: "Kiss Marketers is a digital marketing agency...", link: "https://example.com/kiss-marketers" },
-      { img: img13, title: "STARFIRE SNOWBOARDS", description: "Starfire Snowboards offers high-performance snowboarding gear...", link: "https://example.com/starfire-snowboards" },
+      { img: img13, title: "STARFIRE SNOWBOARDS", description: " A snowboard brand delivering high-performance boards designed for durability, control, and smooth rides.", link: "https://example.com/starfire-snowboards" },
       { img: img18, title: "CODE BRAVE", description: "Code Brave is a coding bootcamp for...", link: "https://example.com/code-brave" },
     ],
     WooCommerce: [{ img: img4, title: "Case Study 4", description: "JG is a branding project focused on...", link: "https://example.com/jg" }],

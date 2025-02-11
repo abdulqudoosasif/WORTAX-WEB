@@ -23,42 +23,42 @@ const HorizontalScrollCarousel = () => {
   const steps = [
     {
       number: "01",
-      title: "Discovery",
+      title: "Discovery & Research",
       description:
-        "We dive deep into your business, understanding your goals, target audience, and the digital landscape.",
+        "We analyze your app idea, target audience, and business goals to create a strategic roadmap for development.",
     },
     {
       number: "02",
-      title: "Planning",
+      title: "Planning & Wireframing",
       description:
-        "Our team creates a comprehensive sitemap and wireframes, ensuring that every detail is planned with precision.",
+        "Our team drafts wireframes and user flows to ensure a seamless user experience and efficient app functionality.",
     },
     {
       number: "03",
-      title: "Design",
+      title: "UI/UX Design",
       description:
-        "Bringing your vision to life, our creative team develops stunning visuals that resonate with your audience.",
+        "We craft visually appealing and user-friendly designs that enhance engagement and usability.",
     },
     {
       number: "04",
-      title: "Development",
-      description: "", 
+      title: "App Development",
+      description:
+        "Our developers build the app using the latest technologies, ensuring high performance, security, and scalability.",
     },
     {
-        number: "01",
-        title: "Discovery",
-        description:
-          "We dive deep into your business, understanding your goals, target audience, and the digital landscape.",
-      },
-      {
-        number: "02",
-        title: "Planning",
-        description:
-          "Our team creates a comprehensive sitemap and wireframes, ensuring that every detail is planned with precision.",
-      },
-
-      
+      number: "05",
+      title: "Testing & Quality Assurance",
+      description:
+        "We rigorously test the app for bugs, performance issues, and usability to deliver a flawless experience.",
+    },
+    {
+      number: "06",
+      title: "Deployment & Launch",
+      description:
+        "Once the app is fully optimized, we deploy it to the App Store and Play Store, ensuring a smooth launch.",
+    }
   ];
+  
      const [isLoading, setIsLoading] = useState(true);
     
       const handlePreloaderFinish = () => {
@@ -83,7 +83,7 @@ const HorizontalScrollCarousel = () => {
       </div>
       <div className="h-[300vh] ">
       <div className=" h-[100vh]   w-full"></div>
-        <div className=" h-[100vh]  pl-[25vw] ">
+        <div className=" h-[100vh]  pl-[25vw] pr-[15vw] ">
         {steps.map((step, index) => (
         <div key={index} className="border-b py-6">
           <p className="text-lg font-bold">{step.number}</p>

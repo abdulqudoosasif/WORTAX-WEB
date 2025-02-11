@@ -23,42 +23,37 @@ const HorizontalScrollCarousel = () => {
   const steps = [
     {
       number: "01",
-      title: "Discovery",
+      title: "Data Collection & Analysis",
       description:
-        "We dive deep into your business, understanding your goals, target audience, and the digital landscape.",
+        "We gather relevant data for your business, including market trends, customer behavior, and industry insights. This data is fundamental for training the AI model.",
     },
     {
       number: "02",
-      title: "Planning",
+      title: "Model Selection & Strategy",
       description:
-        "Our team creates a comprehensive sitemap and wireframes, ensuring that every detail is planned with precision.",
+        "We understand your business requirements and select the best AI models and algorithms. At this stage, we use advanced techniques such as deep learning, machine learning, and NLP (Natural Language Processing).",
     },
     {
       number: "03",
-      title: "Design",
+      title: "Model Training & Optimization",
       description:
-        "Bringing your vision to life, our creative team develops stunning visuals that resonate with your audience.",
+        "The AI model is trained using the collected data, enabling it to learn patterns and insights effectively. We also use hyperparameter tuning and continuous testing to improve accuracy and efficiency.",
     },
     {
       number: "04",
-      title: "Development",
-      description: "", 
+      title: "Deployment & System Integration",
+      description:
+        "Once the AI model is fully optimized, we integrate it into your existing business software or platforms. This ensures that AI works seamlessly and helps automate your business operations.",
     },
     {
-        number: "01",
-        title: "Discovery",
-        description:
-          "We dive deep into your business, understanding your goals, target audience, and the digital landscape.",
-      },
-      {
-        number: "02",
-        title: "Planning",
-        description:
-          "Our team creates a comprehensive sitemap and wireframes, ensuring that every detail is planned with precision.",
-      },
-
-      
+      number: "05",
+      title: "Monitoring, Maintenance & Improvement",
+      description:
+        "After deploying the AI solution, its performance is continuously monitored. We provide regular updates and improvements so the AI model can adapt to new challenges and data, delivering better results.",
+    },
   ];
+  
+  
      const [isLoading, setIsLoading] = useState(true);
     
       const handlePreloaderFinish = () => {
@@ -83,7 +78,7 @@ const HorizontalScrollCarousel = () => {
       </div>
       <div className="h-[300vh] ">
       <div className=" h-[100vh]   w-full"></div>
-        <div className=" h-[100vh]  pl-[25vw] ">
+        <div className=" h-[100vh]  pl-[25vw] pr-[15vw] ">
         {steps.map((step, index) => (
         <div key={index} className="border-b py-6">
           <p className="text-lg font-bold">{step.number}</p>
